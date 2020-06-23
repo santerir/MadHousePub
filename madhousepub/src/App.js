@@ -1,0 +1,44 @@
+import React from 'react';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+
+import Home from './pages/home'
+import Article from './pages/article'
+
+import { About } from './content/s2020/about'
+
+import './sass/style.scss';
+
+import { SUMMER2020 } from './editions'
+
+const App = ({ }) => {
+
+
+  return (
+    <Router>
+      <div className="App">
+        <Switch>
+          <Route path="/about">
+            <Article edition={SUMMER2020}>
+              <About />
+            </Article>
+          </Route>
+          <Route path="/article-1">
+            <Article edition={SUMMER2020}>
+              Test
+            </Article>
+          </Route>
+          <Route path="/">
+            <Home />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
+  );
+}
+
+export default App;

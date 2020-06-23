@@ -1,0 +1,39 @@
+@import "constants";
+@import "zvalues";
+@import "media_queries";
+
+html {
+    font-family: $font-face;
+    font-size: $font-base-size;
+}
+
+body {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+
+    -webkit-text-size-adjust: none;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[s-only="mb"] {
+    @include respond-between("mb-s", "mb-l") {
+    }
+    @include respond-above("mb-l") {
+        display: none !important;
+    }
+}
+
+[s-only="dsk"] {
+    @include respond-between("mb-s", "mb-l") {
+        display: none !important;
+    }
+    @include respond-above("mb-l") {
+    }
+}
