@@ -10,9 +10,10 @@ import Article from './pages/article'
 
 import { About } from './content/s2020/about'
 
-import './sass/style.scss';
-
 import { SUMMER2020 } from './editions'
+
+
+import './sass/style.scss';
 
 const App = ({ }) => {
 
