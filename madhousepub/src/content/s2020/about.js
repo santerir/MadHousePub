@@ -6,13 +6,13 @@ export const About = () => {
             <div className="abt-title">
                 Info
             </div>
-            <div>
+            <div className="col col-1">
                 BLaah
             </div>
-            <div>
+            <div className="col col-2">
                 Blooh
             </div>
-            <div>
+            <div className="col col-3">
                 Blööh
             </div>
         </div>

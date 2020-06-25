@@ -1,12 +1,14 @@
 @import "../zvalues";
 
 .article {
+    height: 100%;
+
     .header {
         width: 100%;
-        position: fixed;
+        position: absolute;
         top: 0;
         height: 50px;
-        background-color: pink;
+        background-color: transparent;
         z-index: z("overlay");
 
         .close-button {
@@ -17,17 +19,19 @@
     }
 
     .footer {
-        position: fixed;
+        position: absolute;
         bottom: 0;
         width: 100%;
         height: 50px;
-        background-color: pink;
+        background-color: transparent;
     }
 
     .content {
-        height: 100%;
+        height: calc(100vh - 100px);
         position: relative;
         top: 50px;
         z-index: z("default");
+        background-color: $base-color;
+        overflow-y: scroll;
     }
 }

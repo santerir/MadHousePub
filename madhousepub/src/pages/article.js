@@ -12,6 +12,7 @@ export default ({ edition, next, prev, children }) => {
             <div className="content">{children}</div>
             <div className="footer">
                 {prev && <Link to={prev.url}>{prev.text}</Link>}
-                {next && <Link to={next.url}>{next.text}</Link>}</div>
+                {next && <Link to={next.url}>{next.text}</Link>}
+            </div>
         </div>)
 }

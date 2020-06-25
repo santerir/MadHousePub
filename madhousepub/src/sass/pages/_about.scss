@@ -2,8 +2,21 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 150px;
+    position: absolute;
+    height: 100%;
+    width: 100%;
 
     .abt-title {
         grid-area: 1 / 1 / 1 / 4;
+    }
+
+    .col {
+        height: 100%;
+        padding: 0 3em 0 3em;
+    }
+
+    .col-2,
+    .col-3 {
+        border-left: 1px black solid;
     }
 }
