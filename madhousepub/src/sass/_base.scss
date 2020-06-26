@@ -16,6 +16,17 @@ body {
     -webkit-text-size-adjust: none;
 }
 
+button {
+    border: none;
+    background-color: unset;
+    cursor: pointer;
+    width: 50px;
+
+    &:focus {
+        outline: none;
+    }
+}
+
 .clearfix::after {
     content: "";
     clear: both;

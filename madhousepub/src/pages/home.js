@@ -3,6 +3,10 @@ import { Link } from 'react-router-dom'
 import Modal from '../components/modal'
 import ModalButton from '../components/modal-button'
 
+import SVGFilters from '../components/svg-filters'
+import { Hole1, Hole2, Hole3, Hole4, Inf } from '../components/svgs'
+
+
 export default ({ }) => {
 
     // const SCROLL_POINTS = 2
@@ -34,19 +38,38 @@ export default ({ }) => {
 
     return (
         <>
+            <SVGFilters />
             <div className="homepage s2020">
-                <Modal closable modalId="info-modal">
-                    InfoText
-            </Modal>
+                <Link to="/about"><button className="info-button">
+                    <Inf />
+                </button></Link>
                 <div className="title-bar">
-                    <ModalButton modalId="info-modal">Info</ModalButton>
-                    <Link to="/about">About</Link>
                 </div>
                 <div className="content-field">
-                    <Link to="/article-1">Article 1</Link>
-                    <Link>Article 2</Link>
-                    <Link>Article 3</Link>
-                    <Link>Article 4</Link>
+                    <div class="article-link">
+                        <Link to="/article-1">
+                            <h1>Bad House</h1>
+                            <Hole1 />
+                        </Link>
+                    </div>
+                    <div class="article-link">
+                        <Link>
+                            <h1>Bad House</h1>
+                            <Hole2 />
+                        </Link>
+                    </div>
+                    <div class="article-link">
+                        <Link>
+                            <h1>Bad House</h1>
+                            <Hole3 />
+                        </Link>
+                    </div>
+                    <div class="article-link">
+                        <Link>
+                            <h1>Bad House</h1>
+                            <Hole4 />
+                        </Link>
+                    </div>
                 </div>
             </div>
         </>

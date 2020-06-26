@@ -1,0 +1,13 @@
+.hole {
+    filter: url(#inset-shadow);
+
+    path {
+        fill: $base-color;
+    }
+
+    transition: transform 1s linear;
+
+    &:hover {
+        transform: scale(1.1, 1.1);
+    }
+}
