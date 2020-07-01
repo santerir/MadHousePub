@@ -9,6 +9,10 @@ import Home from './pages/home'
 import Article from './pages/article'
 
 import { About } from './content/s2020/about'
+import { Polab } from './content/s2020/polab'
+import { Rakkaudesta } from './content/s2020/rakkaudesta'
+import { Cloudbody } from './content/s2020/cloudbody'
+import { Tunne } from './content/s2020/tunne'
 
 import { SUMMER2020 } from './editions'
 
@@ -27,9 +31,24 @@ const App = ({ }) => {
               <About />
             </Article>
           </Route>
-          <Route path="/article-1">
+          <Route path="/practices-of-love-and-body">
             <Article edition={SUMMER2020}>
-
+              <Polab />
+            </Article>
+          </Route>
+          <Route path="/rakkaudesta">
+            <Article edition={SUMMER2020}>
+              <Rakkaudesta />
+            </Article>
+          </Route>
+          <Route path="/cloudbody">
+            <Article edition={SUMMER2020}>
+              <Cloudbody />
+            </Article>
+          </Route>
+          <Route path="/tunnemylläkkähässäkkä">
+            <Article edition={SUMMER2020}>
+              <Tunne />
             </Article>
           </Route>
           <Route path="/">

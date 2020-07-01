@@ -29,12 +29,35 @@
         @include respond-below("mb-l") {
             grid-area: 1/1/2/2;
         }
+
+        text-align: center;
+
+        img {
+            width: 70%;
+            margin: 1em auto;
+        }
+
+        h1 {
+            transform: rotate(90deg);
+            margin: 0.5em;
+            font-size: 3em;
+        }
+
+        & > div {
+            position: absolute;
+            width: 220px;
+            bottom: 0.5em;
+
+            h3 {
+                font-size: 0.8em;
+            }
+        }
     }
 
     .content-field {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 25% 25% 25% 25%;
         grid-area: 1/2/2/3;
 
         overflow: hidden;
@@ -44,19 +67,93 @@
         }
 
         .article-link {
-            .hole {
-                height: 100%;
-                position: absolute;
+            clear: both;
+
+            max-height: 200px;
+
+            &:hover {
+                h1 {
+                    text-shadow: 2px 2px gold;
+                }
             }
+
+            .hole {
+                height: 140%;
+                position: relative;
+                margin: -0.7em 0 0 0;
+            }
+
+            .spacer {
+                height: 100%;
+                width: 10%;
+                float: left;
+
+                @include respond-below("l") {
+                    width: 0%;
+                }
+
+                @include respond-between("l", "xl") {
+                    width: 6%;
+                }
+
+                @include respond-above("xl") {
+                    width: 15%;
+                }
+            }
+
+            #hole4 {
+                height: 110%;
+            }
+
+            #hole2 {
+                float: right;
+                margin-right: 3em;
+            }
+
+            #hole3 {
+                height: 150%;
+                margin-top: -2em;
+            }
+
+            // #hole1 {
+            //     right: 12%;
+            //     margin-top: -6%;
+            //     height: 160%;
+            // }
+            // #hole2 {
+            //     right: 12%;
+            //     margin-top: 1%;
+            //     height: 110%;
+            // }
+            // #hole3 {
+            //     left: 8%;
+            //     height: 150%;
+            //     margin-top: -2%;
+            // }
+
             position: relative;
 
             h1 {
-                margin: 0;
+                margin: 1em 0 0 5%;
+                position: relative;
+                line-height: 0.9;
+                float: left;
+            }
+
+            &:nth-of-type(2n) {
+                h1 {
+                    float: right;
+                    margin: 1em 5% 0 0;
+                }
+
+                .hole {
+                    float: right;
+                }
+
+                .spacer {
+                    float: right;
+                }
             }
         }
-    }
-
-    #info-modal {
-        top: 5%;
     }
 }

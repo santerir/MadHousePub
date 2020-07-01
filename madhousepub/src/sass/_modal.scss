@@ -1,0 +1,39 @@
+.modal-button {
+    &.active {
+        visibility: hidden;
+    }
+}
+
+.modal-container {
+    width: 400px;
+    max-width: 90%;
+    border: 1px solid black;
+
+    display: flex;
+
+    max-height: 60%;
+
+    z-index: z("modal");
+
+    background-color: $base-color;
+
+    .modal-content {
+        flex: 0 1 auto;
+        width: 100%;
+        overflow-y: scroll;
+        padding: 1em;
+    }
+
+    box-shadow: 2px 2px 4px 1px gray;
+    p {
+        color: black;
+        text-align: left;
+    }
+
+    button.modal-button-close {
+        position: absolute;
+        top: 0;
+        margin: -25px 0 0 -25px;
+        left: 50%;
+    }
+}

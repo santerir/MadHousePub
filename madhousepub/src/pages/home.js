@@ -44,30 +44,42 @@ export default ({ }) => {
                     <Inf />
                 </button></Link>
                 <div className="title-bar">
+                    <img src="./img/MHH_Logo.png"></img>
+                    <h1>PUBLICATION</h1>
+                    <div>
+                        <h3>kesä 2020</h3>
+                    </div>
                 </div>
                 <div className="content-field">
                     <div class="article-link">
-                        <Link to="/article-1">
-                            <h1>Bad House</h1>
+                        <Link to="/practices-of-love-and-body">
+                            <h1>Practices of Love <br /> and Body</h1>
+                            <div className="spacer"></div>
                             <Hole1 />
                         </Link>
                     </div>
                     <div class="article-link">
-                        <Link>
-                            <h1>Bad House</h1>
+                        <Link to="/rakkaudesta">
+                            <h1>Rakkaudesta <br />
+– sanasto tuleville vuosikymmenille</h1>
+                            <div className="spacer"></div>
+                            <Hole4 />
+                        </Link>
+                    </div>
+                    <div class="article-link">
+                        <Link to="/cloudbody">
+                            <h1>Cloudbody,<br />
+an Ecology of Dreams,<br />
+osa 3</h1>
+                            <div className="spacer"></div>
                             <Hole2 />
                         </Link>
                     </div>
                     <div class="article-link">
-                        <Link>
-                            <h1>Bad House</h1>
+                        <Link to="/tunnemylläkkähässäkkä">
+                            <h1>Tunnemylläkkähässäkkä</h1>
+                            <div className="spacer"></div>
                             <Hole3 />
-                        </Link>
-                    </div>
-                    <div class="article-link">
-                        <Link>
-                            <h1>Bad House</h1>
-                            <Hole4 />
                         </Link>
                     </div>
                 </div>

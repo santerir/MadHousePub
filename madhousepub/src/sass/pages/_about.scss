@@ -4,15 +4,20 @@
     grid-template-rows: 150px;
     position: absolute;
     height: 100%;
-    width: 100%;
+    width: auto;
 
     .abt-title {
         grid-area: 1 / 1 / 1 / 4;
+        padding: 0 0 0 0;
+
+        h1 {
+            text-align: left;
+        }
     }
 
     .col {
         height: 100%;
-        padding: 0 3em 0 3em;
+        padding: 0 0.5em 0 0.5em;
     }
 
     .col-2,

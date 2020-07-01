@@ -15,7 +15,7 @@ const ModalButton__Connected = ({ modalId, open, close, active, children }) => {
     }
 
     return (
-        <button id={`${modalId}-button`} onClick={callback} active={active}>
+        <button id={`${modalId}-button`} onClick={callback} active={active} className={active ? "active modal-button" : "non-active modal-button"}>
             {children}
         </button>
     )

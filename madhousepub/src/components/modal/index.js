@@ -4,6 +4,7 @@ import { connect } from 'react-redux'
 import { useEffect } from 'react'
 
 import ruksi from './assets/ruksi.png'
+import { Cls } from './assets/close.js'
 
 import styles from './style.scss'
 import state from './state.js'
@@ -42,9 +43,11 @@ class Modal_base extends Component {
                 {isOpen &&
                     <div id={modalId} className={[styles["modal-container"], flex ? styles["modal-container-flex"] : "", "modal-container"].join(' ')}>
                         {closable &&
-                            <img className={styles["modal-button-close"]} onClick={close} src={ruksi}></img>
+                            <button className={"modal-button-close"} onClick={close}> <Cls /> </button>
                         }
-                        {children}
+                        <div className="modal-content">
+                            {children}
+                        </div>
                     </div>
                 }
             </span>)

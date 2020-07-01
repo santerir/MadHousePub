@@ -8,7 +8,7 @@ export default ({ edition, next, prev, children }) => {
     return (
         <div className={["article", edition.cls].join(' ')}>
             <div className="header">
-                <h4> {edition.name} </h4>
+                <h4> Madhouse Helsinki Publication – {edition.name} </h4>
                 <Link to="/"><button className="close-button">
                     <Cls></Cls>
                 </button></Link>

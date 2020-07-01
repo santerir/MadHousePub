@@ -5,6 +5,14 @@
 html {
     font-family: $font-face;
     font-size: $font-base-size;
+
+    @include respond-between("mb-l", "l") {
+        font-size: 0.9 * $font-base-size;
+    }
+
+    div {
+        box-sizing: border-box;
+    }
 }
 
 body {

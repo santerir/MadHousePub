@@ -3,6 +3,8 @@
 @import "pages/article";
 @import "pages/about";
 @import "svg";
+@import "text";
+@import "modal";
 
 @import "editions/s2020";
 
@@ -12,8 +14,8 @@
     height: 100%;
 
     @include respond-above("mb-l") {
-        min-height: 590px;
-        min-width: 980px;
+        min-height: 820px;
+        min-width: 992px;
     }
 
     overflow: scroll;
