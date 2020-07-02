@@ -22,6 +22,12 @@
     #playlist {
         left: 20%;
         position: absolute;
+
+        @include respond-below("mb-l") {
+            position: relative;
+            width: 100%;
+            left: unset;
+        }
     }
 
     .chatbox {
@@ -58,37 +64,95 @@
         position: relative;
         left: 50%;
         top: 5em;
+        margin-left: 1em;
+
+        @include respond-below("mb-l") {
+            position: relative;
+            width: 100%;
+            left: unset;
+            top: unset;
+            margin: 0;
+            margin-top: 3em;
+        }
     }
 
     #audioiltamat-container {
         margin-top: 10em;
 
+        @include respond-below("mb-l") {
+            margin-top: 6em;
+        }
+
         #audioiltamat-modal-button {
             left: 30%;
             position: absolute;
+            margin-top: -5em;
+            @include respond-below("mb-l") {
+                position: relative;
+                left: calc(50% - 25px);
+                margin-top: 1em;
+            }
         }
 
         #audioiltamat-modal {
-            margin-top: 1em;
+            margin-top: -2em;
             left: calc(30% - 180px);
             position: absolute;
+
+            @include respond-below("mb-l") {
+                position: absolute;
+                margin: -25px auto;
+
+                left: 50%;
+                -webkit-transform: translateX(-50%);
+                transform: translateX(-50%);
+            }
         }
 
         .audioiltamat {
-            width: 300px;
+            max-width: 300px;
+            width: 100%;
+
             left: 40%;
             position: relative;
+
+            @include respond-below("mb-l") {
+                position: relative;
+                left: unset;
+                top: unset;
+                margin: 3em auto;
+
+                audio {
+                    width: 100%;
+                }
+            }
         }
     }
 
     #kuohkee {
         position: relative;
         left: 50%;
+
+        @include respond-below("mb-l") {
+            position: relative;
+            width: 100%;
+            left: unset;
+            top: unset;
+            margin-top: 3em;
+        }
     }
 
     #dumplings {
         position: relative;
         left: 20%;
+
+        @include respond-below("mb-l") {
+            position: relative;
+            width: 100%;
+            left: unset;
+            top: unset;
+            margin-top: 3em;
+        }
 
         .hallu {
             color: #008182;
@@ -132,45 +196,103 @@
     }
 
     #kuohkee-modal {
-        margin-top: -3em;
+        margin-top: -8em;
         left: calc(55% - 180px);
         position: absolute;
+        @include respond-below("mb-l") {
+            position: absolute;
+            margin: -25px auto;
+
+            left: 50%;
+            -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+        }
     }
 
     #kuohkee-modal-button {
-        bottom: 3em;
         left: 55%;
         position: relative;
+        bottom: 10em;
+        @include respond-below("mb-l") {
+            position: relative;
+            left: calc(50% - 25px);
+            top: unset;
+            bottom: unset;
+        }
     }
 
     .poem {
-        position: relative;
+        position: absolute;
         height: 3em;
+
+        display: flex;
+        width: 10em;
+
+        @include respond-below("mb-l") {
+            width: auto;
+        }
 
         pre {
         }
 
         &.poem-1 {
-            left: 20%;
+            right: 20%;
+            position: relative;
+
+            @include respond-below("mb-l") {
+                position: relative;
+                left: 10%;
+                right: unset;
+            }
         }
 
         &.poem-2 {
             left: 20%;
             margin: 5em auto -5em auto !important;
+            @include respond-below("mb-l") {
+                margin: 2em auto -5em auto !important;
+                position: relative;
+                left: unset;
+            }
         }
 
         &.poem-3 {
             left: 30%;
             margin: 5em auto -5em auto !important;
+
+            @include respond-below("mb-l") {
+                position: relative;
+                top: unset;
+                bottom: unset;
+                left: 40%;
+                margin: 3em auto !important;
+            }
         }
 
         &.poem-4 {
-            left: 70%;
+            left: 30%;
+            position: relative;
+
+            @include respond-below("mb-l") {
+                position: relative;
+                top: unset;
+                bottom: unset;
+                left: 10%;
+                margin: 3em auto !important;
+            }
         }
 
         &.poem-5 {
-            left: 45%;
-            margin: 5em auto 10em auto !important;
+            margin: 4em auto 1em auto !important;
+            position: relative;
+
+            @include respond-below("mb-l") {
+                position: relative;
+                top: unset;
+                bottom: unset;
+                left: unset;
+                margin: 3em auto !important;
+            }
         }
     }
 
@@ -178,24 +300,56 @@
         margin-top: -4em;
         left: calc(73% - 180px);
         position: absolute;
+
+        @include respond-below("mb-l") {
+            position: absolute;
+            margin: -25px auto;
+
+            left: 50%;
+            -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+        }
     }
 
     #drag-modal-button {
         bottom: 5em;
         left: 75%;
         position: relative;
+
+        @include respond-below("mb-l") {
+            position: relative;
+            left: calc(50% - 25px);
+            top: unset;
+            bottom: unset;
+        }
     }
 
     #poem-modal {
-        margin-top: -12em;
-        left: calc(36% - 180px);
+        left: calc(50% - 180px);
         position: absolute;
+        margin-top: -25px;
+
+        @include respond-below("mb-l") {
+            position: absolute;
+            margin: -25px auto;
+
+            left: 50%;
+            -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+        }
     }
 
     #poem-modal-button {
-        bottom: 2em;
-        left: -10%;
-        position: absolute;
+        position: relative;
+        left: 50%;
+
+        @include respond-below("mb-l") {
+            position: relative;
+            left: calc(50% - 25px);
+            top: 0;
+            bottom: unset;
+            margin-top: -3em;
+        }
     }
 }
 
@@ -206,6 +360,19 @@
         font-weight: 400;
         margin: 0 0 0 0;
         padding: 0;
+
+        @include respond-below("mb-l") {
+            font-size: 1.6em;
+        }
+    }
+
+    img {
+        width: 60%;
+    }
+    @include respond-below("mb-l") {
+        img {
+            width: 100%;
+        }
     }
 
     h3 {
@@ -221,6 +388,26 @@
 
     ul {
         padding-left: 4em;
+    }
+
+    @include respond-below("mb-l") {
+        .word {
+            p,
+            ul {
+                padding-left: 1em;
+            }
+        }
+
+        ul {
+            padding-left: 1em;
+        }
+    }
+}
+
+.cloudbody {
+    iframe {
+        width: 100%;
+        height: auto;
     }
 }
 

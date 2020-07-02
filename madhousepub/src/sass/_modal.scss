@@ -6,7 +6,7 @@
 
 .modal-container {
     width: 400px;
-    max-width: 90%;
+    max-width: 85%;
     border: 1px solid black;
 
     display: flex;
@@ -16,6 +16,9 @@
     z-index: z("modal");
 
     background-color: $base-color;
+
+    @include respond-below("mb-l") {
+    }
 
     .modal-content {
         flex: 0 1 auto;

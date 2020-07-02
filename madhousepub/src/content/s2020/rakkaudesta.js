@@ -37,7 +37,7 @@ export const Rakkaudesta = () => {
                 </Modal>
             </div>
             <div style={{ textAlign: "center" }}>
-                <img src="/img/rakkaudesta/img.jpg" style={{ width: "60%" }}></img>
+                <img src="/img/rakkaudesta/img.jpg"></img>
             </div>
             <div className="word palsta">
                 <h2>Änky</h2>
@@ -152,7 +152,7 @@ elämäntavasta ja valitsemme elää toisin.</p>
                 <p>Olemme saaneet utopediaan osallistujilta seuraavanlaisia sanoja:</p>
             </div>
             <div className="word palsta">
-                <h2>Varustuska/fjällrävenraivo</h2>
+                <h2>Varustuska/<wbr />fjällrävenraivo</h2>
                 <p>
                     Halu viettää pitkiä aikoja luonnossa ostamatta sitä varten
                     tuotettua uutta tavaraa. Halu mennä niissä ramppeissa mitä päällä

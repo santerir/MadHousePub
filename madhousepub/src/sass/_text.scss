@@ -51,4 +51,8 @@ a {
 .palsta {
     width: 600px;
     max-width: 80%;
+
+    @include respond-below("mb-l") {
+        max-width: 90%;
+    }
 }

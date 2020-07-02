@@ -45,8 +45,12 @@ export default ({ }) => {
                 </button></Link>
                 <div className="title-bar">
                     <img src="./img/MHH_Logo.png"></img>
-                    <h1>PUBLICATION</h1>
-                    <div>
+                    <h1 s-only="dsk">PUBLICATION</h1>
+                    <div s-only="mb">
+                        <h1>PUBLICATION</h1>
+                        <h3>kesä 2020</h3>
+                    </div>
+                    <div s-only="dsk">
                         <h3>kesä 2020</h3>
                     </div>
                 </div>
@@ -54,7 +58,7 @@ export default ({ }) => {
                     <div class="article-link">
                         <Link to="/practices-of-love-and-body">
                             <h1>Practices of Love <br /> and Body</h1>
-                            <div className="spacer"></div>
+                            <div s-only="dsk" className="spacer"></div>
                             <Hole1 />
                         </Link>
                     </div>
@@ -62,7 +66,7 @@ export default ({ }) => {
                         <Link to="/rakkaudesta">
                             <h1>Rakkaudesta <br />
 – sanasto tuleville vuosikymmenille</h1>
-                            <div className="spacer"></div>
+                            <div s-only="dsk" className="spacer"></div>
                             <Hole4 />
                         </Link>
                     </div>
@@ -71,14 +75,14 @@ export default ({ }) => {
                             <h1>Cloudbody,<br />
 an Ecology of Dreams,<br />
 osa 3</h1>
-                            <div className="spacer"></div>
+                            <div s-only="dsk" className="spacer"></div>
                             <Hole2 />
                         </Link>
                     </div>
                     <div class="article-link">
                         <Link to="/tunnemylläkkähässäkkä">
                             <h1>Tunnemylläkkähässäkkä</h1>
-                            <div className="spacer"></div>
+                            <div s-only="dsk" className="spacer"></div>
                             <Hole3 />
                         </Link>
                     </div>

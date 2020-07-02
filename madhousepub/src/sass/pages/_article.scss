@@ -18,10 +18,20 @@
             position: absolute;
             top: 25px;
             right: 50px;
+
+            @include respond-below("mb-l") {
+                top: 5%;
+                right: 5%;
+            }
         }
 
         h4 {
             margin: 1em;
+
+            @include respond-below("mb-l") {
+                font-size: 0.6em;
+                width: 70%;
+            }
         }
     }
 
@@ -54,7 +64,12 @@
         z-index: z("default");
         background-color: $base-color;
         overflow-y: scroll;
-        padding: 0 2em 0 2em;
+        padding: 0 2em 6em 2em;
+        overflow-x: hidden;
+
+        @include respond-below("mb-l") {
+            padding: 0 1em 6em 1em;
+        }
 
         h1 {
             text-align: center;

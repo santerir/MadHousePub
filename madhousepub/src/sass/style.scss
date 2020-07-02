@@ -14,7 +14,7 @@
     height: 100%;
 
     @include respond-above("mb-l") {
-        min-height: 820px;
+        min-height: 768px;
         min-width: 992px;
     }
 

@@ -6,6 +6,13 @@
     height: 100%;
     width: auto;
 
+    @include respond-below("mb-l") {
+        display: block;
+        position: static;
+        grid-template-columns: unset;
+        grid-template-rows: unset;
+    }
+
     .abt-title {
         grid-area: 1 / 1 / 1 / 4;
         padding: 0 0 0 0;
@@ -18,10 +25,20 @@
     .col {
         height: 100%;
         padding: 0 0.5em 0 0.5em;
+
+        @include respond-below("mb-l") {
+            height: auto;
+            border-top: 1px black solid;
+            padding: 1em 0.5em 0 0.5em;
+            margin-top: 2em;
+        }
     }
 
     .col-2,
     .col-3 {
         border-left: 1px black solid;
+        @include respond-below("mb-l") {
+            border-left: unset;
+        }
     }
 }

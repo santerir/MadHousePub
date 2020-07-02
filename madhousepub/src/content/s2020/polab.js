@@ -48,6 +48,7 @@ export const Polab = () => {
                     </p>
 
                     <p>5/2020
+                    <br></br>
                     video, teksti, ääni, kuva</p>
 
                     <p>Prekaarit Praktiikat on helsinkiläisten freelance
@@ -253,6 +254,11 @@ trrrr    true       trrrust`}</Tw>
                 </pre>
             </div>
             <div id="audioiltamat-container">
+                <div className="audioiltamat">
+                    <audio src="/audio/polab/aud1.mp3" controls></audio>
+                    <audio src="/audio/polab/aud2.mp3" controls></audio>
+                    <audio src="/audio/polab/aud3.mp3" controls></audio>
+                </div>
                 <ModalButton modalId="audioiltamat-modal">
                     <Inf />
                 </ModalButton>
@@ -261,11 +267,6 @@ trrrr    true       trrrust`}</Tw>
                         Podcast-sarjan osissa I ja II Elias ja Tuuli ohjaavat harjoitteita liittyen keholliseen praktiikkaansa. Kuulija voi halutessaan osallistua niiden tekemiseen.
                     </p>
                 </Modal>
-                <div className="audioiltamat">
-                    <audio src="/audio/polab/aud1.mp3" controls></audio>
-                    <audio src="/audio/polab/aud2.mp3" controls></audio>
-                    <audio src="/audio/polab/aud3.mp3" controls></audio>
-                </div>
             </div>
             <div>
                 <div id="dumplings" className="chatbox" style={{ "height": "300px" }}>
@@ -510,10 +511,10 @@ triggering fragment of tr***`}</Tw></pre>
 grrrr
 meow`}</Tw>
                 </pre>
-                <ModalButton modalId="poem-modal">
-                    <Inf />
-                </ModalButton>
             </div>
+            <ModalButton modalId="poem-modal">
+                <Inf />
+            </ModalButton>
             <Modal modalId="poem-modal" closable>
                 <p>Runo
 </p>

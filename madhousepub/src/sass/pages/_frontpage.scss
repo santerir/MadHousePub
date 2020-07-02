@@ -11,15 +11,20 @@
 
     @include respond-below("mb-l") {
         grid-template-columns: 100%;
-        grid-template-rows: 30vw 1fr;
+        grid-template-rows: 25vw 1fr;
     }
 
     .info-button {
         position: absolute;
-        right: 100px;
-        top: 50px;
+        top: 5%;
+        right: 3em;
 
         z-index: z("overlay");
+
+        @include respond-below("mb-l") {
+            top: 27vw;
+            right: 1em;
+        }
     }
 
     .title-bar {
@@ -28,6 +33,10 @@
 
         @include respond-below("mb-l") {
             grid-area: 1/1/2/2;
+            text-align: left;
+            justify-content: space-evenly;
+            display: flex;
+            align-items: center;
         }
 
         text-align: center;
@@ -35,6 +44,10 @@
         img {
             width: 70%;
             margin: 1em auto;
+            @include respond-below("mb-l") {
+                width: 20%;
+                margin: 0;
+            }
         }
 
         h1 {
@@ -43,13 +56,30 @@
             font-size: 3em;
         }
 
-        & > div {
-            position: absolute;
-            width: 220px;
-            bottom: 0.5em;
+        @include respond-below("mb-l") {
+            & > div {
+                h3 {
+                    font-size: 0.5em;
+                    text-align: right;
+                    margin: -0.5em 1em 0 1em;
+                }
+                h1 {
+                    transform: none;
+                    font-size: 1.1em;
+                    text-align: right;
+                }
+            }
+        }
 
-            h3 {
-                font-size: 0.8em;
+        @include respond-above("mb-l") {
+            & > div {
+                position: absolute;
+                width: 220px;
+                bottom: 0.5em;
+
+                h3 {
+                    font-size: 0.8em;
+                }
             }
         }
     }
@@ -78,9 +108,13 @@
             }
 
             .hole {
-                height: 140%;
+                height: 160%;
                 position: relative;
                 margin: -0.7em 0 0 0;
+
+                @include respond-below("mb-l") {
+                    position: absolute;
+                }
             }
 
             .spacer {
@@ -101,35 +135,44 @@
                 }
             }
 
-            #hole4 {
-                height: 110%;
+            @include respond-above("mb-l") {
+                #hole4 {
+                    height: 110%;
+                }
+
+                #hole2 {
+                    float: right;
+                    margin-right: 3em;
+                }
+
+                #hole3 {
+                    height: 150%;
+                    margin-top: -2em;
+                }
             }
 
-            #hole2 {
-                float: right;
-                margin-right: 3em;
-            }
+            @include respond-below("mb-l") {
+                #hole1 {
+                    height: 140%;
+                    right: 10%;
+                }
+                #hole4 {
+                    height: 110%;
+                    left: 15%;
+                    margin-top: 1em;
+                }
 
-            #hole3 {
-                height: 150%;
-                margin-top: -2em;
-            }
+                #hole2 {
+                    height: 140%;
+                    right: 15%;
+                }
 
-            // #hole1 {
-            //     right: 12%;
-            //     margin-top: -6%;
-            //     height: 160%;
-            // }
-            // #hole2 {
-            //     right: 12%;
-            //     margin-top: 1%;
-            //     height: 110%;
-            // }
-            // #hole3 {
-            //     left: 8%;
-            //     height: 150%;
-            //     margin-top: -2%;
-            // }
+                #hole3 {
+                    height: 150%;
+                    margin-top: -0.5em;
+                    left: 10%;
+                }
+            }
 
             position: relative;
 
@@ -138,20 +181,39 @@
                 position: relative;
                 line-height: 0.9;
                 float: left;
+
+                @include respond-below("mb-l") {
+                    font-size: 1.5em;
+                    position: absolute;
+                    z-index: z("overlay");
+                    margin: 1em 0.5em 0 0.5em;
+                    float: none;
+                }
             }
 
-            &:nth-of-type(2n) {
-                h1 {
-                    float: right;
-                    margin: 1em 5% 0 0;
-                }
+            @include respond-above("mb-l") {
+                &:nth-of-type(2n) {
+                    h1 {
+                        float: right;
+                        margin: 1em 5% 0 0;
+                    }
 
-                .hole {
-                    float: right;
-                }
+                    .hole {
+                        float: right;
+                    }
 
-                .spacer {
-                    float: right;
+                    .spacer {
+                        float: right;
+                    }
+                }
+            }
+
+            @include respond-below("mb-l") {
+                &:nth-of-type(2n) {
+                    h1 {
+                        right: 0;
+                        text-align: right;
+                    }
                 }
             }
         }

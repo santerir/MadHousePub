@@ -22,7 +22,7 @@ export const Tunne = () => {
                 <SVGFilter />
             </div>
             <div className="title">
-                <h1>Tunnemylläkkähässäkkä </h1>
+                <h1>Tunnemylläkkä&shy;hässäkkä </h1>
                 <h5>Anne, Sonja & Elina</h5>
 
                 <ModalButton modalId="info-modal">
