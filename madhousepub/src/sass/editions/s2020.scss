@@ -43,8 +43,13 @@
             font-size: 0.8em;
             font-family: $sans-font;
             padding: 0 1em 0 1em;
+
             p {
                 color: black;
+            }
+
+            img {
+                width: 80%;
             }
         }
     }
@@ -127,15 +132,70 @@
     }
 
     #kuohkee-modal {
-        margin-top: -7em;
+        margin-top: -3em;
         left: calc(55% - 180px);
         position: absolute;
     }
 
     #kuohkee-modal-button {
-        bottom: 10em;
+        bottom: 3em;
         left: 55%;
         position: relative;
+    }
+
+    .poem {
+        position: relative;
+        height: 3em;
+
+        pre {
+        }
+
+        &.poem-1 {
+            left: 20%;
+        }
+
+        &.poem-2 {
+            left: 20%;
+            margin: 5em auto -5em auto !important;
+        }
+
+        &.poem-3 {
+            left: 30%;
+            margin: 5em auto -5em auto !important;
+        }
+
+        &.poem-4 {
+            left: 70%;
+        }
+
+        &.poem-5 {
+            left: 45%;
+            margin: 5em auto 10em auto !important;
+        }
+    }
+
+    #drag-modal {
+        margin-top: -4em;
+        left: calc(73% - 180px);
+        position: absolute;
+    }
+
+    #drag-modal-button {
+        bottom: 5em;
+        left: 75%;
+        position: relative;
+    }
+
+    #poem-modal {
+        margin-top: -12em;
+        left: calc(36% - 180px);
+        position: absolute;
+    }
+
+    #poem-modal-button {
+        bottom: 2em;
+        left: -10%;
+        position: absolute;
     }
 }
 

@@ -2,7 +2,14 @@ import React, { Component } from 'react'
 
 
 export default ({ }) => (
-    <svg style={{ display: "none" }}>
+    <svg style={{
+        visibility: "hidden",
+        height: "0",
+        width: "0",
+        margin: "0",
+        position: "absolute",
+        pointerEvents: "none",
+    }}>
         <filter id="inset-shadow-gray" x="-50%" y="-50%" width="200%" height="200%">
             <feComponentTransfer in="SourceAlpha">
                 <feFuncA type="table" tableValues="1 0" />

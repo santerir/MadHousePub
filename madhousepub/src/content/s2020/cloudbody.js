@@ -38,5 +38,8 @@ video
                     </p>
                 </Modal>
             </div>
+            <div className="palsta">
+                <iframe src="https://player.vimeo.com/video/429218014" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            </div>
         </div>)
 }

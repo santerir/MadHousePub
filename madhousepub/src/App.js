@@ -31,23 +31,23 @@ const App = ({ }) => {
               <About />
             </Article>
           </Route>
-          <Route path="/practices-of-love-and-body">
-            <Article edition={SUMMER2020}>
+          <Route path="/practices-of-love-and-body" >
+            <Article edition={SUMMER2020} next="/rakkaudesta" prev="/tunnemylläkkähässäkkä">
               <Polab />
             </Article>
           </Route>
-          <Route path="/rakkaudesta">
-            <Article edition={SUMMER2020}>
+          <Route path="/rakkaudesta" >
+            <Article edition={SUMMER2020} next="/cloudbody" prev="/practices-of-love-and-body">
               <Rakkaudesta />
             </Article>
           </Route>
           <Route path="/cloudbody">
-            <Article edition={SUMMER2020}>
+            <Article edition={SUMMER2020} next="/tunnemylläkkähässäkkä" prev="/rakkaudesta">
               <Cloudbody />
             </Article>
           </Route>
           <Route path="/tunnemylläkkähässäkkä">
-            <Article edition={SUMMER2020}>
+            <Article edition={SUMMER2020} next="/practices-of-love-and-body" prev="/cloudbody">
               <Tunne />
             </Article>
           </Route>

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import { Cls } from '../components/svgs'
+import { Cls, Fwd, Bck } from '../components/svgs'
 
 export default ({ edition, next, prev, children }) => {
 
@@ -15,8 +15,8 @@ export default ({ edition, next, prev, children }) => {
             </div>
             <div className="content">{children}</div>
             <div className="footer">
-                {prev && <Link to={prev.url}>{prev.text}</Link>}
-                {next && <Link to={next.url}>{next.text}</Link>}
+                {prev && <Link to={prev}><button className="bck"><Bck /></button></Link>}
+                {next && <Link to={next}><button className="fwd"><Fwd /></button></Link>}
             </div>
         </div>)
 }

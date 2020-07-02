@@ -1,9 +1,36 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
 import { Modal } from '../../components/modal'
 import ModalButton from '../../components/modal-button'
 
 import { Inf } from '../../components/svgs'
+
+const Tw = ({ children }) => {
+    const text = children
+
+    const [string, setString] = useState("")
+    const [ticks, setTicks] = useState(0)
+
+    useEffect(() => {
+        let interval = null;
+        interval = setInterval(() => {
+            if (string.length == text.length) {
+                if (ticks >= 10) {
+                    setTicks(0);
+                    setString(" ");
+                    return;
+                }
+                setTicks(ticks + 1)
+                return;
+            }
+            var next = text.slice(0, string.length + 1)
+            setString(next);
+        }, 200);
+        return () => (clearInterval(interval));
+    }, [ticks, string])
+
+    return (string)
+}
 
 export const Polab = () => {
     return (
@@ -43,6 +70,12 @@ export const Polab = () => {
                     </p>
                 </Modal>
             </div>
+            <div className="poem poem-1">
+                <pre>
+                    <Tw>{`Trrr
+trimmer`}</Tw>
+                </pre>
+            </div>
             <div>
                 <iframe src="https://open.spotify.com/embed/playlist/7eukXEF3MsYMEjE6TKClQ4" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media" id="playlist"></iframe>
                 <div className="chatbox kotiklubi">
@@ -58,22 +91,22 @@ Elias: Tiia, mitä näet, kun katsot ulos ikkunasta?</p>
 Elias: Tiia, what do you see when you look out of the window?</p>
                         <p>22.4.2020 klo 11.18
 <br />
-Tiia: ‎IMG-20200423-WA0001.jpg (liitetiedosto)</p>
+Tiia: <br /><img src="/img/polab/kuva1.jpeg"></img></p>
                         <p>22.4.2020 klo 11.18
 <br />
 Tiia: Soile, ketä kotonasi asuu? Soile, who lives in your home?</p>
                         <p>23.4.2020 klo 9.32
 <br />
-Soile: ‎IMG-20200423-WA0000.jpg (liitetiedosto)</p>
+Soile: ‎<br /><img src="/img/polab/kuva2.jpeg" /></p>
                         <p>23.4.2020 klo 9.37
 <br />
 Soile: Ella, mikä on lempipaikka kotonasi? What is your favourite place at your home?</p>
                         <p>23.4.2020 klo 20.55
 <br />
-Ella: ‎IMG-20200423-WA0006.jpg (liitetiedosto)</p>
+Ella: <br /><img src="/img/polab/kuva3.jpeg" /></p>
                         <p>23.4.2020 klo 21.48
 <br />
-Ella: ‎IMG-20200423-WA0007.jpg (liitetiedosto)</p>
+Ella: ‎<br /><img src="/img/polab/kuva4.jpeg" /></p>
                         <p>23.4.2020 klo 22.06
 <br />
 Ella: Jan, mikä on kodissasi sellainen yksityiskohta tai esine, joka tuntuu sinulle merkitykselliseltä?</p>
@@ -82,25 +115,25 @@ Ella: Jan, mikä on kodissasi sellainen yksityiskohta tai esine, joka tuntuu sin
 Ella: Jan, please share with us a detail or an object that feels meaningful to you?</p>
                         <p>24.4.2020 klo 20.06
 <br />
-Jan: ‎IMG-20200424-WA0005.jpg (liitetiedosto)</p>
+Jan: ‎<br /><img src="/img/polab/kuva5.jpeg" /></p>
                         <p>24.4.2020 klo 20.07
 <br />
 Jan: Anne, what is the sound of your home? Miltä kotisi kuulostaa?</p>
                         <p>25.4.2020 klo 11.40
 <br />
-Anne: ‎IMG-20200425-WA0004.jpg (liitetiedosto)</p>
+Anne: ‎<br /><img src="/img/polab/kuva6.jpeg" /></p>
                         <p>25.4.2020 klo 11.41
 <br />
 Anne: Taru, mikä on ensimmäinen aamutoimesi? What is the first thing you do in the morning?</p>
                         <p>25.4.2020 klo 17.39
 <br />
-Taru: ‎IMG-20200425-WA0002.jpg (liitetiedosto)</p>
+Taru: ‎<br /><img src="/img/polab/kuva7.jpeg" /></p>
                         <p>25.4.2020 klo 17.41
 <br />
 Taru: Sanni, mitä piristeitä kodistasi löytyy?</p>
                         <p>25.4.2020 klo 17.59
 <br />
-Sanni: ‎IMG-20200425-WA0003.jpg (liitetiedosto)</p>
+Sanni: <br /><img src="/img/polab/kuva8.jpeg" /></p>
                         <p>25.4.2020 klo 21.36
 <br />
 Taru: What is your favorite kind of pick-me-up at hand for you at home?</p>
@@ -109,21 +142,21 @@ Taru: What is your favorite kind of pick-me-up at hand for you at home?</p>
 Sanni: Pietari, mitä vanhaa kotoasi löytyy? Pietari, what old things do you find in your home?</p>
                         <p>26.4.2020 klo 13.21
 <br />
-Pietari: ‎IMG-20200426-WA0003.jpg (liitetiedosto)</p>
+Pietari: ‎<br /><img src="/img/polab/kuva9.jpeg" /></p>
                         <p>Scobyt Elinalta, valokuva Eevalta, kastekynttilänjalka Antilta, Irenen maalaus Pirkolta, Hertan posliinikukka Lissulta, Pirkon sormus Eevalta</p>
                         <p>26.4.2020 klo 13.23
 <br />
 Pietari: Tuuli millaisia reittejä kodissasi on? / Tuuli what kinds of paths do you take in your home?</p>
                         <p>27.4.2020 klo 8.27
 <br />
-Tuuli: ‎IMG-20200427-WA0000.jpg (liitetiedosto)</p>
+Tuuli: ‎<br /><img src="/img/polab/kuva10.jpeg" /></p>
                         <p>Tällä hetkellä tämä on vahvin reitti (eteisen kautta ulos). At the moment this is the strongest path (out through the hallway).</p>
                         <p>27.4.2020 klo 8.30
 <br />
 Tuuli: Vanessa, miltä kodissasi/siellä, missä oleilet tuntuu? Vanessa, how does it feel in your home/where you reside?</p>
                         <p>27.4.2020 klo 13.53
 <br />
-Vanessa: ‎IMG-20200427-WA0003.jpg (liitetiedosto)</p>
+Vanessa: <br /><img src="/img/polab/kuva11.jpeg" /></p>
                         <p>27.4.2020 klo 13.53
 <br />
 Vanessa: It feels like the love between three unexpected friends.</p>
@@ -135,13 +168,13 @@ Vanessa: Kodissani tuntuu rakkaudelta kolmen yllättävän ystävyksen välillä
 Vanessa: Elias, what is the smell that makes you feel like home? Elias, mikä tuoksu saa kotisi tuntumaan kodilta?</p>
                         <p>27.4.2020 klo 16.09
 <br />
-Elias: ‎IMG-20200427-WA0004.jpg (liitetiedosto)</p>
+Elias: ‎<br /><img src="/img/polab/kuva12.jpeg" /></p>
                         <p>27.4.2020 klo 16.57
 <br />
 Elias: Vanessa, missä silmäsi lepäävät asuinpaikassasi? What do you like to look at in the place you live in?</p>
                         <p>27.4.2020 klo 23.32
 <br />
-Vanessa: ‎IMG-20200428-WA0000.jpg (liitetiedosto)</p>
+Vanessa: ‎<br /><img src="/img/polab/kuva13.jpeg" /></p>
                         <p>These feet dancing / tanssivat jalat</p>
                         <p>27.4.2020 klo 23.36
 <br />
@@ -155,38 +188,38 @@ Tuuli: Hei Vanessa. Vietän paljon aikaa kotona, ja ajattelen, että se on yksi 
 Tuuli: Pietari, jos kotisi olisi jokin julkinen hahmo, kuka tai mikä se olisi? Pietari, if your home was a public character, who or what would it be?</p>
                         <p>28.4.2020 klo 17.16
 <br />
-Pietari: ‎IMG-20200428-WA0001.jpg (liitetiedosto)</p>
+Pietari: ‎<br /><img src="/img/polab/kuva14.jpeg" /></p>
                         <p>Home sweet home 🦠🦠🦠</p>
                         <p>28.4.2020 klo 18.34
 <br />
 Pietari: Sanni, onko sinun kotielämässä tilaa, jossa kotisi materiaalinen ”ruumis” ja sinun ruumis sekoittuvat toisiinsa? / Sanni is there such spaces/moments in your home life where the materiality ”body” of your home and your body fuse with one another?</p>
                         <p>28.4.2020 klo 20.46
 <br />
-Sanni: ‎IMG-20200428-WA0002.jpg (liitetiedosto)</p>
+Sanni: <br /><img src="/img/polab/kuva15.jpeg" /></p>
                         <p>28.4.2020 klo 20.51
 <br />
 Sanni: Taru, jos olisit muurahaisen kokoinen, missä asuisit kotisi sisällä? Taru, if you were the size of an ant, where would you live inside your home?</p>
                         <p>29.4.2020 klo 10.19
 <br />
-Taru: ‎IMG-20200502-WA0004.jpg (liitetiedosto)</p>
+Taru: <br /><img src="/img/polab/kuva16.jpeg" /></p>
                         <p>29.4.2020 klo 10.30
 <br />
-Taru: Anne, mitä sellaista haluaisit tehdä kotonasi, mitä et ole koskaan aiemmin tehnyt?what would you like to do at home that you have never done before?</p>
+Taru: Anne, mitä sellaista haluaisit tehdä kotonasi, mitä et ole koskaan aiemmin tehnyt? What would you like to do at home that you have never done before?</p>
                         <p>29.4.2020 klo 14.02
 <br />
-Anne: ‎IMG-20200429-WA0009.jpg (liitetiedosto)</p>
+Anne: ‎<br /><img src="/img/polab/kuva17.jpeg" /></p>
                         <p>29.4.2020 klo 14.04
 <br />
 Anne: Jan, mikä on kotisi tunnari? What is the theme song of your home?</p>
                         <p>29.4.2020 klo 19.33
 <br />
-Jan: ‎IMG-20200429-WA0010.jpg (liitetiedosto)</p>
+Jan: ‎<br /><img src="/img/polab/kuva18.jpeg" /></p>
                         <p>29.4.2020 klo 19.37
 <br />
 Jan: Ella, minkä kotisi kohdan kanssa haluat käydä vakavan keskustelun? What part of your home are you about to have a serious discussion with?</p>
                         <p>2.5.2020 klo 14.09
 <br />
-Ella: ‎IMG-20200502-WA0003.jpg (liitetiedosto)</p>
+Ella: ‎<br /><img src="/img/polab/kuva19.jpeg" /></p>
                         <p>2.5.2020 klo 14.13
 <br />
 Ella: Soile, mistä kotonasi löydät rakkautta sen kaikista materiaalisimmassa muodossa?</p>
@@ -194,13 +227,13 @@ Ella: Soile, mistä kotonasi löydät rakkautta sen kaikista materiaalisimmassa 
                         <p>Soile, where in your home do you find love in its most material form?</p>
                         <p>2.5.2020 klo 22.07
 <br />
-Soile: ‎IMG-20200502-WA0005.jpg (liitetiedosto)</p>
+Soile: ‎<br /><img src="/img/polab/kuva20.jpeg" /></p>
                         <p>2.5.2020 klo 22.30
 <br />
 Soile: Tiia, minkälaisia hyönteisiä ja eläimiä löydät kotoasi? What kind of insects and animals do you find from your home?</p>
                         <p>3.5.2020 klo 13.41
 <br />
-Tiia: ‎IMG-20200503-WA0000.jpg (liitetiedosto)</p>
+Tiia: ‎<br /><img src="/img/polab/kuva21.jpeg" /></p>
                         <p>3.5.2020 klo 13.42
 <br />
 Tiia: Elias, jos joutuisit muuttamaan, mitä jäisit kaipaamaan eniten nykyisestä kodistasi?</p>
@@ -208,10 +241,16 @@ Tiia: Elias, jos joutuisit muuttamaan, mitä jäisit kaipaamaan eniten nykyisest
                         <p>Elias, if you had to move, what would you miss the most from your current home?</p>
                         <p>4.5.2020 klo 15.31
 <br />
-Elias: ‎IMG-20200504-WA0000.jpg (liitetiedosto)</p>
+Elias: ‎<br /><img src="/img/polab/kuva22.jpeg" /></p>
 
                     </div>
                 </div>
+            </div>
+            <div className="poem poem-2">
+                <pre>
+                    <Tw>{`frrrr    fragment   tsssssss
+trrrr    true       trrrust`}</Tw>
+                </pre>
             </div>
             <div id="audioiltamat-container">
                 <ModalButton modalId="audioiltamat-modal">
@@ -342,6 +381,12 @@ Elias: ‎IMG-20200504-WA0000.jpg (liitetiedosto)</p>
                         </p>
                     </div>
                 </div>
+                <div className="poem poem-3">
+                    <pre>
+                        <Tw>{`fire fff
+figure of fire`}</Tw>
+                    </pre>
+                </div>
                 <ModalButton modalId="kuohkee-modal">
                     <Inf />
                 </ModalButton>
@@ -443,16 +488,38 @@ Elias: ‎IMG-20200504-WA0000.jpg (liitetiedosto)</p>
                     </div>
                 </div>
             </div>
+            <div className="poem poem-4">
+                <pre><Tw>{`trrrr
+trigger
+triggering fragment of tr***`}</Tw></pre>
+            </div>
             <div>
                 <iframe id="drag-video" src="https://player.vimeo.com/video/418025590?app_id=122963" width="426" height="240" frameborder="0" allow="autoplay; fullscreen" allowfullscreen title="DRAG-MEIKKITUTORIAL / From a Lady to a Drag Queen hun"></iframe>
             </div>
-            <div>
-                <p className="poem">
-                    confidant, camaraderie, co-operation<br />
-                grrrr <br />
-                meow <br />
-                </p>
+            <ModalButton modalId="drag-modal">
+                <Inf />
+            </ModalButton>
+            <Modal modalId="drag-modal" closable>
+                <p>Video</p>
+
+                <p>Tiia Kasurinen</p>
+            </Modal>
+            <div className="poem poem-5">
+                <pre>
+                    <Tw>{`confidant, camaraderie, co-operation
+grrrr
+meow`}</Tw>
+                </pre>
+                <ModalButton modalId="poem-modal">
+                    <Inf />
+                </ModalButton>
             </div>
+            <Modal modalId="poem-modal" closable>
+                <p>Runo
+</p>
+
+                <p>Vanessa Virta</p>
+            </Modal>
         </div>
     )
 }

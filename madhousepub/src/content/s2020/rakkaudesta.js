@@ -149,9 +149,6 @@ elämäntavasta ja valitsemme elää toisin.</p>
                 </ul>
                 <p><b>Olemme onnellisia, jos lähetät sanan utopediaan!</b></p>
                 <br />
-                <br />
-                <br />
-                <br />
                 <p>Olemme saaneet utopediaan osallistujilta seuraavanlaisia sanoja:</p>
             </div>
             <div className="word palsta">

@@ -31,6 +31,19 @@
         width: 100%;
         height: 50px;
         background-color: transparent;
+
+        button {
+            position: absolute;
+            margin-top: 5px;
+        }
+
+        .bck {
+            left: 5%;
+        }
+
+        .fwd {
+            right: 5%;
+        }
     }
 
     .content {
