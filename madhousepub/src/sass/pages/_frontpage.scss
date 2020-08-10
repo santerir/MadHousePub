@@ -41,12 +41,14 @@
 
         text-align: center;
 
-        img {
-            width: 70%;
-            margin: 1em auto;
-            @include respond-below("mb-l") {
-                width: 20%;
-                margin: 0;
+        a {
+            img {
+                width: 70%;
+                margin: 1em auto;
+                @include respond-below("mb-l") {
+                    width: 70%;
+                    margin: 0em 15%;
+                }
             }
         }
 

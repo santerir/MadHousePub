@@ -5,6 +5,10 @@ import {
   Route,
 } from "react-router-dom";
 
+
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+
 import Home from './pages/home'
 import Article from './pages/article'
 

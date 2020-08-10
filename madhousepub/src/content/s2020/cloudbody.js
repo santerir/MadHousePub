@@ -18,19 +18,15 @@ osa 3 </h1>
                     <Inf />
                 </ModalButton>
                 <Modal modalId="info-modal" closable>
-                    <p><b>Cloudbody, an ecology of dreams, osa 3
-                    <br />
-                    Pohdintoja Grandvillestä ja Cloudbody-teossarjasta keväällä 2020
-                    </b>
-                    </p>
 
-                    <p>5/2020
-<br />
-video
-</p>
-                    <p>Koreografi ja tanssija Liisa Pentti sekä äänisuunnittelija Jouni Tauriainen puhuvat Cloudbody- teossarjan teemoista ennen kuin selviää, että teoksen toisen osan ensi-ilta voidaan järjestää kesäkuussa 2020. Tämä keskustelu yhdessä Fabian Nybergin kuva- ja videomateriaalin kanssa muodostaa lopulta oman, itsenäisen osansa. Olkoon se Cloudbody, an ecology of dreams, osa 3.
+                    <p><b>5/2020
+                    <br />
+                    video</b>
+                    </p>
+                    <p>Koreografi ja tanssija <b>Liisa Pentti</b> sekä äänisuunnittelija <b>Jouni Tauriainen</b> keskustelevat <i>Cloudbody</i>-teossarjan teemoista ennen kuin selviää, että teoksen toisen osan ensi-ilta voidaan järjestää kesäkuussa 2020 Mad House Helsingissä. Keskustelu yhdessä <b>Fabian Nybergin</b> kuva- ja videomateriaalin kanssa muodostavat lopulta oman itsenäisen osansa <i>Cloudbody, an Ecology of Dreams, osa 3</i>.
                     </p>
                     <p><b>Liisa Pentti +Co</b> on helsinkiläinen tanssiryhmä, jonka keskeiset arvot ovat taiteellinen tinkimättömyys ja omaäänisyys. Vuonna 2000 perustetun ryhmän taiteellinen profiili sijoittuu tanssin, esitystaiteen ja nykyteatterin maisemaan ja sen työskentelyä leimaa kokeellisuus ja uusien ilmaisumuotojen etsiminen.
+
 
                     </p>
                     <p>

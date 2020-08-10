@@ -17,27 +17,22 @@ export const Rakkaudesta = () => {
                     <Inf />
                 </ModalButton>
                 <Modal modalId="info-modal" closable>
-                    <p><b>Rakkaudesta – sanasto tuleville vuosikymmenille
-</b>
+
+                    <p><b>2020<br />
+                    teksti</b>
                     </p>
 
-                    <p>2020<br />
-                    teksti
-</p>
+                    <p><i>Rakkaudesta – sanasto tuleville vuosikymmenille</i> on teoskokonaisuus, joka toteutuu kävelyesityksinä eri puolilla Suomea sekä verkossa päivittyvänä sanastona, <i>Utopediana</i>. Teos käsittelee väistämätöntä muutosta fossiilisesta aikakaudesta jälkifossiiliseen.
 
-                    <p><b>Rakkaudesta - sanasto tuleville vuosikymmenille</b> on teoskokonaisuus, joka toteutuu sekä paikkasidonnaisesti eripuolilla Suomea että verkossa. Teos käsittelee väistämätöntä muutosta fossiilisesta aikakaudesta jälkifossiiliseen. Muutosta, jonka käsittelemiseksi tarvitaan sanoja, joita ei vielä ole. Tarvitsemme nimiä surulle ja ajatuksille, joiden myötä pystymme muuttamaan ympäristösuhdettamme kestävämmäksi.
 
                     </p>
-                    <p>Työryhmä: Minna Haapasalo, Joona Lindberg, Jenny Mansikkasalo, Inari Pesonen, Emma Puikkonen, Heikki Tolin ja Johannes Vartola.
-                    Sanoja Utopediaan ovat kirjoittaneet: tutkija Elisa Aaltola, kirjailija Laura Gustafsson, runoilija Pauliina Haasjoki, tutkija Panu Pihkala, kirjailija Matias Riikonen, kirjailija Jukka Viikilä, toimittaja-kirjailija Hanna Nikkanen ja Rakkaudesta-työryhmä.
+                    <p>Työryhmä: <b>Minna Haapasalo</b>, <b>Joona Lindberg</b>, <b>Jenny Mansikkasalo</b>, <b>Inari Pesonen</b>, <b>Emma Puikkonen</b>, <b>Heikki Tolin</b> ja <b>Johannes Vartola</b>.
+                    Sanoja <i>Utopediaan</i>ovat kirjoittaneet: tutkija <b>Elisa Aaltola</b>, kirjailija Laura Gustafsson, runoilija <b>Pauliina Haasjoki</b>, tutkija <b>Panu Pihkala</b>, kirjailija <b>Matias Riikonen</b>, kirjailija <b>Jukka Viikilä</b>, toimittaja-kirjailija <b>Hanna Nikkanen</b> ja <b>Rakkaudesta</b>-työryhmä.
                     </p>
                     <p>
                         <a href="http://utopedia.fi/">http://utopedia.fi/</a>
                     </p>
                 </Modal>
-            </div>
-            <div style={{ textAlign: "center" }}>
-                <img src="/img/rakkaudesta/img.jpg"></img>
             </div>
             <div className="word palsta">
                 <h2>Änky</h2>
@@ -147,7 +142,7 @@ elämäntavasta ja valitsemme elää toisin.</p>
                         <li>Kirjoita ilmiön kuvaus.</li>
                     </i>
                 </ul>
-                <p><b>Olemme onnellisia, jos lähetät sanan utopediaan!</b></p>
+                <p><b>Olemme onnellisia, jos lähetät sanan <a href="http://utopedia.fi/">utopediaan!</a></b></p>
                 <br />
                 <p>Olemme saaneet utopediaan osallistujilta seuraavanlaisia sanoja:</p>
             </div>

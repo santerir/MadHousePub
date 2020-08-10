@@ -29,25 +29,16 @@ export const Tunne = () => {
                     <Inf />
                 </ModalButton>
                 <Modal modalId="info-modal" closable>
-                    <p><b>TUNNEMYLLÄKKÄHÄSSÄKKÄ
-</b>
+
+                    <p>4<b>-5/2020
+                    <br />
+                    teksti</b>
                     </p>
 
-                    <p>4-5/2020
-<br />
-teksti
-</p>
+                    <p><b>Anne Naukkarinen</b> on tanssija, esitystaiteilija ja kuvataiteilija. Hän toimii Mad House Helsingin hallituksessa.</p>
+                    <p><b>Elina Pirinen</b> on tanssitaiteilija-musiikintekijä, joka työskentelee myös taidepedagogian ja kuratoimisen alueilla.</p>
+                    <p><b>Sonja Jokiniemi</b> on taiteilija ja esiintyjä, joka työskentelee koreografian, esity</p>taiteen, installaation, tekstiilin ja piirroksen materiaalisuuksissa.
 
-                    <p>Sonja Jokiniemi on taiteilija ja esiintyjä, joka työskentelee koreografian, esitytaiteen, installaation, tekstiilin ja piirroksen materiaalisuuksissa. Hän yhteiskuratoi BAD HOUSE -festivaalia.
-
-
-                    </p>
-                    <p>Elina Pirinen on tanssitaiteilija-musiikintekijä, joka työskentelee myös taidepedagogian ja kuratoimisen alueilla.
-                    </p>
-                    <p>
-                        Anne Naukkarinen on tanssija, esitysten tekijä ja kuvataiteilija, joka on aktiivisesti mukana Mad House Helsingin toiminnassa.
-
-                    </p>
                 </Modal>
             </div>
             {/* <div className="palsta hole-container">

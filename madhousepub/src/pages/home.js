@@ -44,14 +44,12 @@ export default ({ }) => {
                     <Inf />
                 </button></Link>
                 <div className="title-bar">
-                    <img src="./img/MHH_Logo.png"></img>
+                    <a href="https://madhousehelsinki.fi/">
+                        <img src="./img/MHH_Logo.png"></img>
+                    </a>
                     <h1 s-only="dsk">PUBLICATION</h1>
                     <div s-only="mb">
                         <h1>PUBLICATION</h1>
-                        <h3>kesä 2020</h3>
-                    </div>
-                    <div s-only="dsk">
-                        <h3>kesä 2020</h3>
                     </div>
                 </div>
                 <div className="content-field">

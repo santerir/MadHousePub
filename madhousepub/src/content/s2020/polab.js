@@ -43,31 +43,14 @@ export const Polab = () => {
                     <Inf />
                 </ModalButton>
                 <Modal modalId="info-modal" closable>
-                    <p><b>Practices of love and body</b><br />
-                    Prekaarit Praktiikat
-                    </p>
 
-                    <p>5/2020
-                    <br></br>
-                    video, teksti, ääni, kuva</p>
+                    <p><b>5/2020</b>
+                        <br></br>
+                        <b>video, teksti, ääni, kuva</b></p>
 
-                    <p>Prekaarit Praktiikat on helsinkiläisten freelance
-                    -tanssitaiteilijoiden muodostama työskentelyalusta. Ryhmän
-                    toiminta perustuu taiteelliseen vaihtoon, yhteisöllisyyteen
-                    ja jatkuvuuteen epästabiileista, prekaareista olosuhteista
-                    huolimatta. Tällä hetkellä työryhmään kuuluvat taiteilijat
-                    Elias Girod, Ella-Noora Koikkalainen, Sanni Kriikku, Pie
-                    Kär, Taru Koski, Jan Nyberg, Anne Rönkkö, Tuuli Vahtola,
-                    Vanessa Virta ja Soile Voima.
+                    <p>Prekaarit Praktiikat on helsinkiläisten freelance-tanssitaiteilijoiden muodostama työskentelyalusta. Ryhmän toiminta perustuu taiteellisen ajattelun vaihtoon, yhteisöllisyyteen ja jatkuvuuteen epävarmoista olosuhteista huolimatta. Tällä hetkellä työryhmään kuuluvat taiteilijat Elias Girod, <b>Tiia Kasurinen</b>, <b>Ella-Noora Koikkalainen</b>, <b>Sanni Kriikku</b>, <b>Pie Kär</b>, <b>Taru Koski</b>, <b>Jan Nyberg</b>, <b>Anne Rönkkö</b>, <b>Tuuli Vahtola</b>, <b>Vanessa Virta</b> ja <b>Soile Voima</b>.
                     </p>
-                    <p>Tässä julkaisussa esitellään muutamia työn alla olevia,
-                    taiteellisia praktiikoita. Suurin osa julkaisussa esitellyistä
-                    praktiikoista on sovellettu aikaisemmasta muodostaan
-                    toimimaan verkossa. Nettiformaatissa toimiminen on
-                    omalta osaltaan liikuttanut ja kehittänyt praktiikoiden
-                    harjoittamista jälleen uusiin suuntiin. Prekaarit Praktiikat -
-                    työskentelyalustan työtä pääsee syksyllä 2020 seuraamaan
-                    fyysisten Iltamien myötä Mad House Helsingissä.
+                    <p>Julkaisussa esitellään muutamia taiteellisia praktiikoita. Suurin osa praktiikoista on sovellettu toimimaan verkossa, mikä on osaltaan liikuttanut ja kehittänyt niiden harjoittamista jälleen uusiin suuntiin. Prekaarit Praktiikat -ryhmän työtä pääsee seuraamaan syksyllä 2020 fyysisissä iltamissa Mad House Helsingissä.
                     </p>
                 </Modal>
             </div>
@@ -135,9 +118,6 @@ Taru: Sanni, mitä piristeitä kodistasi löytyy?</p>
                         <p>25.4.2020 klo 17.59
 <br />
 Sanni: <br /><img src="/img/polab/kuva8.jpeg" /></p>
-                        <p>25.4.2020 klo 21.36
-<br />
-Taru: What is your favorite kind of pick-me-up at hand for you at home?</p>
                         <p>26.4.2020 klo 9.26
 <br />
 Sanni: Pietari, mitä vanhaa kotoasi löytyy? Pietari, what old things do you find in your home?</p>
@@ -255,16 +235,24 @@ trrrr    true       trrrust`}</Tw>
             </div>
             <div id="audioiltamat-container">
                 <div className="audioiltamat">
-                    <audio src="/audio/polab/aud1.mp3" controls></audio>
                     <audio src="/audio/polab/aud2.mp3" controls></audio>
                     <audio src="/audio/polab/aud3.mp3" controls></audio>
+                    <audio src="/audio/polab/aud1.mp3" controls></audio>
+                    <a href="https://soundcloud.com/madhousehelsinki/sets/prekaarit-praktiikat-audioiltamat"> Kuuntele Soundcloudissa</a>
                 </div>
                 <ModalButton modalId="audioiltamat-modal">
                     <Inf />
                 </ModalButton>
                 <Modal modalId="audioiltamat-modal" closable>
                     <p>
-                        Podcast-sarjan osissa I ja II Elias ja Tuuli ohjaavat harjoitteita liittyen keholliseen praktiikkaansa. Kuulija voi halutessaan osallistua niiden tekemiseen.
+                        <i>Audioiltamat</i> on kolmiosainen podcast-sarja.
+
+
+                    I osassa <b>Elias</b> ohjaa suupraktiikkaan liittyviä kehollisia harjoitteita.
+II osassa <b>Tuuli</b> ohjaa kehollisia harjoitteita liittyen omaan työskentelyynsä. Kuulija voi halutessaan osallistua harjoitteiden tekemiseen.
+III osassa työryhmä keskustelee praktiikan merkityksistä ja merkityksellisyydestä. Keskustelijoina <b>Pietari</b>, <b>Soile</b>, <b>Tuuli</b>, <b>Elias</b> ja <b>Taru</b>.
+
+
                     </p>
                 </Modal>
             </div>
@@ -388,18 +376,6 @@ trrrr    true       trrrust`}</Tw>
 figure of fire`}</Tw>
                     </pre>
                 </div>
-                <ModalButton modalId="kuohkee-modal">
-                    <Inf />
-                </ModalButton>
-                <Modal modalId="kuohkee-modal" closable>
-                    <p>Kuvittelupraktiikkaa tehtiin chat-muodossa viidentoista minuutin jaksoissa. Yhteiseen keskusteluun saavuttiin kuvitelluilla nimimerkeillä omilta tietokoneilta käsin. Kuvitelma lähti rakentumaan kollektiivisesti viesti kerrallaan.</p>
-
-                    <p>Esittelemme tässä nettijulkaisussa kaksi eri lopputulemaa, joihin praktiikka meidät vei. Molemmissa kuvittelimme olevamme yhteisen praktiikan tai esityksen harjoituksissa. Leikimme sillä ajatuksella, että kaikki tietävät, mitä olemme tekemässä.</p>
-
-                    <p>Kuvittelupraktiikka pohjautuu viime syksynä tehtyyn Anne Rönkön vetämään keholliseen harjoitteeseen, jossa osallistujat alkavat mitään sopimatta harjoitella yhteistä kuviteltua esitystä. Tätä nettijulkaisua varten halusimme nähdä, miten samaa praktiikkaa voi soveltaa etänä chat-foorumilla.</p>
-
-                    <p>Chat-keskusteluun osallistuivat Sanni, Ella-Noora, Elias ja Anne.</p>
-                </Modal>
                 <div id="kuohkee" className="chatbox" >
                     <div className="chat-title" style={{ "backgroundColor": "#FBEB90" }}>
                         <h2>KUOHKEE</h2>
@@ -488,6 +464,17 @@ figure of fire`}</Tw>
                         </p>
                     </div>
                 </div>
+                <ModalButton modalId="kuohkee-modal">
+                    <Inf />
+                </ModalButton>
+                <Modal modalId="kuohkee-modal" closable>
+                    <p>DUMPLINGS AND TOUCH ja KUOHKEE ovat lopputulemia kuvittelupraktiikasta.
+                    Kuvittelupraktiikka toteutettiin viidentoista minuutin kestoisina chat-keskusteluina, joihin saavuttiin erilaisilla nimimerkeillä omilta tietokoneilta käsin. Molemmissa teksteissä <b>Sanni</b>, <b>Ella-Noora</b>, <b>Elias</b> ja <b>Anne</b> kuvittelivat olevansa yhteisen praktiikan tai esityksen harjoituksissa. He leikkivät ajatuksella, että kaikki tietävät mitä ovat tekemässä.
+</p>
+
+
+                    <p>Kuvittelupraktiikka pohjautuu Annen vetämään harjoitteeseen, jossa osallistujat alkoivat mitään sopimatta harjoittamaan yhteistä kuviteltua esitystä. Verkkojulkaisua varten he halusivat nähdä, miten samaa praktiikka voisi soveltaa etänä chat-foorumilla.</p>
+                </Modal>
             </div>
             <div className="poem poem-4">
                 <pre><Tw>{`trrrr
@@ -501,9 +488,10 @@ triggering fragment of tr***`}</Tw></pre>
                 <Inf />
             </ModalButton>
             <Modal modalId="drag-modal" closable>
-                <p>Video</p>
-
-                <p>Tiia Kasurinen</p>
+                <p>
+                    Video: <b>Tiia Kasurinen</b><br />
+Erityiskiitos: <b>Skorpioni / Julius Konttinen</b>
+                </p>
             </Modal>
             <div className="poem poem-5">
                 <pre>
@@ -516,10 +504,10 @@ meow`}</Tw>
                 <Inf />
             </ModalButton>
             <Modal modalId="poem-modal" closable>
-                <p>Runo
+                <p>Poem/Runo
 </p>
 
-                <p>Vanessa Virta</p>
+                <p><b>Vanessa Virta</b></p>
             </Modal>
         </div>
     )
