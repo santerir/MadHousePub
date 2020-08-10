@@ -45,7 +45,7 @@ export const Rakkaudesta = () => {
                 katsoit isoäitiäsi, kun tämä sanoi, että homoseksuaalisuus on sairaus. Isoäitisi menetti Karjalan,
                 sinä koko maailman, mutta jossain vaiheessa puhe ”maailmanlopusta” alkoi kuulostaa höpinältä.
                 <br />
-                    <i>MR (Matias Riikonen)</i></p>
+                    <b>MR (Matias Riikonen)</b></p>
             </div>
             <div className="word palsta">
                 <h2>Leikinnäkö</h2>
@@ -57,7 +57,7 @@ export const Rakkaudesta = () => {
                 liikkumiskykyä menettämättä. Leikinnäkö on helpottanut monia hallitusneuvotteluja ja
                 yhtiökokouksia. Leikki voi löytää uuden ratkaisun ongelmaan, tai olla löytämättä.
                 <br />
-                    <i>RT (Rakkaudesta -työryhmä)</i></p>
+                    <b>RT (Rakkaudesta -työryhmä)</b></p>
             </div>
             <div className="word palsta">
                 <h2>Maarra</h2>
@@ -70,7 +70,7 @@ export const Rakkaudesta = () => {
                 maarraan osallistuminen palauttaa kyvyn toimia inhimillisesti ja rauhallisesti, suhteessa
                 maailmaan ja omaantuntoon.
                 <br />
-                    <i>RT (Rakkaudesta -työryhmä)</i></p>
+                    <b>RT (Rakkaudesta -työryhmä)</b></p>
             </div>
             <div className="palsta">
                 <h3>
@@ -81,11 +81,11 @@ export const Rakkaudesta = () => {
                     Alunperin ajatuksena oli luoda kirjallisuudessa ja populaarikulttuurissa
                     esiintyville dystopiakuville vastapaino, utopia. Tapasimme eri alojen
                     asiantuntijoita ja pidimme pieniä työpajoja heidän kanssaan. Keskustelimme
-                    ilmastonmuutoksen sopeutumisen tutkija Atte Harjanteen kanssa utopioista
-                    sekä ilmastonmuutokseen liittyvistä toivon merkeistä, neurofilosofi Valtteri
-                    Arstilan kanssa muistin, ihmisen havaintotavan ja utopian suhteista,
-                    ympäristöfilosofi Elisa Aaltolan kanssa arvovalintojen yhteisöllisyydestä ja
-                    ympäristöteologi Panu Pihkalan kanssa ympäristöahdistuksesta.
+                    ilmastonmuutoksen sopeutumisen tutkija <b>Atte Harjanteen</b> kanssa utopioista
+                    sekä ilmastonmuutokseen liittyvistä toivon merkeistä, neurofilosofi <b>Valtteri
+                    Arstilan</b> kanssa muistin, ihmisen havaintotavan ja utopian suhteista,
+                    ympäristöfilosofi <b>Elisa Aaltolan</b> kanssa arvovalintojen yhteisöllisyydestä ja
+                    ympäristöteologi <b>Panu Pihkalan</b> kanssa ympäristöahdistuksesta.
                 </p>
                 <p>
                     Työskentelyn myötä utopia tuntui liikkuvan yhä kauemmaksi. Tuntui siltä,
@@ -102,8 +102,8 @@ export const Rakkaudesta = () => {
                     kävellen ja toinen osa Cirko -Uuden sirkuksen tilassa.
                 </p>
                 <p>
-                    Tällä hetkellä teosprosessi “Rakkaudesta – sanasto tuleville vuosikymmenille”
-                    toteutuu utopedia.fi – sanastona sekä kävelyesityksinä eri ympäristöissä.
+                    Tällä hetkellä teosprosessi “<i>Rakkaudesta – sanasto tuleville vuosikymmenille</i>”
+                    toteutuu <a href="http://utopedia.fi">utopedia.fi</a> – sanastona sekä kävelyesityksinä eri ympäristöissä.
                     Tähän mennessä olemme kävelyttäneet ihmisiä sanojen kanssa Turun
                     Samppalinnanmäellä, Ärjän saarella Kainuussa sekä Helsingissä.
                 </p>
@@ -133,7 +133,7 @@ export const Rakkaudesta = () => {
 elämäntavasta ja valitsemme elää toisin.</p>
             </div>
             <div className="palsta">
-                <h3>Kirjoita sana utopediaan:</h3>
+                <h3>Kirjoita sana Utopediaan:</h3>
                 <ul>
                     <i>
                         <li>Ota valkoinen paperi ja viisitoista minuuttia.</li>
@@ -142,25 +142,8 @@ elämäntavasta ja valitsemme elää toisin.</p>
                         <li>Kirjoita ilmiön kuvaus.</li>
                     </i>
                 </ul>
-                <p><b>Olemme onnellisia, jos lähetät sanan <a href="http://utopedia.fi/">utopediaan!</a></b></p>
+                <p><b>Olemme onnellisia, jos lähetät sanan <a href="http://utopedia.fi/lue/">Utopediaan!</a></b></p>
                 <br />
-                <p>Olemme saaneet utopediaan osallistujilta seuraavanlaisia sanoja:</p>
-            </div>
-            <div className="word palsta">
-                <h2>Varustuska/<wbr />fjällrävenraivo</h2>
-                <p>
-                    Halu viettää pitkiä aikoja luonnossa ostamatta sitä varten
-                    tuotettua uutta tavaraa. Halu mennä niissä ramppeissa mitä päällä
-                    on, vaikka kollegepöksyt kastuvat, kestäen muiden vaeltajien
-                    katseet.<br />
-                    <i>Tiina</i>
-                </p>
-            </div>
-            <div className="word palsta">
-                <h2>Pussittaminen</h2>
-                <p>
-                    Se, kun ajattelee kaikkia eri toimintavaihtoehtojen kritiikin kohtia ja päätyy siihen, että kaikki ovat huonoja / mitään ei voi tehdä, myös tunne; kuin vetäisi muovipussin itse päähänsä.
-                </p>
             </div>
         </div>)
 }

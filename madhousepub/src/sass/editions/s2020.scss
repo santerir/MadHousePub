@@ -422,7 +422,6 @@
 .cloudbody {
     iframe {
         width: 100%;
-        height: auto;
     }
 }
 
@@ -490,6 +489,7 @@
 
     .quote {
         font-weight: 100;
+        font-style: italic;
     }
 
     .dialogue {
