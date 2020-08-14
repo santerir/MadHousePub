@@ -56,33 +56,36 @@ export default ({ }) => {
                     <div class="article-link">
                         <Link to="/practices-of-love-and-body">
                             <h1>Practices of Love <br /> and Body</h1>
-                            <div s-only="dsk" className="spacer"></div>
-                            <Hole1 />
                         </Link>
+                        <div s-only="dsk" className="spacer"></div>
+                        <Hole1 />
                     </div>
                     <div class="article-link">
                         <Link to="/rakkaudesta">
                             <h1>Rakkaudesta <br />
 – sanasto tuleville vuosikymmenille</h1>
-                            <div s-only="dsk" className="spacer"></div>
-                            <Hole4 />
                         </Link>
+
+                        <div s-only="dsk" className="spacer"></div>
+                        <Hole4 />
                     </div>
                     <div class="article-link">
                         <Link to="/cloudbody">
                             <h1>Cloudbody,<br />
 an Ecology of Dreams,<br />
 osa 3</h1>
-                            <div s-only="dsk" className="spacer"></div>
-                            <Hole2 />
                         </Link>
+                        <div s-only="dsk" className="spacer"></div>
+                        <Hole2 />
+
                     </div>
                     <div class="article-link">
                         <Link to="/tunnemylläkkähässäkkä">
                             <h1>Tunnemylläkkähässäkkä</h1>
-                            <div s-only="dsk" className="spacer"></div>
-                            <Hole3 />
                         </Link>
+                        <div s-only="dsk" className="spacer"></div>
+                        <Hole3 />
+
                     </div>
                 </div>
             </div>

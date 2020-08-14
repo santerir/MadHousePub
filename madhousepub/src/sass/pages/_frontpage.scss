@@ -103,9 +103,16 @@
 
             max-height: 200px;
 
-            &:hover {
+            a {
                 h1 {
-                    text-shadow: 2px 2px gold;
+                    text-shadow: 0px 0px 0px gold;
+                    transition: text-shadow linear 0.3s;
+                }
+            }
+
+            a:hover {
+                h1 {
+                    text-shadow: 2px 2px 3px gold;
                 }
             }
 

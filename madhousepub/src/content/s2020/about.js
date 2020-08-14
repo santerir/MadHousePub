@@ -30,7 +30,8 @@ export const About = () => {
                 <p>
                     Nautinnollisia hetkiä julkaisun parissa!
                 </p>
-                <p>
+                <br /><br />
+                <p style={{ fontSize: "0.6em" }}>
                     <b>Graafinen suunnittelu:</b>
                     <br />
                     Kiia Beilinson
@@ -73,7 +74,8 @@ export const About = () => {
                 <p>
                     We wish you enjoyable moments with the publication!
                 </p>
-                <p>
+                <br /><br />
+                <p style={{ fontSize: "0.6em" }}>
                     <b>Graphic design:</b>
                     <br />
                     Kiia Beilinson
@@ -119,8 +121,8 @@ export const About = () => {
                     Vi önskar er trevliga stunder med <i>Mad House Helsinki Publication!</i>
 
                 </p>
-
-                <p>
+                <br /><br />
+                <p style={{ fontSize: "0.6em" }}>
                     <b>Grafisk design:</b>
                     <br />
                     Kiia Beilinson

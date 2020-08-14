@@ -23,7 +23,7 @@ export const Tunne = () => {
             </div>
             <div className="title">
                 <h1>Tunnemylläkkä&shy;hässäkkä </h1>
-                <h5>Anne, Sonja & Elina</h5>
+                <h5>Anne, Elina & Sonja</h5>
 
                 <ModalButton modalId="info-modal">
                     <Inf />
@@ -57,7 +57,7 @@ export const Tunne = () => {
                 </p>
             </div>
             <div className="palsta dialogue">
-                <div><p><span className="ligature">Anne:</span> HHaluisin aloittaa tän keskustelun Sonja siun kommentilla, jonka kirjoitit Facebookissa käytyyn keskusteluun, jossa pohdittiin esittävien taiteiden taltiointien jakamista netissä nyt koronan aikana. Kommenttisi oli minusta liikuttava ja olen jäänyt miettimään sitä omassa tämänhetkisessä arjessani.</p>
+                <div><p><span className="ligature">Anne:</span> Haluisin aloittaa tän keskustelun Sonja siun kommentilla, jonka kirjoitit Facebookissa käytyyn keskusteluun, jossa pohdittiin esittävien taiteiden taltiointien jakamista netissä nyt koronan aikana. Kommenttisi oli minusta liikuttava ja olen jäänyt miettimään sitä omassa tämänhetkisessä arjessani.</p>
                     <p></p>
                     <p className="quote">"Minä olen myös miettinyt näinä viikkoina sitä miten tärkeää on tässäkin hetkessä kutsua tilaa IRL esittävälle taiteelle joka nimenomaan voi tapahtua ainoastaan live kohtaamisen edellyttämänä, joka työskentelee sen materiaalisuuden kanssa. Ja olla sen tyhjyyden/kaipuun kanssa mitä se kuoppa tuottaa. Sekin on tällaisena hetkenä tärkeää, että kaikki ei vaan siirry online, vaan on niitäkin asioita, projekteja ja taidetta joka ei toteudu ennen kuin näyttämöt ja tilat aukeavat taas. Jotkin teokset taas toimivat mahtavasti streamina, videona tai muuten online, eli en ole ollenkaan vastaan näitä muotoja. Mutta jotenkin sen kiireen että kaikki pitäisi siirtyä nyt kulutettavaksi nettiin on jotenkin hämmentävää. Ehkä on myös ok olla tässä tilanteessa vähän pysähtyneenä sekä yksilöinä, instituutioina ja ryhminä. Ehkä on tosiaan ok miettiä sitä mitä teatteri/esitys voi olla nyt, nopean täyttämisen sijaan.” (2.4.2020)</p>
                     <p></p>
@@ -79,7 +79,7 @@ export const Tunne = () => {
                     <p>Tämä tilanne on ollut tuntematon ja aavemainen, yllättävä.
 </p>
                     <p></p>
-                    <p>Tutkijaliitto oli julkaissut kirjoituksen <b>Mattias Lehtiseltä</b> “Affektit pandemian aikana: pelko, ahdistus ja rakkaus”, jossa hän käyttää affektitutkijan <b>Laurent Berlantin</b> määritelmää tilanteesta, joksi hän myös tämän koronapandemian nimeää.
+                    <p>Tutkijaliitto oli julkaissut kirjoituksen <b>Mattias Lehtiseltä</b> <i>“Affektit pandemian aikana: pelko, ahdistus ja rakkaus”</i>, jossa hän käyttää affektitutkijan <b>Laurent Berlantin</b> määritelmää tilanteesta, joksi hän myös tämän koronapandemian nimeää.
 </p>
                     <p></p>
                     <p className="quote">Tilanne on sellainen elämisen laji, että siinä kyllä tietää olevansa vaikka sen luonne onkin vielä selvittämättä. Se on tietty olosuhde, joka kuuluu täysin elämään, mutta ei silti ole hallinnassa. Tilanne on häiriö, tunne elähdyttävästä pysähdyksestä – se elähdyttää lakkaamatta. Valokuvan tavoin sillä on punctum: se pakottaa kiinnittämään huomiota, kiinnostumaan potentiaalisista muutoksista tavallisuudessa. Kun tilanne kehittyy, ihmiset yrittävät pysytellä siinä kunnes he keksivät, kuinka sopeutua.</p></div>

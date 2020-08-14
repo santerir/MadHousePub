@@ -36,6 +36,7 @@ export const Rakkaudesta = () => {
             </div>
             <div className="word palsta">
                 <h2>Änky</h2>
+                <audio src="/audio/rakkaudesta/anky.mp3" controls></audio>
                 <p>Kyvyttömyys todistaa, ettet ole kuten isovanhempasi. Eksyt luennoimaan ”säätyyppien
                 muutoksista” yhtä pitkällisesti kuin oma isoisäsi ”sota-aikana käytettyjen häkäpönttöautojen
                 toimintaperiaatteista”. Isoisäsi lailla haluat esitellä vanhentuneita kartastoja ja analysoida
@@ -49,6 +50,7 @@ export const Rakkaudesta = () => {
             </div>
             <div className="word palsta">
                 <h2>Leikinnäkö</h2>
+                <audio src="/audio/rakkaudesta/leikinnako.mp3" controls></audio>
                 <p>Käyttäytymisen malli jonka avulla yhteisöt keksivät uudenlaisia ratkaisumalleja ongelmille.
                 Kenellä tahansa yhteisön jäsenellä on mahdollisuus alkaa leikki, joka käsittelee ratkaistavaa
                 pulmaa, ja muiden yhteisön jäsenten pitää yhtyä tähän leikkiin. Leikinnäön avulla on keksitty mm.
@@ -57,10 +59,11 @@ export const Rakkaudesta = () => {
                 liikkumiskykyä menettämättä. Leikinnäkö on helpottanut monia hallitusneuvotteluja ja
                 yhtiökokouksia. Leikki voi löytää uuden ratkaisun ongelmaan, tai olla löytämättä.
                 <br />
-                    <b>RT (Rakkaudesta -työryhmä)</b></p>
+                    <b>RT (Rakkaudesta-työryhmä)</b></p>
             </div>
             <div className="word palsta">
                 <h2>Maarra</h2>
+                <audio src="/audio/rakkaudesta/maarra.mp3" controls></audio>
                 <p>2030-luvulla kehittyvä sururituaali, vertaa hautajaiset. Suru ja ahdistus, jotka liittyvät
                 ilmastonmuutokseen ja luonnon tuhoutumiseen, saavat oman rituaalinsa. Sadattuhannet ihmiset
                 saapuvat suremaan eri puolilla maailmaa. Rituaaleja järjestetään tuhansissa kaupungeissa, ja
@@ -70,7 +73,7 @@ export const Rakkaudesta = () => {
                 maarraan osallistuminen palauttaa kyvyn toimia inhimillisesti ja rauhallisesti, suhteessa
                 maailmaan ja omaantuntoon.
                 <br />
-                    <b>RT (Rakkaudesta -työryhmä)</b></p>
+                    <b>RT (Rakkaudesta-työryhmä)</b></p>
             </div>
             <div className="palsta">
                 <h3>
@@ -103,7 +106,7 @@ export const Rakkaudesta = () => {
                 </p>
                 <p>
                     Tällä hetkellä teosprosessi “<i>Rakkaudesta – sanasto tuleville vuosikymmenille</i>”
-                    toteutuu <a href="http://utopedia.fi">utopedia.fi</a> – sanastona sekä kävelyesityksinä eri ympäristöissä.
+                    toteutuu utopedia.fi – sanastona sekä kävelyesityksinä eri ympäristöissä.
                     Tähän mennessä olemme kävelyttäneet ihmisiä sanojen kanssa Turun
                     Samppalinnanmäellä, Ärjän saarella Kainuussa sekä Helsingissä.
                 </p>

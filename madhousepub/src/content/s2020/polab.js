@@ -48,7 +48,7 @@ export const Polab = () => {
                         <br></br>
                         <b>video, teksti, ääni, kuva</b></p>
 
-                    <p>Prekaarit Praktiikat on helsinkiläisten freelance-tanssitaiteilijoiden muodostama työskentelyalusta. Ryhmän toiminta perustuu taiteellisen ajattelun vaihtoon, yhteisöllisyyteen ja jatkuvuuteen epävarmoista olosuhteista huolimatta. Tällä hetkellä työryhmään kuuluvat taiteilijat Elias Girod, <b>Tiia Kasurinen</b>, <b>Ella-Noora Koikkalainen</b>, <b>Sanni Kriikku</b>, <b>Pie Kär</b>, <b>Taru Koski</b>, <b>Jan Nyberg</b>, <b>Anne Rönkkö</b>, <b>Tuuli Vahtola</b>, <b>Vanessa Virta</b> ja <b>Soile Voima</b>.
+                    <p><b>Prekaarit Praktiikat</b> on helsinkiläisten freelance-tanssitaiteilijoiden muodostama työskentelyalusta. Ryhmän toiminta perustuu taiteellisen ajattelun vaihtoon, yhteisöllisyyteen ja jatkuvuuteen epävarmoista olosuhteista huolimatta. Tällä hetkellä työryhmään kuuluvat taiteilijat <b>Elias Girod</b>, <b>Tiia Kasurinen</b>, <b>Ella-Noora Koikkalainen</b>, <b>Sanni Kriikku</b>, <b>Pie Kär</b>, <b>Taru Koski</b>, <b>Jan Nyberg</b>, <b>Anne Rönkkö</b>, <b>Tuuli Vahtola</b>, <b>Vanessa Virta</b> ja <b>Soile Voima</b>.
                     </p>
                     <p>Julkaisussa esitellään muutamia taiteellisia praktiikoita. Suurin osa praktiikoista on sovellettu toimimaan verkossa, mikä on osaltaan liikuttanut ja kehittänyt niiden harjoittamista jälleen uusiin suuntiin. Prekaarit Praktiikat -ryhmän työtä pääsee seuraamaan syksyllä 2020 fyysisissä iltamissa Mad House Helsingissä.
                     </p>
@@ -245,11 +245,13 @@ trrrr    true       trrrust`}</Tw>
                 </ModalButton>
                 <Modal modalId="audioiltamat-modal" closable>
                     <p>
-                        <i>Audioiltamat</i> on kolmiosainen podcast-sarja.
+                        <i>Audioiltamat</i> on kolmiosainen podcast-sarja.<br />
+                        <br />
 
 
-                    I osassa <b>Elias</b> ohjaa suupraktiikkaan liittyviä kehollisia harjoitteita.
-II osassa <b>Tuuli</b> ohjaa kehollisia harjoitteita liittyen omaan työskentelyynsä. Kuulija voi halutessaan osallistua harjoitteiden tekemiseen.
+                    I osassa <b>Elias</b> ohjaa suupraktiikkaan liittyviä kehollisia harjoitteita.<br />
+                        <br />II osassa <b>Tuuli</b> ohjaa kehollisia harjoitteita liittyen omaan työskentelyynsä. Kuulija voi halutessaan osallistua harjoitteiden tekemiseen.<br />
+                        <br />
 III osassa työryhmä keskustelee praktiikan merkityksistä ja merkityksellisyydestä. Keskustelijoina <b>Pietari</b>, <b>Soile</b>, <b>Tuuli</b>, <b>Elias</b> ja <b>Taru</b>.
 
 
@@ -482,7 +484,7 @@ trigger
 triggering fragment of tr***`}</Tw></pre>
             </div>
             <div>
-                <iframe id="drag-video" src="https://player.vimeo.com/video/418025590?app_id=122963" width="426" height="240" frameborder="0" allow="autoplay; fullscreen" allowfullscreen title="DRAG-MEIKKITUTORIAL / From a Lady to a Drag Queen hun"></iframe>
+                <iframe id="drag-video" src="https://player.vimeo.com/video/418025590?app_id=122963" width="426" height="240" frameborder="0" allow="autoplay; fullscreen" allowfullscreen mozallowfullscreen webkitallowfullscreen title="DRAG-MEIKKITUTORIAL / From a Lady to a Drag Queen hun"></iframe>
             </div>
             <ModalButton modalId="drag-modal">
                 <Inf />
