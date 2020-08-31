@@ -41,8 +41,8 @@
             margin: 1em;
 
             @include respond-below("mb-l") {
-                font-size: 0.5em;
-                width: 70%;
+                font-size: 0.6em;
+                width: 100%;
             }
         }
     }

@@ -84,7 +84,7 @@ export const Tunne = () => {
                     <p></p>
                     <p className="quote">Tilanne on sellainen elämisen laji, että siinä kyllä tietää olevansa vaikka sen luonne onkin vielä selvittämättä. Se on tietty olosuhde, joka kuuluu täysin elämään, mutta ei silti ole hallinnassa. Tilanne on häiriö, tunne elähdyttävästä pysähdyksestä – se elähdyttää lakkaamatta. Valokuvan tavoin sillä on punctum: se pakottaa kiinnittämään huomiota, kiinnostumaan potentiaalisista muutoksista tavallisuudessa. Kun tilanne kehittyy, ihmiset yrittävät pysytellä siinä kunnes he keksivät, kuinka sopeutua.</p></div>
 
-                <div><p><span className="ligature">Elina:</span>Teidän avaamanne asiat koskettaa minua. Niihin kytkeytyy niin paljon tätä aikaa, eikä vain jotain tätä Korona-aikaa. Niistä voi kyllä vetää analogioita moneen. Eräs ihana Teatterikorkeakoulun maisteriopiskelija sanoi pitämäni etäkurssin alkuun kuulumisten kyselyn aikana, että “ei Korona tehnyt minusta kriittistä vaan Korona avasi ajallisen mahdollisuuden tuntea vielä voimallisemmin ne kohteet mitkä herättävät minussa kriittisiä, kielletyltäkin tuntuvia ajatuksia.”
+                <div><p><span className="ligature">Elina:</span> Teidän avaamanne asiat koskettaa minua. Niihin kytkeytyy niin paljon tätä aikaa, eikä vain jotain tätä Korona-aikaa. Niistä voi kyllä vetää analogioita moneen. Eräs ihana Teatterikorkeakoulun maisteriopiskelija sanoi pitämäni etäkurssin alkuun kuulumisten kyselyn aikana, että “ei Korona tehnyt minusta kriittistä vaan Korona avasi ajallisen mahdollisuuden tuntea vielä voimallisemmin ne kohteet mitkä herättävät minussa kriittisiä, kielletyltäkin tuntuvia ajatuksia.”
 </p>
                     <p></p>
                     <p>Olen tuntenut samoin. Ajattelin miten voisin kontribuoida teidän kirjoitukseenne lisää siitä mitä minun sydämen päällä on suhteessa tähän aikaan ja kirjoitin pitkän, hengästyttävän, kaoottisen ja kriittisen kirjoituksen nykyesitystaidekentän vallitsevasta omituisesta uus-moralismista, polarisaatiosta ja erittäin ovelan uus-binäärisyyden suuresta ristiriidasta suhteessa ihmiskeskeisyydestä poispäin ajattelevan ekofeministisen paradigman ehdottamaan huokoisuuteen ja siitä syntyvään monitodellisuudelliseen subjektiin. Tai sen subjektin skitsofreenisyyteen ja kriisiin siinä.
@@ -192,20 +192,18 @@ export const Tunne = () => {
                 </div>
                 <div><p>Pelkään kirjoittaa seuraavaa, mutta ajattelen ammattikehtaamista.
 </p>
-                    <p></p>
                     <p>
                         Haluan rohkaista taiteilijana, pedagogina ja kuratoijana taiteilijoita ja tuotantoja fantasioimaan yli yksimielisten joukko-odotusten, ryhmäilmiöiden ja etsimään myös monenlaisia syvän subjektin ääniä ja mielikuvittelua ja ammattikehtaamista, syvästi prosessoitua emansipaatiota.
 </p>
-                    <p></p>
                     <p>Haluan, että ihminen ja taiteilija saisivat rauhassa ajassamme kasvaa syväksi subjektiksi taiteensa avulla ja avautua maailmaan niinkin. Mitä kaikkea se tarkoittaakin. Minä en halua tai aio määritellä positioistani käsin sitä mitä subjekti tarkoittaa vaan kutsua ihmisiä tässä ajassa edelleen pohtimaan sitäkin fokusta. Maailma kulkee ihmisen läpi ja ihminen kulkee maailman läpi. Näin saa myös olla.
 </p>
-                    <p></p>
-                    <p>Haluan, että taiteilija nähdään ajassamme erikoisolentona, ammattikehtaajana, erikoiskielen kirjoittajana. Oma osuuteni esimerkiksi Mad Housessa ja Sivuaskel- festivaalin taiteellisena neuvonantajana on rajattu, mutta tosi. Tiedostan, että fokusoin kaikista edellä mainituista syistä paljon erikoiskielen etsimiseen sisältönä. Haluan intersektionaalisena feministinä, taiteilijana, ihmisenä, kohdata friktiivistä, fantasiallista, hirveää, mielikuvituksellista, vapaasti assosioivaa sisältöä uhkarohkeana avauksena ja sen tutkimista sisältönä, muotona ja logiikkana.
+                    <p>Haluan, että taiteilija nähdään ajassamme erikoisolentona, ammattikehtaajana, erikoiskielen kirjoittajana. Oma osuuteni esimerkiksi Mad Housessa ja Sivuaskel- festivaalin taiteellisena neuvonantajana on rajattu, mutta tosi. Tiedostan, että fokusoin kaikista edellä mainituista syistä paljon erikoiskielen etsimiseen sisältönä.
+                    </p>
+                    <p>
+                        Haluan intersektionaalisena feministinä, taiteilijana, ihmisenä, kohdata friktiivistä, fantasiallista, hirveää, mielikuvituksellista, vapaasti assosioivaa sisältöä uhkarohkeana avauksena ja sen tutkimista sisältönä, muotona ja logiikkana.
 </p>
-                    <p></p>
                     <p>Haluan tukea sitä, että taiteilijuus sheikkaisi uusporvarillisia ja siveitä aikamme hyveitä ja tukea monitemperamentillisuutta ja monitodellisuudellisuutta siten. Olla intersektionaalinen feministi myös siten.
 </p>
-                    <p></p>
                     <p>Haluan yhdessä taiteilijoiden ja tuotantotiimien kanssa etsiä uudelleen ja uudelleen erityisesti transgression merkitystä ja syvemmin ja omakohtaisemmin prosessoitua ajattelua ryhmäilmiöiden ja siitä syntyvän polarisaation rinnalla.
 </p>
                     <p>Haluan, että taiteilija saa vapaasti etsiä ja tutkia tapaansa kokea, ajatella, katsoa ja tehdä työtään sekä itseään toisten valistuneiden tai rahoittajien tai venueiden rajausten ja suunnannäyttöjen rinnalla. Tiedostan, että rakenteellinen radikaali paradigman muutos on asia erikseen ja tällä hetkellä tie yhdenvertaisuuden rakentumiseen.

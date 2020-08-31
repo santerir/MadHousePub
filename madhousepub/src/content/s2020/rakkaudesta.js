@@ -11,7 +11,7 @@ export const Rakkaudesta = () => {
             <div className="title">
                 <h1>Rakkaudesta <br />
                 – sanasto tuleville vuosikymmenille</h1>
-                <h5>Rakkaudesta -työryhmä</h5>
+                <h5>Rakkaudesta-työryhmä</h5>
 
                 <ModalButton modalId="info-modal">
                     <Inf />

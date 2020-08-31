@@ -439,6 +439,10 @@
     .bckground {
         background-attachment: fixed;
         display: flex;
+
+        @supports (-webkit-touch-callout: none) {
+            background-attachment: initial;
+        }
     }
 
     .hole_ {
