@@ -30,11 +30,11 @@
     .title-bar {
         background-color: $base-color;
         grid-area: 1/1/2/2;
+        position: relative;
 
         @include respond-below("mb-l") {
             grid-area: 1/1/2/2;
             text-align: left;
-            justify-content: space-evenly;
             display: flex;
             align-items: center;
         }
@@ -45,9 +45,16 @@
             img {
                 width: 70%;
                 margin: 1em auto;
+                position: relative;
+
                 @include respond-below("mb-l") {
-                    width: 70%;
-                    margin: 0em 15%;
+                    height: 70%;
+                    width: auto;
+                    margin: 0;
+                    margin-left: 0.4em;
+                    top: 15%;
+                    z-index: z("default");
+                    position: absolute;
                 }
             }
         }
@@ -55,21 +62,32 @@
         h1 {
             transform: rotate(90deg);
             margin: 0.5em;
-            font-size: 3em;
+            margin-top: -0.5em;
+            font-size: 2.8rem;
+        }
+
+        h3 {
+            position: absolute;
+            bottom: 1em;
+            width: 100%;
+            font-size: 1.2rem;
         }
 
         @include respond-below("mb-l") {
-            & > div {
-                h3 {
-                    font-size: 0.5em;
-                    text-align: right;
-                    margin: -0.5em 1em 0 1em;
-                }
-                h1 {
-                    transform: none;
-                    font-size: 1.1em;
-                    text-align: right;
-                }
+            h3 {
+                font-size: 0.5em;
+                text-align: right;
+                position: static;
+                width: unset;
+                margin-left: -2em;
+            }
+            h1 {
+                transform: none;
+                font-size: 1.6em;
+                text-align: center;
+                width: 100%;
+                margin: 0;
+                z-index: z("overlay");
             }
         }
 

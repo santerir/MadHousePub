@@ -47,10 +47,8 @@ export default ({ }) => {
                     <a href="https://madhousehelsinki.fi/">
                         <img src="./img/MHH_Logo.png"></img>
                     </a>
-                    <h1 s-only="dsk">PUBLICATION</h1>
-                    <div s-only="mb">
-                        <h1>PUBLICATION</h1>
-                    </div>
+                    <h1> PUBLICATION </h1>
+                    <h3> I </h3>
                 </div>
                 <div className="content-field">
                     <div class="article-link">
