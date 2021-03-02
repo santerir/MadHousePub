@@ -3,9 +3,6 @@ import React from 'react'
 export const About = () => {
     return (
         <div className="about">
-            <div className="abt-title">
-                <h1>INFO</h1>
-            </div>
             <div className="col col-1">
                 <p>
                     <span className="ligature">

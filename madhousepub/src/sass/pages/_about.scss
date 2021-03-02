@@ -1,7 +1,6 @@
 .about {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 150px;
     position: relative;
     height: 100%;
     //margin: 0 2em 0 2em;
@@ -11,15 +10,6 @@
         position: static;
         grid-template-columns: unset;
         grid-template-rows: unset;
-    }
-
-    .abt-title {
-        grid-area: 1 / 1 / 1 / 4;
-        padding: 0 0 0 0;
-
-        h1 {
-            text-align: left;
-        }
     }
 
     .col {

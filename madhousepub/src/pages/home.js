@@ -79,7 +79,7 @@ export default ({ }) => {
                     <h1> PUBLICATION </h1>
                     <h3> {content_panes[current_pane].name} </h3>
                 </div>
-                <div className="content-area" id="content-area" ref={content_area} onScroll={debounce(on_scroll, 200)}>
+                <div className="content-area" id="content-area" ref={content_area} onScroll={debounce(on_scroll, 50)}>
                     <div className="dots">
                         {range(SCROLL_POINTS).map((i) => (<label onClick={go_to(i)} className={current_pane == i ? "active" : "inactive"}></label>))}
                     </div>
