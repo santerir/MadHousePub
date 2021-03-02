@@ -2,7 +2,7 @@ import React, { useEffect, useState, createRef } from 'react'
 import { Link } from 'react-router-dom'
 import Modal from '../components/modal'
 import ModalButton from '../components/modal-button'
-import { range } from 'underscore';
+import { range, debounce } from 'underscore';
 
 import SVGFilters from '../components/svg-filters'
 import { Hole1, Hole2, Hole3, Hole4, Inf } from '../components/svgs'
@@ -15,24 +15,23 @@ export default ({ }) => {
     const [current_pane, setCurrent_pane] = useState(0);
     const [known_position, setKnown_position] = useState(0);
     const [break_points, setBreak_points] = useState([0, 0]);
+    const [sizeChanged, setsizeChanged] = useState(false);
 
     const content_panes = [{ name: "I" }, { name: "II" }]
 
     const content_area = createRef();
 
+    const getWidth = () => content_area.current.scrollWidth;
 
-    const scroll_next = (e) => {
-        let element = e.target;
-        var diff = element.scrollLeft - known_position;
-        setKnown_position(element.scrollLeft)
-        var diff = Math.sign(diff);
-        var next = Math.max(0, Math.min(SCROLL_POINTS - 1, current_pane + diff))
-        setKnown_position(next)
-        element.scrollTo(break_points[next], 0)
+    const on_scroll = (e) => {
+        let scroll_pos = content_area.current.scrollLeft
+        let pane_size = break_points[1]
+        let pos = Math.round(scroll_pos / pane_size);
+        setCurrent_pane(pos);
     }
 
     const populate_breakpoints = () => {
-        var total = content_area.current.scrollWidth;
+        var total = getWidth();
         var arr = range(SCROLL_POINTS);
         arr = arr.map((n) => ((total / SCROLL_POINTS) * n))
         setBreak_points(arr)
@@ -40,9 +39,24 @@ export default ({ }) => {
 
 
     useEffect(() => {
-        populate_breakpoints();
+
+        let handle_resize = () => {
+            setsizeChanged(true)
+        }
+
+        populate_breakpoints()
+        window.addEventListener("resize", debounce(handle_resize, 200))
+
     }, []);
 
+
+    useEffect(() => {
+        populate_breakpoints()
+        setsizeChanged(false)
+    }, [sizeChanged]);
+
+
+    // TODO: debounce and filter scroll event
 
     return (
         <>
@@ -56,9 +70,9 @@ export default ({ }) => {
                         <img src="./img/MHH_Logo.png"></img>
                     </a>
                     <h1> PUBLICATION </h1>
-                    <h3> I </h3>
+                    <h3> {content_panes[current_pane].name} </h3>
                 </div>
-                <div className="content-area" id="content-area" ref={content_area} onScroll={scroll_next}>
+                <div className="content-area" id="content-area" ref={content_area} onScroll={debounce(on_scroll, 200)}>
                     <div className="content-field">
                         <div class="article-link">
                             <Link to="/practices-of-love-and-body">

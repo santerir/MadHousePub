@@ -111,12 +111,14 @@
         grid-template-rows: 100%;
         grid-auto-columns: 100%;
         grid-auto-flow: column;
+        scroll-snap-type: x mandatory;
     }
 
     .content-field {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 25% 25% 25% 25%;
+        scroll-snap-align: start;
 
         @include respond-below("mb-l") {
             grid-area: 2/1/3/2;
