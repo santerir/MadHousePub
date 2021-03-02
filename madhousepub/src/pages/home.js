@@ -17,7 +17,7 @@ export default ({ }) => {
     const [break_points, setBreak_points] = useState([0, 0]);
     const [sizeChanged, setsizeChanged] = useState(false);
 
-    const content_panes = [{ name: "I" }, { name: "II" }]
+    const content_panes = [{ name: "I", info_url: "/about" }, { name: "II", info_url: "/about-II" }]
 
     const content_area = createRef();
 
@@ -69,7 +69,7 @@ export default ({ }) => {
         <>
             <SVGFilters />
             <div className="homepage s2020">
-                <Link to="/about"><button className="info-button">
+                <Link to={content_panes[current_pane].info_url}><button className="info-button">
                     <Inf />
                 </button></Link>
                 <div className="title-bar">
