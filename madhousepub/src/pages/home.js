@@ -2,7 +2,7 @@ import React, { useEffect, useState, createRef } from 'react'
 import { Link } from 'react-router-dom'
 import Modal from '../components/modal'
 import ModalButton from '../components/modal-button'
-import { range, debounce } from 'underscore';
+import { range, debounce, noop } from 'underscore';
 
 import SVGFilters from '../components/svg-filters'
 import { Hole1, Hole2, Hole3, Hole4, Inf } from '../components/svgs'
@@ -35,6 +35,13 @@ export default ({ }) => {
         var arr = range(SCROLL_POINTS);
         arr = arr.map((n) => ((total / SCROLL_POINTS) * n))
         setBreak_points(arr)
+    }
+
+
+    const go_to = (i) => {
+        return () => {
+            content_area.current.scrollTo({ left: break_points[i], top: 0, behaviour: "smooth" })
+        }
     }
 
 
@@ -73,6 +80,9 @@ export default ({ }) => {
                     <h3> {content_panes[current_pane].name} </h3>
                 </div>
                 <div className="content-area" id="content-area" ref={content_area} onScroll={debounce(on_scroll, 200)}>
+                    <div className="dots">
+                        {range(SCROLL_POINTS).map((i) => (<label onClick={go_to(i)} className={current_pane == i ? "active" : "inactive"}></label>))}
+                    </div>
                     <div className="content-field">
                         <div class="article-link">
                             <Link to="/practices-of-love-and-body">
