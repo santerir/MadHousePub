@@ -19,7 +19,7 @@ export default ({ edition, next, prev, children }) => {
                 <Link to="/">
                     <h4> Mad House Helsinki <span style={{ fontWeight: 100 }}>Publication</span></h4>
                 </Link>
-                <Link to="/"><button className="close-button">
+                <Link to={edition.root}><button className="close-button">
                     <Cls></Cls>
                 </button></Link>
             </div>
