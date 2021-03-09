@@ -3,6 +3,7 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
+  Redirect
 } from "react-router-dom";
 
 
@@ -18,7 +19,10 @@ import { Rakkaudesta } from './content/s2020/rakkaudesta'
 import { Cloudbody } from './content/s2020/cloudbody'
 import { Tunne } from './content/s2020/tunne'
 
-import { SUMMER2020 } from './editions'
+
+import { AboutII } from './content/s2021/aboutII'
+
+import { SUMMER2020, SUMMER2021 } from './editions'
 
 
 import './sass/style.scss';
@@ -33,6 +37,11 @@ const App = ({ }) => {
           <Route path="/about">
             <Article edition={SUMMER2020}>
               <About />
+            </Article>
+          </Route>
+          <Route path="/about-II">
+            <Article edition={SUMMER2021}>
+              <AboutII />
             </Article>
           </Route>
           <Route path="/practices-of-love-and-body" >
@@ -55,10 +64,11 @@ const App = ({ }) => {
               <Tunne />
             </Article>
           </Route>
-          <Route path="/">
+          <Route path="/:edition">
             <Home />
           </Route>
         </Switch>
+        <Redirect from='/' to="/II" />
       </div>
     </Router>
   );
