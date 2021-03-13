@@ -1,0 +1,18 @@
+.grid {
+    display: grid;
+
+    &--3w {
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 1em;
+    }
+
+    &--2w {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 1em;
+    }
+
+    &--2h {
+        grid-template-rows: 1fr 1fr;
+        row-gap: 1em;
+    }
+}
