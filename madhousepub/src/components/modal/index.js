@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 import { useEffect } from 'react'
 
-import ruksi from './assets/ruksi.png'
 import { Cls } from './assets/close.js'
 
 import styles from './style.scss'

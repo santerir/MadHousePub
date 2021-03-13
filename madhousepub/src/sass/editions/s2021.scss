@@ -34,3 +34,22 @@
         border: 1px solid black;
     }
 }
+
+.fluctuants {
+    .floatie {
+        position: sticky;
+        height: 0;
+        width: 20em;
+
+        button {
+            position: absolute;
+            top: -20px;
+            right: -20px;
+        }
+
+        img,
+        div {
+            width: 20em;
+        }
+    }
+}

@@ -22,9 +22,9 @@ import { Tunne } from './content/s2020/tunne'
 
 import { AboutII } from './content/s2021/aboutII'
 import { Jasenet } from './content/s2021/jasenet'
+import { Fluctuants } from './content/s2021/fluctuants';
 
 import { SUMMER2020, SUMMER2021 } from './editions'
-
 
 import './sass/style.scss';
 
@@ -48,6 +48,11 @@ const App = ({ }) => {
           <Route path="/ryhman-jasenet" >
             <Article edition={SUMMER2021} next="/rakkaudesta" prev="/tunnemylläkkähässäkkä">
               <Jasenet />
+            </Article>
+          </Route>
+          <Route path="/fluctuants" >
+            <Article edition={SUMMER2021} next="/rakkaudesta" prev="/tunnemylläkkähässäkkä">
+              <Fluctuants />
             </Article>
           </Route>
           <Route path="/practices-of-love-and-body" >

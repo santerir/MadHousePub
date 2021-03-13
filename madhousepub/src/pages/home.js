@@ -145,9 +145,8 @@ osa 3</h1>
                             <Hole1 />
                         </div>
                         <div class="article-link">
-                            <Link to="/rakkaudesta">
-                                <h1>Rakkaudesta <br />
-– sanasto tuleville vuosikymmenille</h1>
+                            <Link to="/fluctuants">
+                                <h1>Fluctuants</h1>
                             </Link>
 
                             <div s-only="dsk" className="spacer"></div>
