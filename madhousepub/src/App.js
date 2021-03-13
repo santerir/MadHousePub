@@ -21,6 +21,7 @@ import { Tunne } from './content/s2020/tunne'
 
 
 import { AboutII } from './content/s2021/aboutII'
+import { Jasenet } from './content/s2021/jasenet'
 
 import { SUMMER2020, SUMMER2021 } from './editions'
 
@@ -42,6 +43,11 @@ const App = ({ }) => {
           <Route path="/about-II">
             <Article edition={SUMMER2021}>
               <AboutII />
+            </Article>
+          </Route>
+          <Route path="/ryhman-jasenet" >
+            <Article edition={SUMMER2021} next="/rakkaudesta" prev="/tunnemylläkkähässäkkä">
+              <Jasenet />
             </Article>
           </Route>
           <Route path="/practices-of-love-and-body" >
@@ -67,8 +73,8 @@ const App = ({ }) => {
           <Route path="/:edition">
             <Home />
           </Route>
+          <Redirect exact from='/' to="/II" />
         </Switch>
-        <Redirect from='/' to="/II" />
       </div>
     </Router>
   );

@@ -138,8 +138,8 @@ osa 3</h1>
                     </div>
                     <div className="content-field s2021">
                         <div class="article-link">
-                            <Link to="/practices-of-love-and-body">
-                                <h1>Practices of Love <br /> and Body</h1>
+                            <Link to="/ryhman-jasenet">
+                                <h1>Ryhmän jäsenet</h1>
                             </Link>
                             <div s-only="dsk" className="spacer"></div>
                             <Hole1 />

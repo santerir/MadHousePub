@@ -16,4 +16,15 @@
         background-size: cover;
         background-position: center center;
     }
+
+    .palsta p {
+        color: $brown;
+    }
+
+    .content {
+        a {
+            color: $red;
+            text-decoration: none;
+        }
+    }
 }
