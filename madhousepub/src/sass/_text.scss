@@ -55,6 +55,7 @@ div.center-text {
 .palsta {
     width: 600px;
     max-width: 80%;
+    margin: 0 auto;
 
     @include respond-below("mb-l") {
         max-width: 90%;

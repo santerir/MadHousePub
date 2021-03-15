@@ -36,10 +36,36 @@
 }
 
 .fluctuants {
-    .floatie {
+    .container {
+        margin: 0;
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        .canvas {
+            position: absolute;
+            height: 100%;
+            width: 90%;
+            max-width: 700px;
+            left: 50%;
+            -webkit-transform: translateX(-50%);
+            -moz-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+        }
+    }
+
+    .floatie-container {
         position: sticky;
+        width: 100%;
+    }
+
+    .floatie {
+        position: absolute;
         height: 0;
         width: 20em;
+        max-width: 80vw;
 
         button {
             position: absolute;
@@ -47,9 +73,11 @@
             right: -20px;
         }
 
-        img,
-        div {
+        iframe {
             width: 20em;
+            max-width: 80vw;
+            max-height: calc(0.56 * 80vw);
+            height: calc(0.56 * 20em);
         }
     }
 }

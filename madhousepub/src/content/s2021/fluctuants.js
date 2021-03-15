@@ -1,41 +1,73 @@
 import React, { useEffect, useState } from 'react'
+import _ from 'lodash'
 
 import { Modal } from '../../components/modal'
 import ModalButton from '../../components/modal-button'
-import useTimeout from '../../components/useTimeout'
+
 
 import { Inf, Cls } from '../../components/svgs'
 
 export const Fluctuants = () => {
 
     const items = [
-        <img src="/img/jasenet/2.webp"></img>
+        <iframe src="https://player.vimeo.com/video/523902082?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;" width="1280" height="720" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="haiku_33"></iframe>
+        ,
+        <iframe src="https://player.vimeo.com/video/523903377?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;" width="1280" height="720" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="haiku_sometimes"></iframe>
+        ,
+        <iframe src="https://player.vimeo.com/video/523903228?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;" width="1280" height="720" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="haiku_questions collection"></iframe>
+        ,
+        <iframe src="https://player.vimeo.com/video/523902457?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;" width="1280" height="720" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="haiku_go slow"></iframe>
+        ,
+        <iframe src="https://player.vimeo.com/video/523902163?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;" width="1280" height="720" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="haiku_a throwing to the world"></iframe>
+        ,
+        <iframe src="https://player.vimeo.com/video/523901887?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;" width="1280" height="720" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="haiku_ forget about your troubles"></iframe>
+        ,
+        <iframe src="https://player.vimeo.com/video/523902805?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;" width="1280" height="720" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="haiku_i think you might like to hear something from us"></iframe>
+
     ]
 
-    const [video, setVideo] = useState(null);
 
-    const placeItem = () => {
-        setVideo(0);
+    const locs = [
+        [{ top: "20%" }, { left: "12%" }],
+        [{ top: "40%" }, { right: "15%" }],
+        [{ top: "56%" }, { left: "4%" }],
+        [{ top: "67%" }, { right: "10%" }],
+        [{ top: "12%" }, { left: "17%" }],
+        [{ top: "76%" }, { left: "15%" }],
+        [{ top: "34%" }, { right: "38%" }],
+    ]
+
+
+    const [index, setIndex] = useState(0);
+    const [order, setOrder] = useState(_.shuffle(_.range(0, items.length)));
+    const [savedTimeout, setSavedTimeout] = useState(null);
+    const [playing, setPlaying] = useState(false);
+
+
+    const nextItem = () => {
+        setIndex((index + 1) % items.length);
     }
 
     const closeVideo = () => {
-        setVideo(null)
+        setPlaying(false);
+        nextItem();
+        setSavedTimeout(null);
     }
 
     const getItem = () => {
-        if (!items[video]) {
-            return;
+        if (!playing) {
+            return null;
         }
-        return Floater(items[video], ["20em", "10em"], closeVideo)
+        return Floater(items[order[index]], locs[index], closeVideo)
     }
 
     useEffect(() => {
-        if (!video) {
-            setTimeout(() => {
-                placeItem();
-            }, 5000);
+        if (!savedTimeout) {
+            setSavedTimeout(setTimeout(() => {
+                setPlaying(true);
+            }, 5000));
         }
-    }, [video])
+    }, [savedTimeout])
 
     return (
         <div className="fluctuants">
@@ -91,29 +123,33 @@ Let them fluctuate<br />
                     </p>
                 </Modal>
             </div>
-            <div className="palsta canvas">
-                {getItem()}
-                <p>Due to the situation of Covid-19,we had to go to the countryside to work in a kind of collective isolation.</p>
-                <p>We are involved in a creation process, working on a group dance piece, with the provisional name of grrRoUNd, to be premiered in May 2020 in Brussels, at the Kunstenfestivaldesarts.</p>
-                <p>It is the first time that we have embarked on a creation process outside the urban perimeter.</p>
-                <p>For a year now, our bodies are not crossed by the street.</p>
-                <p>For a year now, we have not had the possibility of having a chance, unplanned, inopportune, deviating encounter when walking in the street.</p>
-                <p>When walking in the street, we enter briefly into the "frame" of strangers and we are crossed by small frames of other presences.</p>
-                <p>For a year now, these "brief and unexpected visitors" have not impacted our bodies and senses.</p>
-                <p>We read and listen to news "from outside" through newspapers and television channels.</p>
-                <p>For a year our bodies have not encountered the world.</p>
-                <p>They do not experience being among others in the street.</p>
-                <p>How does the lack of this experience affect/shake/shock our cognition, our articulation?</p>
-                <p>These clips, HAIKUS, are a collection of what happened "out of frame" during the rehearsals so far.</p>
-                <p>A collection of chance encounters with our unexpected visitors: geese, toucans, turkeys and birds.</p>
-                <p>They interrupted us, diverted us, suspended us.</p>
-                <p>They are some "others" for this new creation.</p>
-                <p>We decided to share, on the screen, in the frame, what is for us out of frame.</p>
-                <p>What finally, when we go on stage, will not be there visible, but will perhaps sensitively permeate our presence.</p>
-                <p>These brief and unexpected visitors will appear at any moment on your screen.</p>
-                <p>Please do not try to glue them on.</p>
-                <p>Let them float.</p>
-                <p>Let them be brief and incomplete.</p>
+            <div className="container">
+                <div className="canvas">
+                    {getItem()}
+                </div>
+                <div className="palsta">
+                    <p>Due to the situation of Covid-19,we had to go to the countryside to work in a kind of collective isolation.</p>
+                    <p>We are involved in a creation process, working on a group dance piece, with the provisional name of grrRoUNd, to be premiered in May 2020 in Brussels, at the Kunstenfestivaldesarts.</p>
+                    <p>It is the first time that we have embarked on a creation process outside the urban perimeter.</p>
+                    <p>For a year now, our bodies are not crossed by the street.</p>
+                    <p>For a year now, we have not had the possibility of having a chance, unplanned, inopportune, deviating encounter when walking in the street.</p>
+                    <p>When walking in the street, we enter briefly into the "frame" of strangers and we are crossed by small frames of other presences.</p>
+                    <p>For a year now, these "brief and unexpected visitors" have not impacted our bodies and senses.</p>
+                    <p>We read and listen to news "from outside" through newspapers and television channels.</p>
+                    <p>For a year our bodies have not encountered the world.</p>
+                    <p>They do not experience being among others in the street.</p>
+                    <p>How does the lack of this experience affect/shake/shock our cognition, our articulation?</p>
+                    <p>These clips, HAIKUS, are a collection of what happened "out of frame" during the rehearsals so far.</p>
+                    <p>A collection of chance encounters with our unexpected visitors: geese, toucans, turkeys and birds.</p>
+                    <p>They interrupted us, diverted us, suspended us.</p>
+                    <p>They are some "others" for this new creation.</p>
+                    <p>We decided to share, on the screen, in the frame, what is for us out of frame.</p>
+                    <p>What finally, when we go on stage, will not be there visible, but will perhaps sensitively permeate our presence.</p>
+                    <p>These brief and unexpected visitors will appear at any moment on your screen.</p>
+                    <p>Please do not try to glue them on.</p>
+                    <p>Let them float.</p>
+                    <p>Let them be brief and incomplete.</p>
+                </div>
             </div>
         </div>)
 }
@@ -121,17 +157,13 @@ Let them fluctuate<br />
 
 const Floater = (item, loc, close) => {
 
-    const styles = {
-        top: loc[0],
-        left: loc[1],
-    }
-
-
 
     return (
-        <div className="floatie" style={styles}>
-            <button onClick={close}><Cls></Cls></button>
-            {item}
+        <div className="floatie-container" style={loc[0]}>
+            <div className="floatie" style={loc[1]}>
+                <button onClick={close}><Cls></Cls></button>
+                {item}
+            </div>
         </div>
     )
 }
