@@ -3,7 +3,7 @@ import { Link, useParams, useHistory } from 'react-router-dom'
 import { range, debounce, reduce } from 'lodash';
 
 import SVGFilters from '../components/svg-filters'
-import { Hole1, Hole2, Hole3, Hole4, Inf } from '../components/svgs'
+import { Hole1, Hole2, Hole3, Hole4, Hole5, Inf } from '../components/svgs'
 
 
 export default ({ }) => {
@@ -142,7 +142,7 @@ osa 3</h1>
                                 <h1>Ryhmän jäsenet</h1>
                             </Link>
                             <div s-only="dsk" className="spacer"></div>
-                            <Hole1 />
+                            <Hole5 />
                         </div>
                         <div class="article-link">
                             <Link to="/fluctuants">
@@ -153,10 +153,8 @@ osa 3</h1>
                             <Hole4 />
                         </div>
                         <div class="article-link">
-                            <Link to="/cloudbody">
-                                <h1>Cloudbody,<br />
-an Ecology of Dreams,<br />
-osa 3</h1>
+                            <Link to="/ekfrasiksesta-osa-2">
+                                <h1>Ekfrasiksesta osa 2</h1>
                             </Link>
                             <div s-only="dsk" className="spacer"></div>
                             <Hole2 />

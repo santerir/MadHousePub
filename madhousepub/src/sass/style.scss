@@ -1,4 +1,8 @@
 @import "base";
+
+@import "editions/s2020";
+@import "editions/s2021";
+
 @import "pages/frontpage";
 @import "pages/article";
 @import "pages/about";
@@ -7,9 +11,6 @@
 @import "modal";
 @import "img";
 @import "grids";
-
-@import "editions/s2020";
-@import "editions/s2021";
 
 .App {
     position: absolute;

@@ -15,4 +15,20 @@
         grid-template-rows: 1fr 1fr;
         row-gap: 1em;
     }
+
+    &--less-gap {
+        column-gap: 0.5em;
+        row-gap: 0.5em;
+    }
+
+    &--mb-3h {
+        @include respond-between("mb-s", "mb-l") {
+            grid-template-columns: unset;
+            grid-auto-flow: row;
+            grid-template-rows: 1fr 1fr 1fr;
+            align-items: center;
+            row-gap: 1em;
+            text-align: center;
+        }
+    }
 }

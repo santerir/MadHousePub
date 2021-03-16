@@ -30,11 +30,11 @@ export const Fluctuants = () => {
     const locs = [
         [{ top: "20%" }, { left: "12%" }],
         [{ top: "40%" }, { right: "15%" }],
-        [{ top: "56%" }, { left: "4%" }],
+        [{ top: "56%" }, { left: "0%" }],
         [{ top: "67%" }, { right: "10%" }],
         [{ top: "12%" }, { left: "17%" }],
-        [{ top: "76%" }, { left: "15%" }],
-        [{ top: "34%" }, { right: "38%" }],
+        [{ top: "68%" }, { right: "0%" }],
+        [{ top: "34%" }, { right: "18%" }],
     ]
 
 

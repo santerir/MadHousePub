@@ -17,7 +17,7 @@
         background-position: center center;
     }
 
-    .palsta p {
+    p {
         color: $brown;
     }
 
@@ -47,7 +47,7 @@
             position: absolute;
             height: 100%;
             width: 90%;
-            max-width: 700px;
+            max-width: 800px;
             left: 50%;
             -webkit-transform: translateX(-50%);
             -moz-transform: translateX(-50%);
@@ -78,6 +78,43 @@
             max-width: 80vw;
             max-height: calc(0.56 * 80vw);
             height: calc(0.56 * 20em);
+        }
+    }
+}
+
+.ekfrasiksesta {
+    .orb-thing {
+        font-size: 0.7em;
+        color: black;
+
+        label {
+            width: 20px;
+            height: 20px;
+            position: relative;
+            border-radius: 100%;
+            top: 4px;
+            margin: 0 10px 0 0;
+            display: inline-block;
+
+            &.blue {
+                background-color: $blue;
+                box-shadow: 3px 0px 6px $blue, -3px -0px 6px $blue, 0px 3px 6px $blue, 0px -3px 6px $blue;
+            }
+            &.brown {
+                background-color: $brown;
+                box-shadow: 3px 0px 6px $brown, -3px -0px 6px $brown, 0px 3px 6px $brown, 0px -3px 6px $brown;
+            }
+            &.teal {
+                background-color: $teal;
+                box-shadow: 3px 0px 6px $teal, -3px -0px 6px $teal, 0px 3px 6px $teal, 0px -3px 6px $teal;
+            }
+        }
+    }
+
+    div.footnotes {
+        margin-top: 10em !important;
+        p {
+            color: black;
         }
     }
 }

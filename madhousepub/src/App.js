@@ -20,6 +20,7 @@ import { Tunne } from './content/s2020/tunne'
 import { AboutII } from './content/s2021/aboutII'
 import { Jasenet } from './content/s2021/jasenet'
 import { Fluctuants } from './content/s2021/fluctuants';
+import { Ekfrasiksesta } from './content/s2021/ekfrasiksesta';
 
 import { SUMMER2020, SUMMER2021 } from './editions'
 
@@ -50,6 +51,11 @@ const App = ({ }) => {
           <Route path="/fluctuants" >
             <Article edition={SUMMER2021} next="/rakkaudesta" prev="/tunnemylläkkähässäkkä">
               <Fluctuants />
+            </Article>
+          </Route>
+          <Route path="/ekfrasiksesta-osa-2" >
+            <Article edition={SUMMER2021} next="/rakkaudesta" prev="/tunnemylläkkähässäkkä">
+              <Ekfrasiksesta />
             </Article>
           </Route>
           <Route path="/practices-of-love-and-body" >
