@@ -3,7 +3,7 @@ import { Link, useParams, useHistory } from 'react-router-dom'
 import { range, debounce, reduce } from 'lodash';
 
 import SVGFilters from '../components/svg-filters'
-import { Hole1, Hole2, Hole3, Hole4, Hole5, Inf } from '../components/svgs'
+import { Hole1, Hole2, Hole3, Hole4, Hole5, Hole6, Hole7, Hole8, Inf } from '../components/svgs'
 
 
 export default ({ }) => {
@@ -19,6 +19,7 @@ export default ({ }) => {
     const [current_pane, setCurrent_pane] = useState(starting_pane);
     const [break_points, setBreak_points] = useState([0, 0]);
     const [sizeChanged, setsizeChanged] = useState(false);
+    const [resizing, setResizing] = useState(false);
 
     const content_area = createRef();
 
@@ -27,6 +28,9 @@ export default ({ }) => {
     const getWidth = () => content_area.current.scrollWidth;
 
     const on_scroll = (e) => {
+        if (resizing) {
+            return;
+        }
         let scroll_pos = content_area.current.scrollLeft
         let pane_size = break_points[1]
         let pos = Math.round(scroll_pos / pane_size);
@@ -51,14 +55,18 @@ export default ({ }) => {
     useEffect(() => {
 
         let handle_resize = () => {
-            setsizeChanged(true)
+            setResizing(false);
+            setsizeChanged(true);
         }
 
-        populate_breakpoints()
-        window.addEventListener("resize", debounce(handle_resize, 200))
+        populate_breakpoints();
+        window.addEventListener("resize", debounce(() => { setResizing(true) }, 300, {
+            'leading': true
+        }
+        ));
+        window.addEventListener("resize", debounce(handle_resize, 500));
 
     }, []);
-
 
     useEffect(() => {
 
@@ -67,12 +75,11 @@ export default ({ }) => {
     }, [current_pane])
 
 
+    // useEffect(() => {
 
-    useEffect(() => {
+    //     content_area.current.scrollTo({ left: break_points[current_pane], top: 0 })
 
-        content_area.current.scrollTo({ left: break_points[current_pane], top: 0 })
-
-    }, [break_points])
+    // }, [break_points])
 
     useEffect(() => {
         populate_breakpoints()
@@ -96,7 +103,7 @@ export default ({ }) => {
                     <h1> PUBLICATION </h1>
                     <h3> {CONTENT_PANES[current_pane].name} </h3>
                 </div>
-                <div className="content-area" id="content-area" ref={content_area} onScroll={debounce(on_scroll, 50)}>
+                <div className="content-area" id="content-area" ref={content_area} onScroll={debounce(on_scroll, 200)}>
                     <div className="dots">
                         {range(SCROLL_POINTS).map((i) => (<label onClick={go_to(i)} className={current_pane == i ? "active" : "inactive"}></label>))}
                     </div>
@@ -150,14 +157,14 @@ osa 3</h1>
                             </Link>
 
                             <div s-only="dsk" className="spacer"></div>
-                            <Hole4 />
+                            <Hole6 />
                         </div>
                         <div class="article-link">
                             <Link to="/ekfrasiksesta-osa-2">
                                 <h1>Ekfrasiksesta osa 2</h1>
                             </Link>
                             <div s-only="dsk" className="spacer"></div>
-                            <Hole2 />
+                            <Hole7 />
 
                         </div>
                         <div class="article-link">
@@ -165,7 +172,7 @@ osa 3</h1>
                                 <h1>Tunnemylläkkähässäkkä</h1>
                             </Link>
                             <div s-only="dsk" className="spacer"></div>
-                            <Hole3 />
+                            <Hole8 />
 
                         </div>
                     </div>

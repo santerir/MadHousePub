@@ -3,7 +3,7 @@ import React from 'react'
 import { Modal } from '../../components/modal'
 import ModalButton from '../../components/modal-button'
 
-import { Inf, Hole3, Hole3Clip, Hole3Inv } from '../../components/svgs'
+import { Inf, Hole3Inv } from '../../components/svgs'
 
 
 import SVGFilter from '../../components/svg-filters'

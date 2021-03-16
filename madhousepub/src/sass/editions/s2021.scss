@@ -117,4 +117,38 @@
             color: black;
         }
     }
+
+    .bckground {
+        background-attachment: fixed;
+        display: flex;
+
+        @supports (-webkit-touch-callout: none) {
+            background-attachment: initial;
+        }
+    }
+
+    .hole_ {
+        mask-size: contain;
+        mask-repeat: no-repeat;
+        height: 300px;
+        mask-position: center;
+
+        &.hole_5 {
+            mask-image: url(/img/holes/MHPhole1_1.svg);
+        }
+
+        &.hole_6 {
+            mask-image: url(/img/holes/MHPhole2_1.svg);
+            mask-position: 35%;
+        }
+
+        &.hole_7 {
+            mask-image: url(/img/holes/MHPhole3_1.svg);
+            mask-position: 35%;
+        }
+
+        &.hole_8 {
+            mask-image: url(/img/holes/MHPhole4_1.svg);
+        }
+    }
 }
