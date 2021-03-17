@@ -8,17 +8,22 @@ import { Inf } from '../../components/svgs'
 
 export const Jasenet = () => {
 
+    const items = [
+
+    ]
+
+    const maz
 
     const [size, setSize] = useState([0, 0]);
 
     const canvas = useRef();
 
-    const place = (path, key) => {
+    const place = (item, key) => {
 
         let x = Math.floor(Math.random() * size[0]);
         let y = Math.floor(Math.random() * size[1]);
 
-        return (<img style={{ position: absolute, top: y, left: x }} src={path} />)
+        return (<div key={key} style={{ position: absolute, top: y, left: x }} >  {item} </div>)
     }
 
     return (

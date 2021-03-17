@@ -74,13 +74,6 @@ export default ({ }) => {
 
     }, [current_pane])
 
-
-    // useEffect(() => {
-
-    //     content_area.current.scrollTo({ left: break_points[current_pane], top: 0 })
-
-    // }, [break_points])
-
     useEffect(() => {
         populate_breakpoints()
         setsizeChanged(false)
