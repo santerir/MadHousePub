@@ -176,6 +176,16 @@
                 max-height: 80vh;
             }
 
+            h1 {
+                position: absolute;
+                color: white;
+                top: 50%;
+                left: 50%;
+                /* bring your own prefixes */
+                transform: translate(-50%, -50%);
+                z-index: z("below");
+            }
+
             button {
                 position: absolute;
 
@@ -198,6 +208,12 @@
     }
 
     #renees-canvas {
+        cursor: url("/img/pains/Mouse.png") 64 32, pointer;
+
+        button {
+            cursor: url("/img/pains/Mouse.png") 64 32, pointer;
+        }
+
         position: relative;
 
         @include respond-below("mb-l") {
@@ -224,6 +240,14 @@
             position: absolute;
         }
 
+        .credit {
+            top: 60%;
+            right: 10%;
+            z-index: z("overlay");
+            width: 30%;
+            position: absolute;
+        }
+
         .collage-item {
             z-index: 0;
             img,
@@ -231,6 +255,27 @@
                 max-width: 30vw;
                 max-height: 30vw;
             }
+        }
+    }
+
+    .audio-player {
+        z-index: z("overlay");
+        height: 30vw;
+        width: 10vw;
+        position: absolute;
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        &.not-active {
+            background-image: url("/img/pains/inactive.png");
+
+            &:hover {
+                background-image: url("/img/pains/hover.png");
+            }
+        }
+
+        &.active {
+            background-image: url("/img/pains/active.png");
         }
     }
 }

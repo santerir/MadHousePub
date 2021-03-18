@@ -35,17 +35,52 @@ export const Pains = () => {
         [<img src="https://videoapi-muybridge.vimeocdn.com/animated-thumbnails/image/769351fa-0f07-4640-ad68-6510b85bdcb5.gif?ClientID=vimeo-core-prod&Date=1616071978&Signature=b48c59145884e11549742aa700c3a85c584af9c2"></img>, <iframe src="https://player.vimeo.com/video/525469169?autoplay=1&amp;background=1" width="640" height="1138" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>],
         [<img src="https://videoapi-muybridge.vimeocdn.com/animated-thumbnails/image/00d31980-3ce9-48b2-82ec-4d5ace70ac76.gif?ClientID=vimeo-core-prod&Date=1616072066&Signature=ee2aaadb4db69dbc519d068c562819da00958489"></img>, <iframe src="https://player.vimeo.com/video/525469100?autoplay=1&amp;background=1" width="640" height="352" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>],
         [<img src="https://videoapi-muybridge.vimeocdn.com/animated-thumbnails/image/34b64b8d-7c61-4dba-9f5c-724ae96a491c.gif?ClientID=vimeo-core-prod&Date=1616072211&Signature=0e9266eb54d30827f2e294b3e765d16397e3eab8"></img>, <iframe src="https://player.vimeo.com/video/525469022?autoplay=1&amp;background=1" width="640" height="868" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>],
-        // <iframe src="https://player.vimeo.com/video/525468896?autoplay=1&amp;background=1" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>,
-        // <iframe src="https://player.vimeo.com/video/525468749?autoplay=1&amp;background=1" width="640" height="917" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>,
-        // <iframe src="https://player.vimeo.com/video/525463068?autoplay=1&amp;background=1" width="640" height="879" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>,
-        // <iframe src="https://player.vimeo.com/video/525463009?autoplay=1&amp;background=1" width="640" height="895" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>,
-        // <iframe src="https://player.vimeo.com/video/525462969?autoplay=1&amp;background=1" width="640" height="539" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>,
-        // <iframe src="https://player.vimeo.com/video/525462827?autoplay=1&amp;background=1" width="640" height="850" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>,
-        [<img src="https://videoapi-muybridge.vimeocdn.com/animated-thumbnails/image/41a2318d-181d-40a8-9829-03f392c13e8a.gif?ClientID=vimeo-core-prod&Date=1616070004&Signature=c1b9aa81b9c42ec636c9ed88bcbf55e832baa7ed"></img>, <iframe src="https://player.vimeo.com/video/525462710?autoplay=1&amp;background=1" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>]
+        [<img src="https://videoapi-muybridge.vimeocdn.com/animated-thumbnails/image/10a58a27-cadd-48bd-8c97-d5712ec4e4f7.gif?ClientID=vimeo-core-prod&Date=1616087955&Signature=b57b498555a00e63fa079d57e0662d30ced7ce2f"></img>, <iframe src="https://player.vimeo.com/video/525468896?autoplay=1&amp;background=1" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>],
+        [<img src="https://videoapi-muybridge.vimeocdn.com/animated-thumbnails/image/04bd30c4-852c-4442-9df9-8605aa1215e1.gif?ClientID=vimeo-core-prod&Date=1616088112&Signature=e0d927175fe61b74d81208847519a14efb8c4f32" />, <iframe src="https://player.vimeo.com/video/525468749?autoplay=1&amp;background=1" width="640" height="917" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>],
+        [<img src="https://videoapi-muybridge.vimeocdn.com/animated-thumbnails/image/79741a5f-ea8a-4c3c-a9f4-e7ec9b3c0f6f.gif?ClientID=vimeo-core-prod&Date=1616088149&Signature=14b0440bfa6067d5c002e8a70c93e3676ac2e6b0"></img>, <iframe src="https://player.vimeo.com/video/525463068?autoplay=1&amp;background=1" width="640" height="879" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>],
+        [<img src="https://videoapi-muybridge.vimeocdn.com/animated-thumbnails/image/eb71bfc3-560b-43fa-9320-0ed84a95a38b.gif?ClientID=vimeo-core-prod&Date=1616088212&Signature=bed40fc0b36502ab8230fe9d352fe40eb0158efe"></img>, <iframe src="https://player.vimeo.com/video/525463009?autoplay=1&amp;background=1" width="640" height="895" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>],
+        [<img src="https://videoapi-muybridge.vimeocdn.com/animated-thumbnails/image/e45d9714-a934-4659-8233-7fa55fab08d3.gif?ClientID=vimeo-core-prod&Date=1616088240&Signature=0b08859e79b55f95b83a37407ccc3a9419dada45"></img>, <iframe src="https://player.vimeo.com/video/525462969?autoplay=1&amp;background=1" width="640" height="539" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>],
+        [<img src="https://videoapi-muybridge.vimeocdn.com/animated-thumbnails/image/7ad9254a-6b4a-45ba-b6c1-54f8b4a6dc91.gif?ClientID=vimeo-core-prod&Date=1616088311&Signature=9d04b8b1c0780eb30cc18c20785afe9b9724141f"></img>, <iframe src="https://player.vimeo.com/video/525462827?autoplay=1&amp;background=1" width="640" height="850" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>],
+        [<img src="https://videoapi-muybridge.vimeocdn.com/animated-thumbnails/image/41a2318d-181d-40a8-9829-03f392c13e8a.gif?ClientID=vimeo-core-prod&Date=1616070004&Signature=c1b9aa81b9c42ec636c9ed88bcbf55e832baa7ed"></img>, <iframe src="https://player.vimeo.com/video/525462710?autoplay=1&amp;background=1" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>],
+        [<img src="https://videoapi-muybridge.vimeocdn.com/animated-thumbnails/image/a64d4513-91fa-456d-bdcf-249c060e8d49.gif?ClientID=vimeo-core-prod&Date=1616088536&Signature=fcd661d29c190f2fbe53d247c9ccbba8a86bf9fc"></img>, <iframe src="https://player.vimeo.com/video/525462402?autoplay=1&amp;background=1" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>],
+        [<img src="https://videoapi-muybridge.vimeocdn.com/animated-thumbnails/image/f2c7d6c2-7d80-456e-bb8f-74503625a8a4.gif?ClientID=vimeo-core-prod&Date=1616088611&Signature=239234fc08b2f4a9e54d3a61d6b2663a1502ea1c"></img>, <iframe src="https://player.vimeo.com/video/525462649?autoplay=1&amp;background=1" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>],
+        [<img src="https://videoapi-muybridge.vimeocdn.com/animated-thumbnails/image/d3f5f847-aa43-4b2d-b2df-abadbbd30519.gif?ClientID=vimeo-core-prod&Date=1616088670&Signature=089f09ed31afa58789fa9b24bc7860960b64adec"></img>, <iframe src="https://player.vimeo.com/video/525462280?autoplay=1&amp;background=1" width="640" height="914" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>],
+        [<img src="https://videoapi-muybridge.vimeocdn.com/animated-thumbnails/image/7b2aca87-d2be-4cf6-9904-5cfd913451be.gif?ClientID=vimeo-core-prod&Date=1616088702&Signature=9e56a1aaee9655316b49227fef55c45c3e95bbba"></img>, <iframe src="https://player.vimeo.com/video/525461993?autoplay=1&amp;background=1" width="640" height="827" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>],
+        [<img src="https://videoapi-muybridge.vimeocdn.com/animated-thumbnails/image/1e64d5ba-a818-482e-a20c-2b86153e8e8a.gif?ClientID=vimeo-core-prod&Date=1616088727&Signature=0afa0a30e3c392a15251e4c8fa5952990442acde"></img>, <iframe src="https://player.vimeo.com/video/525462055?autoplay=1&amp;background=1" width="640" height="821" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>],
+        [<img src="https://videoapi-muybridge.vimeocdn.com/animated-thumbnails/image/b46e3a9b-a8d8-482a-9386-5bb6a437d4cd.gif?ClientID=vimeo-core-prod&Date=1616088761&Signature=4ab62ba2fcb2d3045923db72b57474f46de689ae"></img>, <iframe src="https://player.vimeo.com/video/525462096?autoplay=1&amp;background=1" width="640" height="878" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>],
+        [<img src="https://videoapi-muybridge.vimeocdn.com/animated-thumbnails/image/e8fdee12-30fc-444c-9619-515cfd6718bc.gif?ClientID=vimeo-core-prod&Date=1616088799&Signature=827d1ee7aaf1010a69ebae355cd5d7396d525104"></img>, <iframe src="https://player.vimeo.com/video/525462166?autoplay=1&amp;background=1" width="640" height="958" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>],
+        [<img src="https://videoapi-muybridge.vimeocdn.com/animated-thumbnails/image/4523f14a-e6fb-4697-bcfd-424c1fef9f93.gif?ClientID=vimeo-core-prod&Date=1616088842&Signature=e3e46a8d5193eeaf8adb57d94098a80cc3ec1a79"></img>, <iframe src="https://player.vimeo.com/video/525462223?autoplay=1&amp;background=1" width="640" height="804" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>],
+        [<img src="https://videoapi-muybridge.vimeocdn.com/animated-thumbnails/image/dd8be5d0-f27f-4626-a5de-0e2a593bb313.gif?ClientID=vimeo-core-prod&Date=1616088873&Signature=d7090f78346b280a558f5c23becb8b4f77982f7e"></img>, <iframe src="https://player.vimeo.com/video/525461717?autoplay=1&amp;background=1" width="640" height="882" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>],
+        [<img src="https://videoapi-muybridge.vimeocdn.com/animated-thumbnails/image/1ff1b7bc-78d6-421e-b341-4c5b491c38ad.gif?ClientID=vimeo-core-prod&Date=1616088917&Signature=8637891eae7d2545e90def9b83fd10e9198d162d"></img>, <iframe src="https://player.vimeo.com/video/525461919?autoplay=1&amp;background=1" width="640" height="1138" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>]
     ]
 
-    const maxWidth = 300;
-    const maxHeight = 300;
+    const audios = [
+        "/audio/renee/1_.mp3",
+        "/audio/renee/2_.mp3",
+        "/audio/renee/3_.mp3",
+        "/audio/renee/4_.mp3",
+        "/audio/renee/5_.mp3",
+        "/audio/renee/6_.mp3",
+        "/audio/renee/7_.mp3",
+        "/audio/renee/8_.mp3",
+        "/audio/renee/9_.mp3",
+        "/audio/renee/10_.mp3",
+        "/audio/renee/11_.mp3",
+        "/audio/renee/12_.mp3",
+        "/audio/renee/13_.mp3",
+        "/audio/renee/14_.mp3",
+        "/audio/renee/15_.mp3",
+        "/audio/renee/16_.mp3",
+        "/audio/renee/17_.mp3",
+        "/audio/renee/18_.mp3"
+    ]
+
+
+    const maxWidth = 0.3;
+    const maxHeight = 0.3;
+
+    const audMaxWidth = 0.05;
+    const audMaxHeight = 0.2;
 
     const [size, setSize] = useState([0, 0]);
     const [loading, setLoading] = useState(true);
@@ -56,10 +91,18 @@ export const Pains = () => {
 
     const place = (item, key) => {
 
-        let x = Math.floor(Math.random() * (size[0] - maxWidth));
-        let y = Math.floor(Math.random() * (size[1] - maxHeight));
+        let x = Math.floor(Math.random() * (size[0] * (1 - maxWidth)));
+        let y = Math.floor(Math.random() * (size[1] - (size[0] * maxHeight)));
 
         return (<button onClick={() => { setSelected(key) }}><div className="collage-item" key={key} style={{ position: "absolute", top: y, left: x }} >  {item[0]} </div></button>)
+    }
+
+    const placeAudio = (item, key) => {
+
+        let x = Math.floor(Math.random() * (size[0] * (1 - audMaxWidth)));
+        let y = Math.floor(Math.random() * (size[1] - (size[0] * (audMaxHeight))));
+
+        return (<AudioThing src={item} key={`audio_${key}`} loc={{ top: y, left: x }} />)
     }
 
     const mod = (n, m) => {
@@ -68,7 +111,8 @@ export const Pains = () => {
 
     const makeCollage = () => {
         let itms = items.map(place);
-        setPlacedItems(itms);
+        let itms2 = itms.concat(audios.map(placeAudio));
+        setPlacedItems(itms2);
         setLoading(false);
     }
 
@@ -125,6 +169,7 @@ export const Pains = () => {
             {selected != null && items[selected] && <div className="lightbox">
                 <div>
                     <button id="cls_btn" onClick={() => { setSelected(null) }}><Cls></Cls></button>
+                    <h1>Loading...</h1>
                     {items[selected][1]}
                     <button id="nxt_btn" onClick={() => { setSelected(mod(selected + 1, items.length)) }}><Fwd></Fwd></button>
                     <button id="prev_btn" onClick={() => { setSelected(mod(selected - 1, items.length)) }}><Bck></Bck> </button>
@@ -132,8 +177,33 @@ export const Pains = () => {
             </div>}
             <div id="renees-canvas" ref={canvas}>
                 {placedItems}
+                <img className="credit" src="/img/pains/Logo-VanTrier.png"></img>
                 <img className="title" src="/img/pains/title.gif"></img>
             </div>
         </div>
+    )
+}
+
+
+export const AudioThing = ({ src, loc }) => {
+
+    const [playing, setPlaying] = useState(false);
+    const p = useRef();
+
+    const toggle = () => {
+        setPlaying(!playing);
+    }
+
+    useEffect(() => {
+        let method = playing ? "play" : "pause";
+        p.current[method]();
+    }, [playing])
+
+    return (
+        <button className={playing ? "active audio-player" : "not-active audio-player"} onClick={toggle} style={loc}>
+            <audio ref={p}>
+                <source src={src} type="audio/mp3" />
+            </audio>
+        </button>
     )
 }
