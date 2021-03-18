@@ -45,22 +45,22 @@ const App = ({ }) => {
             </Article>
           </Route>
           <Route path="/fluctuants" >
-            <Article edition={SUMMER2021} next="/rakkaudesta" prev="/tunnemylläkkähässäkkä">
+            <Article edition={SUMMER2021} next="/ryhman-jasenet" prev="/tunnemylläkkähässäkkä">
               <Fluctuants />
             </Article>
           </Route>
           <Route path="/ryhman-jasenet" >
-            <Article edition={SUMMER2021} next="/rakkaudesta" prev="/tunnemylläkkähässäkkä">
+            <Article edition={SUMMER2021} next="/growing-pains" prev="/fluctuants">
               <Jasenet />
             </Article>
           </Route>
           <Route path="/growing-pains" >
-            <Article edition={SUMMER2021} next="/rakkaudesta" prev="/tunnemylläkkähässäkkä">
+            <Article edition={SUMMER2021} next="/ekfrasiksesta-osa-2" prev="/ryhman-jasenet" >
               <Pains />
             </Article>
           </Route>
           <Route path="/ekfrasiksesta-osa-2" >
-            <Article edition={SUMMER2021} next="/rakkaudesta" prev="/tunnemylläkkähässäkkä">
+            <Article edition={SUMMER2021} next="/practices-of-love-and-body" prev="/growing-pains">
               <Ekfrasiksesta />
             </Article>
           </Route>

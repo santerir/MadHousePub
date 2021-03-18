@@ -18,7 +18,6 @@
 
         @include respond-below("mb-l") {
             height: auto;
-            border-top: 1px black solid;
             padding: 1em 0.5em 0 0.5em;
             margin-top: 2em;
         }
@@ -29,6 +28,11 @@
         border-left: 1px black solid;
         @include respond-below("mb-l") {
             border-left: unset;
+            border-top: 1px black solid;
         }
+    }
+
+    .col-3 {
+        padding-bottom: 2em;
     }
 }

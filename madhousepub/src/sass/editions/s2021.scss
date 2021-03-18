@@ -131,6 +131,9 @@
         mask-size: contain;
         mask-repeat: no-repeat;
         height: 300px;
+        @include respond-below("mb-l") {
+            height: 150px;
+        }
         mask-position: center;
 
         &.hole_5 {
@@ -157,11 +160,11 @@
     .lightbox {
         position: fixed;
         background-color: rgba(0, 0, 0, 0.6);
-        height: calc(100% - 100px);
+        height: calc(100%);
         width: 100%;
         top: 0;
         left: 0;
-        margin: 50px 0 50px 0 !important;
+        margin: 0 0 0 0 !important;
         z-index: z("modal");
 
         div {
@@ -172,8 +175,10 @@
 
             position: absolute;
 
-            iframe {
+            iframe,
+            img {
                 max-height: 80vh;
+                max-width: 80vw;
             }
 
             h1 {

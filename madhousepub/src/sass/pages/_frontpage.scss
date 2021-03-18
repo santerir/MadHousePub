@@ -1,5 +1,16 @@
 @import "../media_queries";
 
+@keyframes pulse-animation {
+    0% {
+        text-shadow: 0 0 0px rgba(0, 0, 0, 0.2), 0 0 0px rgba(0, 0, 0, 0.2), 0 0 0px rgba(0, 0, 0, 0.2),
+            0 0 0px rgba(0, 0, 0, 0.2);
+    }
+    100% {
+        text-shadow: 3px 3px 20px rgba(0, 0, 0, 0), -3px 3px 20px rgba(0, 0, 0, 0), -3px -3px 20px rgba(0, 0, 0, 0),
+            3px -3px 20px rgba(0, 0, 0, 0);
+    }
+}
+
 .homepage {
     display: grid;
     grid-template-columns: 220px 1fr;
@@ -174,7 +185,7 @@
 
             a:hover {
                 h1 {
-                    text-shadow: 2px 2px 3px gold;
+                    animation: pulse-animation 2s ease-in-out 0s infinite;
                 }
             }
 
