@@ -154,15 +154,82 @@
 }
 
 .pains {
+    .lightbox {
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0.6);
+        height: calc(100% - 100px);
+        width: 100%;
+        top: 0;
+        left: 0;
+        margin: 50px 0 50px 0 !important;
+        z-index: z("modal");
+
+        div {
+            top: 50%;
+            left: 50%;
+            /* bring your own prefixes */
+            transform: translate(-50%, -50%);
+
+            position: absolute;
+
+            iframe {
+                max-height: 80vh;
+            }
+
+            button {
+                position: absolute;
+
+                &#cls_btn {
+                    top: -25px;
+                    right: -25px;
+                }
+
+                &#nxt_btn {
+                    bottom: -40px;
+                    right: 0px;
+                }
+
+                &#prev_btn {
+                    bottom: -40px;
+                    left: 0px;
+                }
+            }
+        }
+    }
+
     #renees-canvas {
         position: relative;
 
-        height: 80vw;
+        @include respond-below("mb-l") {
+            height: 300vw;
+        }
+        @include respond-below("s") {
+            height: 250vw;
+        }
+        @include respond-below("m") {
+            height: 200vw;
+        }
+        @include respond-below("l") {
+            height: 180vw;
+        }
+        @include respond-above("l") {
+            height: 160vw;
+        }
+
+        .title {
+            top: 30%;
+            left: 10%;
+            z-index: z("overlay");
+            width: 60%;
+            position: absolute;
+        }
 
         .collage-item {
-            img {
-                max-width: 300px;
-                max-height: 300px;
+            z-index: 0;
+            img,
+            iframe {
+                max-width: 30vw;
+                max-height: 30vw;
             }
         }
     }
