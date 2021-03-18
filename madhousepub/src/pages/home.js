@@ -31,6 +31,9 @@ export default ({ }) => {
         if (resizing) {
             return;
         }
+        if (!content_area.current) {
+            return;
+        }
         let scroll_pos = content_area.current.scrollLeft
         let pane_size = break_points[1]
         let pos = Math.round(scroll_pos / pane_size);
@@ -78,6 +81,13 @@ export default ({ }) => {
         populate_breakpoints()
         setsizeChanged(false)
     }, [sizeChanged]);
+
+    useEffect(() => {
+
+        content_area.current.scrollTo({ left: break_points[current_pane], top: 0 })
+
+    }, [break_points])
+
 
 
     // TODO: debounce and filter scroll event
@@ -138,36 +148,35 @@ osa 3</h1>
                     </div>
                     <div className="content-field s2021">
                         <div class="article-link">
-                            <Link to="/ryhman-jasenet">
-                                <h1>Ryhmän jäsenet</h1>
-                            </Link>
-                            <div s-only="dsk" className="spacer"></div>
-                            <Hole5 />
-                        </div>
-                        <div class="article-link">
                             <Link to="/fluctuants">
                                 <h1>Fluctuants</h1>
                             </Link>
 
                             <div s-only="dsk" className="spacer"></div>
+                            <Hole5 />
+                        </div>
+                        <div class="article-link">
+                            <Link to="/ryhman-jasenet">
+                                <h1>Ryhmän jäsenet</h1>
+                            </Link>
+                            <div s-only="dsk" className="spacer"></div>
                             <Hole6 />
+                        </div>
+                        <div class="article-link">
+                            <Link to="/growing-pains">
+                                <h1>GROWING <br></br> PAINS</h1>
+                            </Link>
+                            <div s-only="dsk" className="spacer"></div>
+                            <Hole7 />
                         </div>
                         <div class="article-link">
                             <Link to="/ekfrasiksesta-osa-2">
                                 <h1>Ekfrasiksesta osa 2</h1>
                             </Link>
                             <div s-only="dsk" className="spacer"></div>
-                            <Hole7 />
-
-                        </div>
-                        <div class="article-link">
-                            <Link to="/tunnemylläkkähässäkkä">
-                                <h1>Tunnemylläkkähässäkkä</h1>
-                            </Link>
-                            <div s-only="dsk" className="spacer"></div>
                             <Hole8 />
-
                         </div>
+
                     </div>
                 </div>
             </div>

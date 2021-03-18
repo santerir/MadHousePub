@@ -80,6 +80,7 @@
                 position: static;
                 width: unset;
                 margin-left: -2em;
+                margin-top: 5em;
             }
             h1 {
                 transform: none;
@@ -219,6 +220,26 @@
                     height: 150%;
                     margin-top: -2em;
                 }
+
+                #hole5 {
+                    height: 100%;
+                    top: 10%;
+                    left: 10%;
+                }
+
+                #hole6 {
+                    height: 140%;
+                }
+
+                #hole7 {
+                    height: 140%;
+                    float: right;
+                    margin-right: 5%;
+                }
+
+                #hole8 {
+                    height: 94%;
+                }
             }
 
             @include respond-below("mb-l") {
@@ -241,6 +262,27 @@
                     height: 150%;
                     margin-top: -0.5em;
                     left: 10%;
+                }
+
+                #hole5 {
+                    height: 70%;
+                    top: 20%;
+                    right: 5%;
+                }
+
+                #hole6 {
+                    height: 120%;
+                }
+
+                #hole7 {
+                    height: 110%;
+                    right: 0;
+                }
+
+                #hole8 {
+                    height: 74%;
+                    top: 10%;
+                    left: 5%;
                 }
             }
 

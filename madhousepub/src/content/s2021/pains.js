@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React, { useRef, useEffect, useState } from 'react'
 
 import { Modal } from '../../components/modal'
 import ModalButton from '../../components/modal-button'
@@ -6,28 +6,58 @@ import ModalButton from '../../components/modal-button'
 import { Inf } from '../../components/svgs'
 
 
-export const Jasenet = () => {
+export const Pains = () => {
 
     const items = [
-
+        <img src="/img/pains/1_.png" />,
+        <img src="/img/pains/2_.jpg" />,
+        <img src="/img/pains/3_.jpg" />,
+        <img src="/img/pains/4_.jpg" />,
+        <img src="/img/pains/5_.jpg" />,
+        <img src="/img/pains/6_.jpg" />,
+        <img src="/img/pains/7_.jpg" />,
+        <img src="/img/pains/8_.jpg" />,
+        <img src="/img/pains/9_.jpg" />,
+        <img src="/img/pains/10_.jpg" />,
+        <img src="/img/pains/11_.jpg" />,
+        <img src="/img/pains/12_.jpg" />,
+        <img src="/img/pains/13_.jpg" />,
+        <img src="/img/pains/14_.jpg" />
     ]
 
-    const maz
+    const maxWidth = 300;
+    const maxHeight = 300;
 
     const [size, setSize] = useState([0, 0]);
+    const [loading, setLoading] = useState(true);
+    const [placedItems, setPlacedItems] = useState(true);
 
     const canvas = useRef();
 
     const place = (item, key) => {
 
-        let x = Math.floor(Math.random() * size[0]);
-        let y = Math.floor(Math.random() * size[1]);
+        let x = Math.floor(Math.random() * (size[0] - maxWidth));
+        let y = Math.floor(Math.random() * (size[1] - maxHeight));
 
-        return (<div key={key} style={{ position: absolute, top: y, left: x }} >  {item} </div>)
+        return (<div className="collage-item" key={key} style={{ position: "absolute", top: y, left: x }} >  {item} </div>)
     }
 
+    const makeCollage = () => {
+        let itms = items.map(place);
+        setPlacedItems(itms);
+        setLoading(false);
+    }
+
+    useEffect(() => {
+        makeCollage();
+    }, [size]);
+
+    useEffect(() => {
+        setSize([canvas.current.offsetWidth, canvas.current.offsetHeight]);
+    }, []);
+
     return (
-        <div className="jasenet">
+        <div className="pains">
             <div className="title">
                 <h1>GROWING PAINS</h1>
                 <h5>Renée Van Trier</h5>
@@ -54,7 +84,7 @@ export const Jasenet = () => {
                 </Modal>
             </div>
             <div id="renees-canvas" ref={canvas}>
-
+                {placedItems}
             </div>
         </div>
     )

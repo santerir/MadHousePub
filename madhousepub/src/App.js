@@ -25,6 +25,7 @@ import { Ekfrasiksesta } from './content/s2021/ekfrasiksesta';
 import { SUMMER2020, SUMMER2021 } from './editions'
 
 import './sass/style.scss';
+import { Pains } from './content/s2021/pains';
 
 const App = ({ }) => {
 
@@ -43,14 +44,19 @@ const App = ({ }) => {
               <AboutII />
             </Article>
           </Route>
+          <Route path="/fluctuants" >
+            <Article edition={SUMMER2021} next="/rakkaudesta" prev="/tunnemylläkkähässäkkä">
+              <Fluctuants />
+            </Article>
+          </Route>
           <Route path="/ryhman-jasenet" >
             <Article edition={SUMMER2021} next="/rakkaudesta" prev="/tunnemylläkkähässäkkä">
               <Jasenet />
             </Article>
           </Route>
-          <Route path="/fluctuants" >
+          <Route path="/growing-pains" >
             <Article edition={SUMMER2021} next="/rakkaudesta" prev="/tunnemylläkkähässäkkä">
-              <Fluctuants />
+              <Pains />
             </Article>
           </Route>
           <Route path="/ekfrasiksesta-osa-2" >

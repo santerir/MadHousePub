@@ -152,3 +152,18 @@
         }
     }
 }
+
+.pains {
+    #renees-canvas {
+        position: relative;
+
+        height: 80vw;
+
+        .collage-item {
+            img {
+                max-width: 300px;
+                max-height: 300px;
+            }
+        }
+    }
+}
