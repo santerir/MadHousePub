@@ -65,7 +65,7 @@ const App = ({ }) => {
             </Article>
           </Route>
           <Route path="/practices-of-love-and-body" >
-            <Article edition={SUMMER2020} next="/rakkaudesta" prev="/tunnemylläkkähässäkkä">
+            <Article edition={SUMMER2020} next="/rakkaudesta" prev="/ekfrasiksesta-osa-2">
               <Polab />
             </Article>
           </Route>
@@ -80,7 +80,7 @@ const App = ({ }) => {
             </Article>
           </Route>
           <Route path="/tunnemylläkkähässäkkä">
-            <Article edition={SUMMER2020} next="/practices-of-love-and-body" prev="/cloudbody">
+            <Article edition={SUMMER2020} next="/fluctuants" prev="/cloudbody">
               <Tunne />
             </Article>
           </Route>

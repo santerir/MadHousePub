@@ -4,12 +4,14 @@
     position: relative;
     height: 100%;
     //margin: 0 2em 0 2em;
+    padding-top: 3em;
 
     @include respond-below("mb-l") {
         display: block;
         position: static;
         grid-template-columns: unset;
         grid-template-rows: unset;
+        padding: 0;
     }
 
     .col {

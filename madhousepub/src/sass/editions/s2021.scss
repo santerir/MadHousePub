@@ -112,46 +112,98 @@
     }
 
     div.footnotes {
-        margin-top: 10em !important;
+        margin-top: 35em !important;
         p {
             color: black;
         }
     }
 
-    .bckground {
-        background-attachment: fixed;
-        display: flex;
-
-        @supports (-webkit-touch-callout: none) {
-            background-attachment: initial;
-        }
-    }
-
     .hole_ {
-        mask-size: contain;
-        mask-repeat: no-repeat;
+        position: relative;
+
         height: 300px;
+
         @include respond-below("mb-l") {
             height: 150px;
         }
-        mask-position: center;
+
+        svg {
+            z-index: z("overlay");
+            position: absolute;
+        }
 
         &.hole_5 {
-            mask-image: url(/img/holes/MHPhole1_1.svg);
+            &::before {
+                mask-image: url(/img/holes/MHPhole1_1.svg);
+            }
+
+            svg {
+                left: 50%;
+                transform: translateX(-50%);
+            }
         }
 
         &.hole_6 {
-            mask-image: url(/img/holes/MHPhole2_1.svg);
-            mask-position: 35%;
+            &::before {
+                mask-image: url(/img/holes/MHPhole2_1.svg);
+                mask-position: 35%;
+            }
+
+            svg {
+                left: 35%;
+                transform: translateX(-35%);
+            }
         }
 
         &.hole_7 {
-            mask-image: url(/img/holes/MHPhole3_1.svg);
-            mask-position: 35%;
+            &::before {
+                mask-image: url(/img/holes/MHPhole3_1.svg);
+                mask-position: 35%;
+            }
+
+            svg {
+                left: 35%;
+                transform: translateX(-35%);
+            }
         }
 
         &.hole_8 {
-            mask-image: url(/img/holes/MHPhole4_1.svg);
+            &::before {
+                mask-image: url(/img/holes/MHPhole4_1.svg);
+            }
+
+            svg {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+
+            height: 300px;
+
+            @include respond-below("mb-l") {
+                height: 150px;
+            }
+
+            background-attachment: fixed;
+
+            background-image: url("/img/s2021-bkgrnd.jpg");
+            background-size: cover;
+            background-position: center center;
+
+            @supports (-webkit-touch-callout: none) {
+                background-attachment: initial;
+            }
+
+            mask-size: contain;
+            mask-repeat: no-repeat;
+            mask-position: center;
         }
     }
 }

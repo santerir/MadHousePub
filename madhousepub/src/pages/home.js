@@ -103,7 +103,7 @@ export default ({ }) => {
                     <a href="https://madhousehelsinki.fi/">
                         <img src="./img/MHH_Logo.png"></img>
                     </a>
-                    <h1> PUBLICATION </h1>
+                    <img className="pub-logo" src="/img/MHPLogo.svg" />
                     <h3> {CONTENT_PANES[current_pane].name} </h3>
                 </div>
                 <div className="content-area" id="content-area" ref={content_area} onScroll={debounce(on_scroll, 200)}>

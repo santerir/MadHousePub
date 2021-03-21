@@ -50,7 +50,7 @@ Sebastian López-Lehto & Emmi Kaasalainen
                 </Modal>
             </div>
             <div className="center-text">
-                <img className="center w--90" src="/img/jasenet/1.webp"></img>
+                <img className="center w--70" src="/img/jasenet/1.webp"></img>
             </div>
             <div className="palsta">
                 <p>Ajattelen massojen nautintoa. Väkijoukkojen jalkojen rasvaa, yhdessä, vanukkaan kiinteydellä hytiseviä, heiluvia reisiä. Taipuvien jalkojen ympäröiviä liharasvakuorrutuksia.
@@ -108,8 +108,8 @@ Sebastian López-Lehto & Emmi Kaasalainen
                 <p>Joukkoontuminen tuntuu kyllä olennaiselta.</p>
                 <p>Se antaa energiaa. Energiaa elää ja toimia.</p>
             </div>
-            <div className="center-text">
-                <img className="w--70" src="/img/jasenet/13.webp"></img>
+            <div className="palsta center-text">
+                <img className="w--100" src="/img/jasenet/13.webp"></img>
             </div>
         </div>)
 }

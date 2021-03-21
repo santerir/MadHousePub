@@ -3,17 +3,30 @@
 
     path {
         fill: $base-color;
+        stroke: black;
+        stroke-width: 0.75px;
+        stroke-miterlimit: 10;
+    }
+}
+
+.hole-path {
+    .hole {
+        filter: none;
+        height: 100%;
+
+        path {
+            fill: transparent;
+            stroke: black;
+            stroke-width: 0.75px;
+            stroke-miterlimit: 10;
+        }
     }
 }
 
 button {
-    svg {
-        transition: filter 0.4s ease;
-        filter: drop-shadow(0px 0px 0px $hover-color);
-    }
     &:hover {
         svg {
-            filter: drop-shadow(2px 2px 2px $hover-color);
+            animation: pulse-animation-svg 2s ease-in-out 0s infinite;
         }
     }
 }

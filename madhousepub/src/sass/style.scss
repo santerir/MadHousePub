@@ -6,6 +6,7 @@
 @import "pages/frontpage";
 @import "pages/article";
 @import "pages/about";
+@import "animations";
 @import "svg";
 @import "text";
 @import "modal";
@@ -18,8 +19,8 @@
     height: 100%;
 
     @include respond-above("mb-l") {
-        min-height: 768px;
-        min-width: 992px;
+        min-height: 670px;
+        min-width: 760px;
     }
 
     overflow: scroll;

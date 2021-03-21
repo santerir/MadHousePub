@@ -3,14 +3,11 @@ import React from 'react'
 import { Modal } from '../../components/modal'
 import ModalButton from '../../components/modal-button'
 
-import { Inf, Hole5 } from '../../components/svgs'
+import { Inf, Hole5, Hole6, Hole7, Hole8 } from '../../components/svgs'
 
 export const Ekfrasiksesta = () => {
     return (
         <div className="ekfrasiksesta">
-            <div style={{ display: "none" }}>
-                <Hole5 />
-            </div>
             <div className="title">
                 <h1>Ekfrasiksesta osa 2</h1>
                 <h3>Esityksen kuvittelemisesta ja muistamisesta</h3>
@@ -53,7 +50,8 @@ export const Ekfrasiksesta = () => {
                     </p>
                 </Modal>
             </div>
-            <div className="bckground hole_ hole_5">
+            <div className="hole_ hole_5 hole-path">
+                <Hole5></Hole5>
             </div>
             <div className="palsta grid grid--3w grid--less-gap grid--mb-3h">
                 <div className="orb-thing"> <label className="blue" /> <span>Tarleena Laakko</span></div>
@@ -73,7 +71,8 @@ export const Ekfrasiksesta = () => {
                 <p className="color-teal">Voiko olla, että kun esityksen hetkellisyyttä ja katoavaisuutta pystyy katsojana todistamaan ja tuntemaan, niin esitys kutsuu näin muistamaan itseään, pyytää kantamaan yhteistä vastuuta sen muistamisesta? Toisin sanoen, onko eroa vaikkapa kivestä veistetyn objektin ja tanssijan liikesarjan muistamisessa? Jään kaivamaan kokemuksestani esityksiä, jotka olen unohtanut.<br /><span style={{ float: "right" }}>Tuntuu kuin kääntäisin maata keväällä.</span></p>
 
             </div>
-            <div className="bckground hole_ hole_7">
+            <div className="hole_ hole_7 hole-path">
+                <Hole7></Hole7>
             </div>
             <div className="palsta">
                 <p className="color-teal"><b>Kun muistan jotain, koitan tehdä sitä jälleen eläväksi itselleni.</b></p>
@@ -91,7 +90,8 @@ export const Ekfrasiksesta = () => {
 
                 <p className="color-teal">seassa-kollektiivin alkuaikana kirjoitin ekfrasis-sanan englanniksi – <i>ekphrasis</i> – aina väärin, sillä luulin termin viittaavan kaikuun: <i>ēkhō – ekh</i>prasis. Jäin miettimään, <b>voisiko ekfrasis olla teokselle jonkinlainen kumma kaiku? Kun seuraan esitystä, läsnäolollani kaiutan sitä.</b> Koen tämän voimakkaasti myös ollessani itse esiintyjänä: yleisö vuotaa ja heijastaa minulle informaatiota, kierrätämme energiaa välillämme, esitys tapahtuu.</p>
             </div>
-            <div className="bckground hole_ hole_8">
+            <div className="hole_ hole_8 hole-path">
+                <Hole8></Hole8>
             </div>
             <div className="palsta">
                 <p className="color-blue">
@@ -108,7 +108,8 @@ export const Ekfrasiksesta = () => {
                 <p>Olisiko siis niin, että kun mieleni ei tahdo tai osaa jäsentää nähtyä esitystapahtumaa kieleksi, ainakaan suoraan kieleksi, annan teoksen liikkua tajunnallisella tasolla juurikin niin hämäränä, outona ja itsestäni erillisenä, kuin se koko ajan on ollutkin? Siten kun annan kielen toimia omassa hämärässä maastossaan, enkä ponnistele saadakseni sitä jäsentymään yhtään miksikään, sekä kielen että teoksen oma erityisyys ja erillisyys korostuu.</p>
                 <p>Kirjoittamisen kautta on mahdollista päästä hyvin yksityiskohtaisella tavalla käsiksi siihen, mitä tapahtuu kun jotakin muuttuu eriksi tai toiseksi. Tämä liittyy Derridan ajatukseen kirjoituksesta “erojen järjestelmänä”<sup>4</sup>. <b>Runouden kautta ajatteleminen herkistää ajattelemaan, että ne erot voivat olla hyvinkin nyansoituneita ja tulla näkyviin ilman ennakkoehtoja.</b></p>
             </div>
-            <div className="bckground hole_ hole_6">
+            <div className="hole_ hole_6 hole-path">
+                <Hole6></Hole6>
             </div>
             <div className="palsta">
                 <p>
@@ -124,9 +125,9 @@ export const Ekfrasiksesta = () => {
                     <span className="color-teal">On maaliskuun alku 2021. Odotan kevään etenemistä</span>, sipulien ja silmujen uutteraa pitkää ryhtymistä, joka tapahtuu aina erilaisilla rytmeillä ja etenemisen varmuudessa, <span className="color-blue">valoa, joka jatkuu.</span>
                 </p>
                 <p>
-                    <span className="color-teal">Jätämme tähän tilaa tuleville esityksille ja niiden kuvittelulle </span>
-Jätämme tähän tilaa tuleville esityksille ja niiden kuvittelulle
-<span className="color-blue">Jätämme tähän tilaa tuleville esityksille ja niiden kuvittelulle  </span>
+                    <span className="color-teal">Jätämme tähän tilaa tuleville esityksille ja niiden kuvittelulle </span><br />
+Jätämme tähän tilaa tuleville esityksille ja niiden kuvittelulle<br />
+                    <span className="color-blue"> Jätämme tähän tilaa tuleville esityksille ja niiden kuvittelulle  </span>
                 </p>
             </div>
             <div className="palsta footnotes">
