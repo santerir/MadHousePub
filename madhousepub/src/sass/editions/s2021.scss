@@ -130,6 +130,7 @@
         svg {
             z-index: z("overlay");
             position: absolute;
+            max-width: 100%;
         }
 
         &.hole_5 {
@@ -140,6 +141,17 @@
             svg {
                 left: calc(50% + 0.5px);
                 transform: translateX(-50%);
+            }
+
+            @include respond-below("mb-l") {
+                &[data-w-p="2"],
+                &[data-w-p="1"],
+                &[data-w-p="0"] {
+                    svg {
+                        left: calc(50%);
+                        transform: translateX(-50%);
+                    }
+                }
             }
         }
 
@@ -172,6 +184,17 @@
                 svg {
                     left: calc(33.3333% + 0px);
                     transform: translateX(-33.3333%);
+                }
+            }
+
+            @include respond-below("mb-l") {
+                &[data-w-p="2"],
+                &[data-w-p="1"],
+                &[data-w-p="0"] {
+                    svg {
+                        left: calc(33.3333% + 0px);
+                        transform: translateX(-33.3333%);
+                    }
                 }
             }
         }
@@ -207,6 +230,17 @@
                     transform: translateX(-33.3333%);
                 }
             }
+
+            @include respond-below("mb-l") {
+                &[data-w-p="2"],
+                &[data-w-p="1"],
+                &[data-w-p="0"] {
+                    svg {
+                        left: calc(33.3333% + 0px);
+                        transform: translateX(-33.3333%);
+                    }
+                }
+            }
         }
 
         &.hole_8 {
@@ -217,6 +251,17 @@
             svg {
                 left: calc(50% + 0.5px);
                 transform: translateX(-50%);
+            }
+
+            @include respond-below("mb-l") {
+                &[data-w-p="2"],
+                &[data-w-p="1"],
+                &[data-w-p="0"] {
+                    svg {
+                        left: calc(50%);
+                        transform: translateX(-50%);
+                    }
+                }
             }
         }
 

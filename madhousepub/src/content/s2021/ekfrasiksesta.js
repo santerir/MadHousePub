@@ -7,7 +7,7 @@ import { Inf, Hole5, Hole6, Hole7, Hole8 } from '../../components/svgs'
 
 export const Ekfrasiksesta = () => {
 
-    const [w_parity, setW_parity] = useState(false);
+    const [w_parity, setW_parity] = useState(0);
     const c = useRef();
 
     const resize = () => {
@@ -16,7 +16,7 @@ export const Ekfrasiksesta = () => {
 
 
     useEffect(() => {
-
+        setW_parity(Math.abs(c.current.offsetWidth) % 3);
         window.addEventListener('resize', resize);
         return () => {
             window.removeEventListener('resize', resize);
