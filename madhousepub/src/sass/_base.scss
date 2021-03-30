@@ -20,8 +20,12 @@ body {
     margin-bottom: 0;
     margin-left: 0;
     margin-right: 0;
-
+    -webkit-overflow-scrolling: auto;
     -webkit-text-size-adjust: none;
+
+    #root {
+        height: 100vh;
+    }
 }
 
 button {

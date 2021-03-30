@@ -113,14 +113,16 @@
         overflow-y: hidden;
         display: grid;
         grid-template-rows: 100%;
-        grid-auto-columns: 100%;
+        grid-auto-columns: 100% 100% 100% 100%;
         grid-auto-flow: column;
-        scroll-snap-type: x mandatory;
         position: relative;
 
         z-index: 0;
         @include respond-below("mb-l") {
             grid-area: 2/1/3/2;
+            scroll-snap-type: x mandatory;
+            scroll-behavior: auto;
+            scroll-snap-stop: always;
         }
 
         .dots {
@@ -154,6 +156,12 @@
                     background: rgba(0, 0, 0, 0.8);
                 }
             }
+        }
+
+        .buffer-zone {
+            width: 100%;
+            height: 100%;
+            background-color: ivory;
         }
     }
 
@@ -340,6 +348,7 @@
                 #hole6 {
                     height: 120%;
                     top: 5%;
+                    left: 5%;
                 }
 
                 #hole7 {

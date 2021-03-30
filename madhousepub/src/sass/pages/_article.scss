@@ -65,7 +65,8 @@
             @include respond-below("mb-l") {
                 svg {
                     height: 0.8 * $mb-head-foot-size;
-                    margin-top: -4px;
+                    top: -2px;
+                    position: relative;
                 }
             }
         }

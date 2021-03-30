@@ -161,7 +161,7 @@
                 &[data-w-p="1"],
                 &[data-w-p="0"] {
                     svg {
-                        left: calc(50%);
+                        left: calc(50% + 0.2px);
                         transform: translateX(-50%);
                     }
                 }
@@ -205,7 +205,7 @@
                 &[data-w-p="1"],
                 &[data-w-p="0"] {
                     svg {
-                        left: calc(33.3333% + 0px);
+                        left: calc(33.3333% + 0.2px);
                         transform: translateX(-33.3333%);
                     }
                 }
@@ -249,7 +249,7 @@
                 &[data-w-p="1"],
                 &[data-w-p="0"] {
                     svg {
-                        left: calc(33.3333% + 0px);
+                        left: calc(33.3333% + 0.2px);
                         transform: translateX(-33.3333%);
                     }
                 }
@@ -271,6 +271,7 @@
                 &[data-w-p="1"],
                 &[data-w-p="0"] {
                     svg {
+                        top: 0.2px;
                         left: calc(50%);
                         transform: translateX(-50%);
                     }
