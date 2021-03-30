@@ -86,29 +86,42 @@
     .orb-thing {
         font-size: 0.7em;
         color: black;
+        text-align: center;
 
-        label {
-            width: 20px;
-            height: 20px;
-            position: relative;
-            border-radius: 100%;
-            top: 4px;
-            margin: 0 10px 0 0;
-            display: inline-block;
-
-            &.blue {
-                background-color: $blue;
-                box-shadow: 3px 0px 6px $blue, -3px -0px 6px $blue, 0px 3px 6px $blue, 0px -3px 6px $blue;
-            }
-            &.brown {
-                background-color: $brown;
-                box-shadow: 3px 0px 6px $brown, -3px -0px 6px $brown, 0px 3px 6px $brown, 0px -3px 6px $brown;
-            }
-            &.teal {
-                background-color: $teal;
-                box-shadow: 3px 0px 6px $teal, -3px -0px 6px $teal, 0px 3px 6px $teal, 0px -3px 6px $teal;
-            }
+        .blue {
+            color: $blue;
         }
+
+        .teal {
+            color: $teal;
+        }
+
+        .brown {
+            color: $brown;
+        }
+
+        // label {
+        //     width: 20px;
+        //     height: 20px;
+        //     position: relative;
+        //     border-radius: 100%;
+        //     top: 4px;
+        //     margin: 0 10px 0 0;
+        //     display: inline-block;
+
+        //     &.blue {
+        //         background-color: $blue;
+        //         box-shadow: 3px 0px 6px $blue, -3px -0px 6px $blue, 0px 3px 6px $blue, 0px -3px 6px $blue;
+        //     }
+        //     &.brown {
+        //         background-color: $brown;
+        //         box-shadow: 3px 0px 6px $brown, -3px -0px 6px $brown, 0px 3px 6px $brown, 0px -3px 6px $brown;
+        //     }
+        //     &.teal {
+        //         background-color: $teal;
+        //         box-shadow: 3px 0px 6px $teal, -3px -0px 6px $teal, 0px 3px 6px $teal, 0px -3px 6px $teal;
+        //     }
+        // }
     }
 
     div.footnotes {

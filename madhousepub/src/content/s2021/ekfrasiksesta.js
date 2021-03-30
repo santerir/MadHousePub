@@ -27,14 +27,14 @@ export const Ekfrasiksesta = () => {
     return (
         <div className="ekfrasiksesta">
             <div className="title">
-                <h1>Ekfrasiksesta osa 2</h1>
+                <h1>Ekfrasiksesta osa 2.</h1>
                 <h3>Esityksen kuvittelemisesta ja muistamisesta</h3>
                 <h5>seassa-kollektiivi</h5>
                 <ModalButton modalId="info-modal">
                     <Inf />
                 </ModalButton>
                 <Modal modalId="info-modal" closable>
-                    <p><b>Ekfrasiksesta osa 2<br />
+                    <p><b>Ekfrasiksesta osa 2.<br />
                     seassa-kollektiivi
 </b></p>
 
@@ -50,6 +50,10 @@ export const Ekfrasiksesta = () => {
                         Kreikan kielen sana <i>ekfrasis</i> tarkoittaa kuvausta (<i>ek</i> > ulos, <i>phrazein</i> > puhua, kertoa). Lajityyppinä se merkitsee taideteoksen kirjallista kuvausta, kuten esityksen tai maalauksen sanallista selostusta.
                     </p>
                     <p>
+                        <b>seassa-kollektiivin</b> muodostavat dramaturgi-kirjoittaja <b>Tarleena Laakko</b>, dramaturgi-runoilija <b>Milka Luhtaniemi</b> ja kuvataiteilija-kirjoittaja <b>Maarit Mustonen</b>. Kollektiivia kiinnostaa taidekirjoittaminen, joka korostaa kehollisen kokemuksen, monitulkintaisuuden ja assosiaation merkitystä. seassa-kollektiivi on perustettu syksyllä 2020 ja julkaisutoiminta aloitettu helmikuussa 2021.
+                    </p>
+                    <p><a href="https://seassakollektiivi.wordpress.com/">https://seassakollektiivi.wordpress.com/</a></p>
+                    <p>
                         —
                     </p>
                     <p>
@@ -63,8 +67,11 @@ export const Ekfrasiksesta = () => {
                         The Greek word <i>ekphrasis</i> translates as description (<i>ek</i> > out, <i>phrazein</i> > tell). As a literary genre it refers to a written description of an artwork, such as a verbal depiction of a painting or a dance piece.
                     </p>
                     <p>
-
                         The members of the <b>seassa collective</b> are dramaturge, writer <b>Tarleena Laakko</b>, dramaturge, poet <b>Milka Luhtaniemi</b> and visual artist, writer <b>Maarit Mustonen</b>. They share an interest in art writing that acknowledges the significance of corporeality, ambiguity and the associations of the spectator-writer. The collective was formed in autumn 2020 and the website was launched in February 2021.
+                    </p>
+                    <p><a href="https://seassakollektiivi.wordpress.com/">https://seassakollektiivi.wordpress.com/</a></p>
+                    <p>
+                        The collectively written essay <i>"On ekphrasis part 2: Rembembering and imagining a performace"</i> deals with the notion of imperfect recollection of a performance and ties it together with what it is to imagine and fantasize about performances.
                     </p>
                 </Modal>
             </div>
@@ -72,9 +79,9 @@ export const Ekfrasiksesta = () => {
                 <Hole5></Hole5>
             </div>
             <div className="palsta grid grid--3w grid--less-gap grid--mb-3h">
-                <div className="orb-thing"> <label className="blue" /> <span>Tarleena Laakko</span></div>
-                <div className="orb-thing"> <label className="brown" /> <span>Milka Luhtaniemi</span></div>
-                <div className="orb-thing"> <label className="teal" /> <span>Maarit Mustonen</span></div>
+                <div className="orb-thing"> <span className="blue">Tarleena Laakko</span></div>
+                <div className="orb-thing"> <span className="brown">Milka Luhtaniemi</span></div>
+                <div className="orb-thing"> <span className="teal">Maarit Mustonen</span></div>
             </div>
             <div className="palsta">
                 <p>Alan ajatella esitystä, jota en ole ikinä nähnyt. Se oli Teatterikorkeakoulussa ollut <b>Jarkko Partasen</b> esitys <i>Mudbody</i>, jonka esitystila oli täynnä mutaa. Vuosi oli loppumassa, oli 2019. Näin silloin päivittäin, miten esiintyjät tulivat ulos studiosta mutaisina, ja miten he menivät takaisin sisälle.</p>
@@ -96,7 +103,7 @@ export const Ekfrasiksesta = () => {
                 <p className="color-teal"><b>Kun muistan jotain, koitan tehdä sitä jälleen eläväksi itselleni.</b></p>
                 <p className="color-blue">Haastattelin ystävää taiteellisen lopputyöni <i>Hukassa</i> (2019, Teatterikorkeakoulu) jättämästä muistijäljestä vuosi esityksen jälkeen. Hän kuvaili näkemäänsä ihmeen tarkasti ja puhui ruumiiden tavasta olla esillä, niiden välisen kosketuksen suoruudesta ja ahnaudesta. Jossain kohtaa uskaltauduin kysymään, mitä hän ajatteli tekstistä. Ystävän muistikuvissa tekstiä ei ollut esityksessä ollenkaan. Olin tästä aika järkyttynyt. Esityksessä oli valollisesti hämärä osuus, jossa teksti tuli kaiuttimista. Kuitenkin tekstissä olleet asiat olivat selvästi osa ystävän kokemusta, aivan kuin hän olisi nähnyt tekstin, sanat olivat muistissa liudentuneet osaksi näyttämön maisemaa ja sen ruumiita.</p>
                 <p className="color-teal">
-                    Minulla on samansuuntaisia kokemuksia: Tein vuonna 2017 taiteilija Anne Naukkarisen kanssa esityksen <i>WATER FALL 1</i>, jonka esitimme Turussa Nykytaidetila Kutomossa. Pari kuukautta esityksen jälkeen pyysimme muutamaa yleisössä ollutta ystäväämme kirjoittamaan meille mitä he muistavat esityksestä, mitä siinä tapahtui. Oli hämmästyttävää lukea, miten katsojat muistivat teoksen keskenään hyvin eri tavoin, miten jotkin asiat olivat pyyhkiytyneet pois, toiset nousseet etualalle. Minä ja Anne esiintyjinä olimme muistikuvissa monesti sekoittuneet keskenämme. Eräässä pitkässä ja yksityiskohtaisessa kuvauksessa esityksen alku ja loppu olivat vaihtaneet paikkaa.
+                    Tein vuonna 2017 taiteilija Anne Naukkarisen kanssa esityksen <i>WATER FALL 1</i>, jonka esitimme Turussa Nykytaidetila Kutomossa. Pari kuukautta esityksen jälkeen pyysimme muutamaa yleisössä ollutta ystäväämme kirjoittamaan meille mitä he muistavat esityksestä, mitä siinä tapahtui. Oli hämmästyttävää lukea, miten katsojat muistivat teoksen keskenään hyvin eri tavoin, miten jotkin asiat olivat pyyhkiytyneet pois, toiset nousseet etualalle. Minä ja Anne esiintyjinä olimme muistikuvissa monesti sekoittuneet keskenämme. Eräässä pitkässä ja yksityiskohtaisessa kuvauksessa esityksen alku ja loppu olivat vaihtaneet paikkaa.
                 </p>
                 <p><b>Katsomistapahtuma ja siitä puhuminen eivät usein vastaa toisiaan.</b> Usein ne jopa estävät toisiaan. Silti kielen kanssa pitää aina tehdä sopimus, että se täsmää jotensakin kuvaamaansa kohteeseen. Tai solmia sopimus ylipäänsä siitä, millaisessa suhteessa kieli on todellisuuteen. Saa se olla horjuvakin.
                 </p><p className="indent">
