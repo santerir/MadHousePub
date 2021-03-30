@@ -14,7 +14,7 @@ export const AboutII = () => {
                     Julkaisun toisessa numerossa tuodaan yhteen taiteilijoita ja lukijoita eri kaupungeista, maista ja mantereilta. Se on syntynyt ajassa, jossa esitystoiminta on niin Suomessa kuin muualla maailmassa ollut lähes pysähdyksissä jo kuukausia. Julkaisun taiteilijoiden työskentelyssä on ollut läsnä toistuva sopeutuminen epävarmoihin ja muuttuviin olosuhteisiin. Videon, äänen, piirustuksen, maalauksen, tekstin keinoin taiteilijat <b>Marcela Levi & Lucía Russo</b>, <b>seassa-kollektiivi</b>, <b>Sebastian López-Lehto & Emmi Kaasalainen</b> sekä <b>Renée Van Trier</b> rakentavat fragmentaarisia, kerroksellisia, muistelevia ja ruumiillista yhteyttä etsiviä maailmoja lukijoille koettavaksi.
                 </p>
                 <p>
-                    Mad House Helsinki Publication on tila esitystaiteen tekijöille taiteellisen ajattelun jakamiseen, joka rakentuu taiteilijalähtöisesti käyttäen erilaisten medioiden mm. videon, tekstin ja äänen mahdollisuuksia. Julkaisun ensimmäinen numero julkaistiin elokuussa 2020.
+                    <i>Mad House Helsinki Publication</i> on tila esitystaiteen tekijöille taiteellisen ajattelun jakamiseen, joka rakentuu taiteilijalähtöisesti käyttäen erilaisten medioiden mm. videon, tekstin ja äänen mahdollisuuksia. Julkaisun ensimmäinen numero julkaistiin elokuussa 2020.
                 </p>
 
                 <br /><br />
@@ -50,7 +50,7 @@ export const AboutII = () => {
 
                 </p>
                 <p>
-                    The Mad House Helsinki Publication is a platform for performing artists to share their artistic thinking. The publication is constructed, on the artists’ terms, exploring several media: video, text, sound, etc. The first issue was published in August 2020.
+                    The <i>Mad House Helsinki Publication</i> is a platform for performing artists to share their artistic thinking. The publication is constructed, on the artists’ terms, exploring several media: video, text, sound, etc. The first issue was published in August 2020.
 
                 </p>
                 <br /><br />
@@ -87,7 +87,7 @@ export const AboutII = () => {
                 </p>
                 <p>
 
-                    Mad House Helsinki-publikationen erbjuder en plattform för scenkonstnärer och delar deras konstnärliga tänkande. Publikationen är konstruerad på konstnärens villkor och utforskar flera media: video, text, ljud osv. Det första numret publicerades i augusti 2020.
+                    <i>Mad House Helsinki-publikationen</i> erbjuder en plattform för scenkonstnärer och delar deras konstnärliga tänkande. Publikationen är konstruerad på konstnärens villkor och utforskar flera media: video, text, ljud osv. Det första numret publicerades i augusti 2020.
 
                 </p>
 

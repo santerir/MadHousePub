@@ -104,11 +104,11 @@ Do not try to glue them <br />
 Let them fluctuate<br />
                     </p>
                     <p>
-                        <b>Conception and creation</b>: Marcela Levi and Lucía Russo<br />
+                        <b>Concept and created by</b>: Marcela Levi and Lucía Russo<br />
                         <b>Performance</b>: Ícaro Gaya, Lucas Fonseca, Marcela Levi, Martim Gueller, Tamires Costa, Washington Silva <br />
                         <b>Special guests</b>: birds, toucan, turkey and geese<br />
                         <b>Video and drawings</b>: Lucía Russo<br />
-                        <b>Edition</b>: Marcela Levi and Lucía Russo<br />
+                        <b>Editing</b>: Marcela Levi and Lucía Russo<br />
                         <b>Artistic realization and production</b>: Improvável Produções<br />
 
                     </p>
@@ -128,8 +128,8 @@ Let them fluctuate<br />
                     {getItem()}
                 </div>
                 <div className="palsta">
-                    <p>Due to the situation of Covid-19, we had to go to the countryside to work in a kind of collective isolation.</p>
-                    <p>We are involved in a creation process, working on a group dance piece, with the provisional name of grrRoUNd, to be premiered in May 2020 in Brussels, at the Kunstenfestivaldesarts.</p>
+                    <p>Due to the Covid-19 situation, we had to go to the countryside to work in a kind of collective isolation.</p>
+                    <p>We are involved in a creative process, working on a group dance piece, with the provisional name of <i>grrRoUNd</i>, to be premiered in May 2020 in Brussels, at the Kunstenfestivaldesarts.</p>
                     <p>It is the first time that we have embarked on a creation process outside the urban perimeter.</p>
                     <p>For a year now, our bodies are not crossed by the street.</p>
                     <p>For a year now, we have not had the possibility of having a chance, unplanned, inopportune, deviating encounter when walking in the street.</p>

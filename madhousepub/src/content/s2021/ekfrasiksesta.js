@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef, useState, useEffect } from 'react'
 
 import { Modal } from '../../components/modal'
 import ModalButton from '../../components/modal-button'
@@ -6,6 +6,24 @@ import ModalButton from '../../components/modal-button'
 import { Inf, Hole5, Hole6, Hole7, Hole8 } from '../../components/svgs'
 
 export const Ekfrasiksesta = () => {
+
+    const [w_parity, setW_parity] = useState(false);
+    const c = useRef();
+
+    const resize = () => {
+        setW_parity(Math.abs(c.current.offsetWidth) % 3);
+    }
+
+
+    useEffect(() => {
+
+        window.addEventListener('resize', resize);
+        return () => {
+            window.removeEventListener('resize', resize);
+        }
+
+    }, [])
+
     return (
         <div className="ekfrasiksesta">
             <div className="title">
@@ -50,7 +68,7 @@ export const Ekfrasiksesta = () => {
                     </p>
                 </Modal>
             </div>
-            <div className="hole_ hole_5 hole-path">
+            <div ref={c} data-w-p={w_parity} className="hole_ hole_5 hole-path">
                 <Hole5></Hole5>
             </div>
             <div className="palsta grid grid--3w grid--less-gap grid--mb-3h">
@@ -59,7 +77,7 @@ export const Ekfrasiksesta = () => {
                 <div className="orb-thing"> <label className="teal" /> <span>Maarit Mustonen</span></div>
             </div>
             <div className="palsta">
-                <p>Alan ajatella esitystä, jota en ole ikinä nähnyt. Se oli Teatterikorkeakoulussa ollut Jarkko Partasen esitys <i>Mudbody</i>, jonka esitystila oli täynnä mutaa. Vuosi oli loppumassa, oli 2019. Näin silloin päivittäin, miten esiintyjät tulivat ulos studiosta mutaisina, ja miten he menivät takaisin sisälle.</p>
+                <p>Alan ajatella esitystä, jota en ole ikinä nähnyt. Se oli Teatterikorkeakoulussa ollut <b>Jarkko Partasen</b> esitys <i>Mudbody</i>, jonka esitystila oli täynnä mutaa. Vuosi oli loppumassa, oli 2019. Näin silloin päivittäin, miten esiintyjät tulivat ulos studiosta mutaisina, ja miten he menivät takaisin sisälle.</p>
                 <p>Ekfrasis on taiteesta kirjoittamisen muoto, joka kumpuaa alkujaan antiikin Kreikasta. Sen juuret ovat sanassa <i>ekphrazein</i>, joka merkitsee kirjaimellisesti ulospuhumista. Ekfrasis-muoto jakautuu vähintään kolmeen alatyyppiin, joista eräs on niin kutsuttu <i>notional ekphrasis</i>, eli kuvitteellinen ekfrasis.</p>
                 <p>Kuvitteellinen ekfrasis avaa uomia taiteen kokemuksen tarkasteluun laveammin. Se ei tarkoita, että todellista teosta ei tarvittaisi, sillä teokset ovat koko ajan ja kiistämättä kokijoilleen tarpeellisia. <b>Mutta voisiko katsomistapahtuma olla vain yksi vaihe koko teoksen kokemisessa? </b>Loput on sitä, kun kuvittelee, valmistautuu, otaksuu, ottaa selville, tyhjentää mielen. Kun mieli on tyhjänä, siellä on viimein paikka johon teos saapuu.</p>
                 <p>Kuvittelen <i>Mudbodya</i>. Kuvittelen miten valo kiilsi lihaksella, joka oli mutavuoren päällä. Kuvittelen valon olleen yksiväristä, keltaista tai metallia. Kun kuvittelen <i>Mudbodya</i>, siitä tulee muisto, valemuisto tai melkein totta. Kuvittelen liikkuvaa lihasta, metallin ja keltaisen kajoa. Lihaksessa kajo, mudassa liukkaus, keltaisessa kajo, lihaksessa reaktionopeus ja toisaalta, niin, myös, hidastumisen kaikki laadut.</p>
@@ -71,7 +89,7 @@ export const Ekfrasiksesta = () => {
                 <p className="color-teal">Voiko olla, että kun esityksen hetkellisyyttä ja katoavaisuutta pystyy katsojana todistamaan ja tuntemaan, niin esitys kutsuu näin muistamaan itseään, pyytää kantamaan yhteistä vastuuta sen muistamisesta? Toisin sanoen, onko eroa vaikkapa kivestä veistetyn objektin ja tanssijan liikesarjan muistamisessa? Jään kaivamaan kokemuksestani esityksiä, jotka olen unohtanut.<br /><span style={{ float: "right" }}>Tuntuu kuin kääntäisin maata keväällä.</span></p>
 
             </div>
-            <div className="hole_ hole_7 hole-path">
+            <div data-w-p={w_parity} className="hole_ hole_7 hole-path">
                 <Hole7></Hole7>
             </div>
             <div className="palsta">
@@ -90,7 +108,7 @@ export const Ekfrasiksesta = () => {
 
                 <p className="color-teal">seassa-kollektiivin alkuaikana kirjoitin ekfrasis-sanan englanniksi – <i>ekphrasis</i> – aina väärin, sillä luulin termin viittaavan kaikuun: <i>ēkhō – ekh</i>prasis. Jäin miettimään, <b>voisiko ekfrasis olla teokselle jonkinlainen kumma kaiku? Kun seuraan esitystä, läsnäolollani kaiutan sitä.</b> Koen tämän voimakkaasti myös ollessani itse esiintyjänä: yleisö vuotaa ja heijastaa minulle informaatiota, kierrätämme energiaa välillämme, esitys tapahtuu.</p>
             </div>
-            <div className="hole_ hole_8 hole-path">
+            <div data-w-p={w_parity} className="hole_ hole_8 hole-path">
                 <Hole8></Hole8>
             </div>
             <div className="palsta">
@@ -105,10 +123,10 @@ export const Ekfrasiksesta = () => {
 
                 <p>Runoilija Maria Matinmikko puhuu Paavo Mannisen haastattelussa: “Ajattelua itsessään on aktuaalisena tapahtumana mahdotonta kopioida tai konkretisoida sellaisenaan koko laajuudessaan ja monitasoisuudessaan. Koen, että kirjoituksella on kuitenkin pääsy tähän ulottuvuuteen. Poeettinen kieli ja omituiset tarinat tai teokset tavoittavat loogisen ja tavanomaisin lausein strukturoidun ajattelun ”takaa” hämärämmän maaston, joka liittyy läheisesti tiedostamattomaan ja tunteisiin.”<sup>3</sup></p>
 
-                <p>Olisiko siis niin, että kun mieleni ei tahdo tai osaa jäsentää nähtyä esitystapahtumaa kieleksi, ainakaan suoraan kieleksi, annan teoksen liikkua tajunnallisella tasolla juurikin niin hämäränä, outona ja itsestäni erillisenä, kuin se koko ajan on ollutkin? Siten kun annan kielen toimia omassa hämärässä maastossaan, enkä ponnistele saadakseni sitä jäsentymään yhtään miksikään, sekä kielen että teoksen oma erityisyys ja erillisyys korostuu.</p>
+                <p>Olisiko siis niin, että kun mieleni ei tahdo tai osaa jäsentää nähtyä esitystapahtumaa kieleksi, ainakaan suoraan kieleksi, annan teoksen liikkua tajunnallisella tasolla juurikin niin hämäränä, outona ja itsestäni erillisenä, kuin se koko ajan on ollutkin? Siten kun annan kielen toimia omassa hämärässä maastossaan, enkä ponnistele saadakseni sitä jäsentymään yhtään miksikään, sekä kielen että teoksen oma erityisyys ja erillisyys korostuvat.</p>
                 <p>Kirjoittamisen kautta on mahdollista päästä hyvin yksityiskohtaisella tavalla käsiksi siihen, mitä tapahtuu kun jotakin muuttuu eriksi tai toiseksi. Tämä liittyy Derridan ajatukseen kirjoituksesta “erojen järjestelmänä”<sup>4</sup>. <b>Runouden kautta ajatteleminen herkistää ajattelemaan, että ne erot voivat olla hyvinkin nyansoituneita ja tulla näkyviin ilman ennakkoehtoja.</b></p>
             </div>
-            <div className="hole_ hole_6 hole-path">
+            <div data-w-p={w_parity} className="hole_ hole_6 hole-path">
                 <Hole6></Hole6>
             </div>
             <div className="palsta">
@@ -116,7 +134,7 @@ export const Ekfrasiksesta = () => {
                     Muistelen Emmi Vennan <i>Fabulous muscles</i> -esitystä Mad Housessa helmikuussa 2020. Olin vähällä myöhästyä esityksestä, ja pyöräilin sinne kaatosateessa. Kun tulin läpimärkänä esitystilaan, Emmi juoksi ja liikuskeli tilassa. Musiikki blastasi, tuntui kuin tulisi juhliin parhaaseen mahdolliseen aikaan. Myöhemmin esityksen aikana hän siirtyi lattialle ja taputteli ja hieroi lihaksiaan. Hän kertoi liikepraktiikasta, jonka mukaan energiaa voisi hieroa lihaksista ulos ja siten käyttövoimaksi. Aiemmin, esityksen alussa, lihasten kaikki energia oli ollut koko tilan käytössä, höyrysi katsojien ympärillä ja liikeratojen synnyttämissä näkymättömissä uurteissa. Esityksessä oli ollut kokonaan kyse voiman, lihaksiston ja energian säännöstelystä. Vaatteet kuivuivat päälläni hitaasti ja kuivuttuaan ne olivat taas pehmeitä. Aineenvaihdunta tuntui kestävältä.
                 </p>
                 <p className="color-blue">
-                    Viisi vuotta sitten olin Zodiakilla katsomassa Masi Tiitan ja Hanna Ahtin teosta <i>Flute</i>. Katsomossa oli väljää ja raukeuttani päädyin katsomaan esitystä takariviltä loikoillen. Hitaasti alaspäin, kuin ruumista kiinteämpänä massana, liikkuvat ruumiit vetivät mukanaan ruumiini uneen. Nukuin suurimman osan esitystä. Heräsin muutamia sekunteja ennen näyttämön sivusta loistavan paksun keltaisen valon syttymistä, joka sammui pian syttymisen jälkeen. Näin valon melkein samasta asennosta kuin esiintyvät ruumiit, jostain kyljeltään ja mahaltaan välimaastosta, vain eri suunnasta. Esiintyjät nousivat ylös lattialta kumartamaan ja minä nousin samanaikaisesti istumaan taputtaakseni. Tämä on yksi lempi esityksessä-olo-muistoistani, ajattelen ettei nukkuminen vienyt mitään pois vaan oli tapa olla sen teoksen kanssa siinä tilassa, samaan aikaan ja uskon teoksen vaikuttaneen uneeni, olin sen kanssa unissani. Tunnen sen teoksen ruumiissani yhä.
+                    Viisi vuotta sitten olin Zodiakilla katsomassa Masi Tiitan ja Hanna Ahtin teosta <i>Flute</i>. Katsomossa oli väljää ja raukeuttani päädyin katsomaan esitystä takariviltä loikoillen. Hitaasti alaspäin, kuin ruumista kiinteämpänä massana, liikkuvat ruumiit vetivät ruumiini mukanaan uneen. Nukuin suurimman osan esitystä. Heräsin muutamia sekunteja ennen näyttämön sivusta loistavan paksun keltaisen valon syttymistä, joka sammui pian syttymisen jälkeen. Näin valon melkein samasta asennosta kuin esiintyvät ruumiit, jostain kyljeltään ja mahaltaan välimaastosta, vain eri suunnasta. Esiintyjät nousivat ylös lattialta kumartamaan ja minä nousin samanaikaisesti istumaan taputtaakseni. Tämä on yksi lempi esityksessä-olo-muistoistani, ajattelen ettei nukkuminen vienyt mitään pois vaan oli tapa olla sen teoksen kanssa siinä tilassa, samaan aikaan ja uskon teoksen vaikuttaneen uneeni, olin sen kanssa unissani. Tunnen sen teoksen ruumiissani yhä.
                 </p>
                 <p className="color-teal">
                     Esityksen katsomisen jälkeen en haluaisi heti liikkua tai puhua. Tuntuu kuin hiljaisuus ja paikallaanolo auttaisivat säilömään esitystä. Kuitenkin on noustava istumapaikaltaan ja lähdettävä kävelemään, enkä voi loputtomiin kulkea ystäväni vierellä sanomatta mitään, jossain vaiheessa on avattava suu ja alettava puheella vähitellen puhkoa sitä tilaa, jonne olen katsomisen myötä liikkunut, vaivattava esityksen kokemisen materiaalia ensimmäisiksi lauseiksi, äänteiksi<i>…....aimmit…..se…mhh…ä....hei...</i>

@@ -39,7 +39,7 @@ Sebastian López-Lehto & Emmi Kaasalainen
                         <b>Group members </b>
                     </p>
                     <p>
-                        The piece thinks through the media of text and gif-file about synchronizing body parts as community creating biotechnology.
+                        The piece thinks through the media of text and gif-file about synchronizing body parts as a community creating biotechnology.
                     </p>
                     <p>
                         The piece is a part of a project from choreographer <b>Sebastian López-Lehto</b> and osteopath-musician <b>Emmi Kaasalainen</b> on the corporeality of community formation and being a crowd. In this project, community formation is looked at as a bodily skill and as a product of choreographic practises. The project asks: How can the body´s ability to connect with other bodies be explicitly supported? What kind of corporeal events are experiences of connection or isolation? What kinds of choreographic practices connect bodies, and produce emotions and thinking specific to groups of people?
@@ -57,7 +57,7 @@ Sebastian López-Lehto & Emmi Kaasalainen
                 </p>
                 <p>Ajattelen koukistumista, ojentumista. Reisien laskoksia. Reisien rasvaisia nahkakerroksia. Keinuntaa.</p>
                 <p>läts läts mutta joustaen. läts läts.</p>
-                <p>Ajattelen lantioni rasvaa. Nahan napsumista etureisieni rasvan yläosan kanssa. Reiteni ovat kuorrutetut rasvanahalla, josta voi tarrata ja siirtää koko ruhoa. Reiteni ovat lätisevät, vahvat nauttivat möntit.</p>
+                <p>Ajattelen lantioni rasvaa. Nahan napsumista etureisieni rasvan yläosan kanssa. Reiteni ovat kuorrutetut rasvanahalla, josta voi tarrata ja siirtää koko ruhoa. Reiteni ovat lätisevät, vahvat, nauttivat möntit.</p>
                 <p>Ajattelen massojen liikkuvia keskuksia, väkijoukon samettisia energioita, niiden tiivistymisiä, reisien ja raajojen yhteistä suhinaa, vartaloiden sykettä yhteisenä limana.</p>
                 <p>Ajattelen keskittyneitä älykkäitä muuntuvia massoja. Vastavuoroisesti virtaavia, nauravia ja ilossaan kurinalaisia aistimusvirtojen organismijoukkoja.</p>
                 <p>Ajattelen massoja vierelläni, niiden rytmikästä keinuntaa. Ajattelen keinuntaa puolelta toiselle, yhteistä pysähtymistä ja liikkeelle lähtöä. Rytmikkäiden askeleiden tukea vastassani ja sivuillani. Olen merilevää, olen pataljoonan lojaali, olen sivuilta tuettu energia virta. Levenen kun vierelläni olevat huutavat lauluaan.</p>

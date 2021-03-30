@@ -1,6 +1,6 @@
-import React, { useEffect, useState, createRef } from 'react'
+import React, { useEffect, useState, useRef } from 'react'
 import { Link, useParams, useHistory } from 'react-router-dom'
-import { range, debounce, reduce } from 'lodash';
+import { range, debounce, reduce, clone } from 'lodash';
 
 import SVGFilters from '../components/svg-filters'
 import { Hole1, Hole2, Hole3, Hole4, Hole5, Hole6, Hole7, Hole8, Inf } from '../components/svgs'
@@ -21,7 +21,7 @@ export default ({ }) => {
     const [sizeChanged, setsizeChanged] = useState(false);
     const [resizing, setResizing] = useState(false);
 
-    const content_area = createRef();
+    const content_area = useRef();
 
     const history = useHistory();
 
@@ -52,6 +52,13 @@ export default ({ }) => {
         return () => {
             content_area.current.scrollTo({ left: break_points[i], top: 0, behaviour: "smooth" })
         }
+    }
+
+
+    const scrollHorizontally = (e) => {
+        // var delta = Math.min(1, Math.max(-1, (e.deltaX + e.deltaY))) * 40;
+        // content_area.current.scrollLeft -= delta
+        // e.preventDefault();
     }
 
 
@@ -88,6 +95,17 @@ export default ({ }) => {
 
     }, [break_points])
 
+    useEffect(() => {
+
+        content_area.current.addEventListener('wheel', scrollHorizontally, false);
+
+        return (() => {
+            content_area.current.removeEventListener('wheel', scrollHorizontally)
+        })
+
+    }, [])
+
+
 
 
     // TODO: debounce and filter scroll event
@@ -116,7 +134,9 @@ export default ({ }) => {
                                 <h1>Practices of Love <br /> and Body</h1>
                             </Link>
                             <div s-only="dsk" className="spacer"></div>
-                            <Hole1 />
+                            <div className="hole-container">
+                                <Hole1 />
+                            </div>
                         </div>
                         <div class="article-link">
                             <Link to="/rakkaudesta">
@@ -125,7 +145,9 @@ export default ({ }) => {
                             </Link>
 
                             <div s-only="dsk" className="spacer"></div>
-                            <Hole4 />
+                            <div className="hole-container">
+                                <Hole4 />
+                            </div>
                         </div>
                         <div class="article-link">
                             <Link to="/cloudbody">
@@ -134,7 +156,9 @@ an Ecology of Dreams,<br />
 osa 3</h1>
                             </Link>
                             <div s-only="dsk" className="spacer"></div>
-                            <Hole2 />
+                            <div className="hole-container">
+                                <Hole2 />
+                            </div>
 
                         </div>
                         <div class="article-link">
@@ -142,39 +166,50 @@ osa 3</h1>
                                 <h1>Tunnemylläkkähässäkkä</h1>
                             </Link>
                             <div s-only="dsk" className="spacer"></div>
-                            <Hole3 />
+                            <div className="hole-container">
+                                <Hole3 />
+                            </div>
 
                         </div>
                     </div>
                     <div className="content-field s2021">
                         <div class="article-link">
                             <Link to="/fluctuants">
-                                <h1>Fluctuants</h1>
+                                <h1>FLUCTUANTS</h1>
                             </Link>
 
                             <div s-only="dsk" className="spacer"></div>
-                            <Hole5 />
+                            <div className="hole-container">
+                                <Hole5 />
+                            </div>
                         </div>
                         <div class="article-link">
                             <Link to="/ryhman-jasenet">
                                 <h1>Ryhmän jäsenet</h1>
                             </Link>
                             <div s-only="dsk" className="spacer"></div>
-                            <Hole6 />
+                            <div className="hole-container">
+                                <Hole6 />
+                            </div>
                         </div>
                         <div class="article-link">
                             <Link to="/growing-pains">
                                 <h1>GROWING <br></br> PAINS</h1>
                             </Link>
                             <div s-only="dsk" className="spacer"></div>
-                            <Hole7 />
+                            <div className="hole-container">
+                                <Hole7 />
+                            </div>
                         </div>
                         <div class="article-link">
                             <Link to="/ekfrasiksesta-osa-2">
-                                <h1>Ekfrasiksesta osa 2</h1>
+                                <h1>Ekfrasiksesta osa 2 <br></br>
+                                    <span className="smaller">Esityksen kuvittelemisesta  <br></br> ja muistamisesta</span></h1>
                             </Link>
                             <div s-only="dsk" className="spacer"></div>
-                            <Hole8 />
+                            <div className="hole-container">
+                                <Hole8 />
+                            </div>
                         </div>
 
                     </div>

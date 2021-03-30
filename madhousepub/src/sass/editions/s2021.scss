@@ -112,7 +112,7 @@
     }
 
     div.footnotes {
-        margin-top: 35em !important;
+        margin-top: 50em !important;
         p {
             color: black;
         }
@@ -138,7 +138,7 @@
             }
 
             svg {
-                left: 50%;
+                left: calc(50% + 0.5px);
                 transform: translateX(-50%);
             }
         }
@@ -146,24 +146,66 @@
         &.hole_6 {
             &::before {
                 mask-image: url(/img/holes/MHPhole2_1.svg);
-                mask-position: 35%;
+                mask-position: 33.33333%;
+            }
+
+            &[data-w-p="1"] {
+                svg {
+                    left: calc(33.3333% + 0px);
+                    transform: translateX(-33.333%);
+                }
+            }
+
+            &[data-w-p="2"] {
+                svg {
+                    left: calc(33.3333% + 0.3333px);
+                    transform: translateX(-33.333%);
+                }
             }
 
             svg {
-                left: 35%;
-                transform: translateX(-35%);
+                left: calc(33.3333% + 0.3333px);
+                transform: translateX(-33.3333%);
+            }
+
+            @include respond-above("l") {
+                svg {
+                    left: calc(33.3333% + 0px);
+                    transform: translateX(-33.3333%);
+                }
             }
         }
 
         &.hole_7 {
             &::before {
                 mask-image: url(/img/holes/MHPhole3_1.svg);
-                mask-position: 35%;
+                mask-position: 33.3333%;
+            }
+
+            &[data-w-p="1"] {
+                svg {
+                    left: calc(33.3333% + 0.6666px);
+                    transform: translateX(-33.333%);
+                }
+            }
+
+            &[data-w-p="2"] {
+                svg {
+                    left: calc(33.3333% + 0.6666px);
+                    transform: translateX(-33.333%);
+                }
             }
 
             svg {
-                left: 35%;
-                transform: translateX(-35%);
+                left: calc(33.3333% + 0.6666px);
+                transform: translateX(-33.3333%);
+            }
+
+            @include respond-above("l") {
+                svg {
+                    left: calc(33.3333% + 0px);
+                    transform: translateX(-33.3333%);
+                }
             }
         }
 
@@ -173,7 +215,7 @@
             }
 
             svg {
-                left: 50%;
+                left: calc(50% + 0.5px);
                 transform: translateX(-50%);
             }
         }
@@ -261,6 +303,18 @@
                     left: 0px;
                 }
             }
+        }
+    }
+
+    .lightbox {
+        cursor: url("/img/pains/Mouse.png") 64 32, pointer;
+
+        button {
+            cursor: url("/img/pains/Mouse.png") 64 32, pointer;
+        }
+
+        iframe {
+            cursor: url("/img/pains/Mouse.png") 64 32, pointer;
         }
     }
 

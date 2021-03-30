@@ -1,12 +1,15 @@
 .hole {
-    filter: url(#inset-shadow-gray);
-
     path {
         fill: $base-color;
         stroke: black;
         stroke-width: 0.75px;
         stroke-miterlimit: 10;
     }
+}
+
+.hole-container {
+    filter: url(#inset-shadow-gray);
+    display: inline;
 }
 
 .hole-path {

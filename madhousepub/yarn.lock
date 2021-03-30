@@ -9613,6 +9613,11 @@ schema-utils@^2.5.0, schema-utils@^2.6.0, schema-utils@^2.6.1, schema-utils@^2.6
     ajv "^6.12.0"
     ajv-keywords "^3.4.1"
 
+scroll-snap@^3.2.3:
+  version "3.2.3"
+  resolved "https://registry.yarnpkg.com/scroll-snap/-/scroll-snap-3.2.3.tgz#893119102ef8b8d0d18ac6f06d464286f1159c02"
+  integrity sha512-SxHplDVKP/MQB4Eqh347Nhgu7VdEZq7dORIkFbh5mkumHv/p9UVPox8hyt5AePRcByCPG31xQCUhiwi6CHMxoQ==
+
 scss-tokenizer@^0.2.3:
   version "0.2.3"
   resolved "https://registry.yarnpkg.com/scss-tokenizer/-/scss-tokenizer-0.2.3.tgz#8eb06db9a9723333824d3f5530641149847ce5d1"

@@ -157,11 +157,12 @@ export const Pains = () => {
                     </b>
                     </p>
                     <p>
-                        It might give you some tummy ache and bad dreams. Avert your gaze, complete disapproval of unwanted feelings. Van Trier serves as an unconscious narrator of the human psyche, as a mirror of the personality to which it belongs. Actual dialectics of writing, sounds, drawings and paintings. An infinite number of possibilities arise from these numerous interactions. How daring, confused and insane they may seem at first sight it is carefully selected by Van Trier. Sometimes the works offer comfort and reassurance, the next moment they are from a repulsive ugliness. Unrestrained, emerging, the perfect banality to its present time. With great hospitality, Van Trier dares you to wander around. One promise like a Band Aid, Van Trier’s work will soothe your anxieties, heal your torments and make you smile for weeks.
+                        It might give you some tummy ache and bad dreams. Avert your gaze, complete disapproval of unwanted feelings. Van Trier serves as an unconscious narrator of the human psyche, as a mirror of the personality to which it belongs. Actual dialectics of writing, sounds, drawings and paintings. An infinite number of possibilities arise from these numerous interactions. How daring, confused and insane they may seem at first sight they are carefully selected by Van Trier. Sometimes the works offer comfort and reassurance, the next moment they are from a repulsive ugliness. Unrestrained, emerging, the perfect banality to its present time. With great hospitality, Van Trier dares you to wander around. One promise like a Band Aid, Van Trier’s work will soothe your anxieties, heal your torments and make you smile for weeks.
 
                     </p>
                     <p>
                         <b>Renée van Trier</b> is a musician, performer and painter based in Netherlands.
+                        <br></br>
                         <a href="https://www.reneevantrier.nl/">https://www.reneevantrier.nl/</a>
                     </p>
                 </Modal>

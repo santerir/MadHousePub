@@ -43,7 +43,7 @@
 
         a {
             img {
-                width: 70%;
+                width: 60%;
                 margin: 1em auto;
                 position: relative;
 
@@ -60,11 +60,11 @@
         }
 
         .pub-logo {
-            transform: translate(-50%, 0) rotate(90deg);
+            transform: translate(-50%, -50%) rotate(90deg);
             left: 50%;
-            top: 40%;
+            top: 50%;
             min-width: 500px;
-            width: 80vh;
+            width: 70vh;
             position: absolute;
         }
 
@@ -72,7 +72,7 @@
             position: absolute;
             bottom: 1em;
             width: 100%;
-            font-size: 1.2rem;
+            font-size: 1rem;
         }
 
         @include respond-below("mb-l") {
@@ -118,6 +118,7 @@
         scroll-snap-type: x mandatory;
         position: relative;
 
+        z-index: 0;
         @include respond-below("mb-l") {
             grid-area: 2/1/3/2;
         }
@@ -171,10 +172,19 @@
                 margin: 1em 0 0 5%;
                 position: relative;
                 line-height: 0.9;
+                z-index: 1;
                 float: left;
+
+                .smaller {
+                    font-size: 0.8em;
+                }
 
                 @include respond-below("l") {
                     font-size: 2.3em;
+
+                    .smaller {
+                        font-size: 0.8em;
+                    }
                 }
 
                 @include respond-below("mb-l") {
@@ -183,6 +193,11 @@
                     z-index: z("overlay");
                     margin: 1em 0.5em 0 0.5em;
                     float: none;
+                    line-height: 0.7;
+
+                    .smaller {
+                        font-size: 0.8em;
+                    }
                 }
             }
 
@@ -197,10 +212,22 @@
                 max-height: 160%;
                 position: relative;
                 margin: -0.7em 0 0 0;
-                z-index: z("default");
 
                 @include respond-below("mb-l") {
                     position: absolute;
+                }
+
+                svg {
+                    height: 100%;
+                }
+            }
+
+            .hole-container {
+                @include respond-below("mb-l") {
+                    display: block;
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
                 }
             }
 
@@ -250,9 +277,11 @@
 
                 #hole5 {
                     max-height: 100%;
-                    top: 10%;
+                    top: 50%;
                     float: left;
                     width: 45%;
+                    left: 10%;
+                    margin-left: -10em;
                 }
 
                 #hole6 {
@@ -275,15 +304,15 @@
                     top: 10%;
                     max-height: 94%;
                     float: right;
-                    margin-right: -6%;
-                    right: 7%;
+                    margin-right: -5em;
+                    right: 12%;
                 }
             }
 
             @include respond-below("mb-l") {
                 #hole1 {
                     height: 140%;
-                    right: 10%;
+                    right: -5%;
                 }
                 #hole4 {
                     height: 110%;
@@ -293,33 +322,35 @@
 
                 #hole2 {
                     height: 140%;
-                    right: 15%;
+                    right: 0%;
                 }
 
                 #hole3 {
                     height: 150%;
-                    margin-top: -0.5em;
+                    top: -20%;
                     left: 10%;
                 }
 
                 #hole5 {
-                    height: 70%;
-                    top: 20%;
+                    height: 80%;
+                    top: 45%;
                     right: 5%;
                 }
 
                 #hole6 {
                     height: 120%;
+                    top: 5%;
                 }
 
                 #hole7 {
                     height: 110%;
                     right: 0;
+                    top: 30%;
                 }
 
                 #hole8 {
                     height: 74%;
-                    top: 10%;
+                    top: 30%;
                     left: 5%;
                 }
             }
@@ -332,7 +363,6 @@
                         float: right;
                         margin: 1em 5% 0 0;
                     }
-
                     .hole {
                         float: right;
                     }
