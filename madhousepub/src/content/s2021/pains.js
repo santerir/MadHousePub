@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from 'react'
+import React, { useRef, useEffect, useState, useLayoutEffect } from 'react'
 
 import { Modal } from '../../components/modal'
 import ModalButton from '../../components/modal-button'
@@ -186,7 +186,7 @@ export const Pains = () => {
 }
 
 
-export const AudioThing = ({ src, loc }) => {
+export const AudioThing = ({ src, loc, key }) => {
 
     const [playing, setPlaying] = useState(false);
     const p = useRef();
@@ -195,13 +195,13 @@ export const AudioThing = ({ src, loc }) => {
         setPlaying(!playing);
     }
 
-    useEffect(() => {
+    useLayoutEffect(() => {
         let method = playing ? "play" : "pause";
         p.current[method]();
     }, [playing])
 
     return (
-        <button className={playing ? "active audio-player" : "not-active audio-player"} onClick={toggle} style={loc}>
+        <button className={playing ? "active audio-player" : "not-active audio-player"} onClickCapture={toggle} style={loc}>
             <audio ref={p}>
                 <source src={src} type="audio/mp3" />
             </audio>

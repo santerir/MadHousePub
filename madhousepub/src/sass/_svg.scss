@@ -1,15 +1,23 @@
 .hole {
-    path {
-        fill: $base-color;
-        stroke: black;
-        stroke-width: 0.75px;
-        stroke-miterlimit: 10;
-    }
+    // path {
+    //     fill: $base-color;
+    //     stroke: black;
+    //     stroke-width: 0.75px;
+    //     stroke-miterlimit: 10;
+    // }
+
+    // @include respond-above("mb-l") {
+    //     filter: url(#inset-shadow-gray);
+    // }
 }
 
 .hole-container {
-    filter: url(#inset-shadow-gray);
-    display: inline;
+    display: contents;
+
+    // @include respond-below("mb-l") {
+    //     filter: url(#inset-shadow-gray);
+    //     display: block;
+    // }
 }
 
 .hole-path {

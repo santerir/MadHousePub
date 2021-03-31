@@ -51,9 +51,10 @@ h1 {
 
 h2 {
     font-family: $sans-font;
-    font-size: 0.6em;
-    margin: 0 0 0 1em;
-    padding: 0.6em 0 0 0;
+    font-size: 0.8em;
+    margin-top: 0.3em;
+    padding-top: 0em;
+    font-weight: 400;
 }
 
 h4 {
@@ -67,6 +68,7 @@ h5 {
 a {
     color: black;
     text-decoration: underline;
+    word-break: break-all;
 }
 
 div.center-text {

@@ -171,6 +171,10 @@
         grid-template-rows: 25% 25% 25% 25%;
         scroll-snap-align: start;
 
+        .ekfrasis-link {
+            margin-top: -1em;
+        }
+
         .article-link {
             clear: both;
 
@@ -183,16 +187,20 @@
                 z-index: 1;
                 float: left;
 
-                .smaller {
-                    font-size: 0.8em;
+                h2 {
+                    font-family: $heading-font;
+                    font-size: 0.6em;
+                    font-weight: 400;
+                    margin: 0;
+                    padding: 0;
+
+                    @include respond-below("mb-l") {
+                        font-size: 0.7em;
+                    }
                 }
 
                 @include respond-below("l") {
                     font-size: 2.3em;
-
-                    .smaller {
-                        font-size: 0.8em;
-                    }
                 }
 
                 @include respond-below("mb-l") {
@@ -217,7 +225,6 @@
 
             .hole {
                 height: auto;
-                max-height: 160%;
                 position: relative;
                 margin: -0.7em 0 0 0;
 
@@ -259,41 +266,37 @@
 
             @include respond-above("mb-l") {
                 #hole1 {
-                    width: 45%;
+                    width: 35%;
                 }
 
                 #hole4 {
-                    max-height: 110%;
-                    width: 45%;
+                    width: 37%;
                     left: -30%;
                     margin-right: -45%;
                 }
 
                 #hole2 {
-                    float: right;
-                    margin-left: -35%;
-                    width: 45%;
+                    float: left;
+                    left: 0%;
+                    width: 17%;
                 }
 
                 #hole3 {
-                    max-height: 150%;
                     top: 5%;
                     margin-right: -35%;
-                    left: -20%;
+                    left: -30%;
                     width: 45%;
                 }
 
                 #hole5 {
-                    max-height: 100%;
-                    top: 50%;
                     float: left;
                     width: 45%;
                     left: 10%;
+                    top: 30%;
                     margin-left: -10em;
                 }
 
                 #hole6 {
-                    max-height: 140%;
                     width: 45%;
                 }
 
@@ -308,12 +311,11 @@
                 }
 
                 #hole8 {
-                    width: 42%;
-                    top: 10%;
-                    max-height: 94%;
+                    width: 46%;
+                    top: 0;
                     float: right;
                     margin-right: -5em;
-                    right: 12%;
+                    right: 8%;
                 }
             }
 
@@ -323,20 +325,21 @@
                     right: -5%;
                 }
                 #hole4 {
-                    height: 110%;
-                    left: 15%;
+                    height: 100%;
+                    left: 10%;
                     margin-top: 1em;
                 }
 
                 #hole2 {
-                    height: 140%;
-                    right: 0%;
+                    height: 120%;
+                    right: 5%;
+                    top: 15%;
                 }
 
                 #hole3 {
-                    height: 150%;
-                    top: -20%;
-                    left: 10%;
+                    height: 120%;
+                    top: 0%;
+                    left: 5%;
                 }
 
                 #hole5 {

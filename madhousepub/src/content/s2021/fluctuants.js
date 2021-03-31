@@ -14,7 +14,7 @@ export const Fluctuants = () => {
         ,
         <iframe src="https://player.vimeo.com/video/523903377?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;" width="1280" height="720" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="haiku_sometimes"></iframe>
         ,
-        <iframe src="https://player.vimeo.com/video/523903228?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;" width="1280" height="720" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="haiku_questions collection"></iframe>
+        <iframe src="https://player.vimeo.com/video/523903228?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;" width="1280" height="720" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="haiku_questions collection" wmode="Opaque"></iframe>
         ,
         <iframe src="https://player.vimeo.com/video/523902457?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;" width="1280" height="720" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="haiku_go slow"></iframe>
         ,
@@ -161,8 +161,8 @@ const Floater = (item, loc, close) => {
     return (
         <div className="floatie-container" style={loc[0]}>
             <div className="floatie" style={loc[1]}>
-                <button onClick={close}><Cls></Cls></button>
                 {item}
+                <button onClick={close}><Cls></Cls></button>
             </div>
         </div>
     )

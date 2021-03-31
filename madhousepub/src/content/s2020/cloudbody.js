@@ -11,7 +11,7 @@ export const Cloudbody = () => {
             <div className="title">
                 <h1>Cloudbody, <br />an Ecology of Dreams,<br />
 osa 3 </h1>
-                <h4>Pohdintoja Grandvillestä ja Cloudbody-teossarjasta keväällä 2020</h4>
+                <h2>Pohdintoja Grandvillestä ja Cloudbody-teossarjasta keväällä 2020</h2>
                 <h5>Liisa Pentti +Co</h5>
 
                 <ModalButton modalId="info-modal">
