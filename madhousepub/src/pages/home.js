@@ -87,7 +87,7 @@ export default ({ }) => {
 
     const getOn_scroll = () => {
         if (isMobile()) {
-            return debounce(on_scroll, 50);
+            return debounce(on_scroll, 150);
         }
         return noop;
     }
@@ -123,7 +123,7 @@ export default ({ }) => {
 
     const scrollHorizontally = (e) => {
         e.preventDefault();
-        var delta = Math.min(1, Math.max(-1, (- e.deltaX - e.deltaY))) * 17;
+        var delta = Math.min(1, Math.max(-1, (- e.deltaX - e.deltaY))) * 19;
         content_area.current.scrollLeft -= delta
     }
 
@@ -198,7 +198,7 @@ export default ({ }) => {
     const bindScrollSnap = () => {
         const snapElement = new ScrollSnap(content_area.current, {
             snapDestinationX: '100%',
-            snapStop: false,
+            //snapStop: true,
             duration: 100,
             timeout: 100,
             threshold: 0.4,

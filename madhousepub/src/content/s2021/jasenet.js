@@ -10,7 +10,7 @@ export const Jasenet = () => {
         <div className="jasenet">
             <div className="title">
                 <h1>Ryhmän jäsenet</h1>
-                <h5>Sebastian López-Lehto ja Emmi Kaasalainen</h5>
+                <h5>Sebastian López-Lehto & Emmi Kaasalainen</h5>
                 <ModalButton modalId="info-modal">
                     <Inf />
                 </ModalButton>
@@ -74,7 +74,7 @@ Sebastian López-Lehto & Emmi Kaasalainen
                 <p>Kirjailija <b>Barbara Ehrenreich</b> spekuloi <i>Dancing in The Streets – A History of Collective Joy</i> -kirjassaan synkronoituvien joukkojen evolutiivisesta merkityksestä.</p>
                 <p>Hän ehdottaa ihmisnisäkkäiden kykenevän muodostamaan joukkona illusorisen ison pedon, jotta muut suuret pedot havaitsisivat joukon yhtenä vielä isompana petona.</p>
                 <p>Myös historioitsija <b>William McNeill</b> kysyy <i>Keeping Together in Time</i> -kirjassaan aiheesta. Hän näkee rytmisen yhteenliittymisen ennen kaikkea solidaarisuuden tunteen muodostava ryhmäkoheesiotekniikkana. Yhdessä liikkuminen tuottaa erityistä kanssatunnetta ja mahdollistaa sisaruuden kokemisen minkä tahansa tähän tekniikkaan ryhtyvän joukon kesken.</p>
-                <p>McNeill kysyy synkronoitumisen fysiologian ja solidaarisuuden tunteen yhteydestä, josta kirjan kirjoittamisen aikaan 1995 aiheesta ei oltu juurikaan tehty tutkimusta. Mitä yhteisessä liikkeessä tapahtuu? Miten yhteisyyden tunne syntyy? Kysymys on tietysti laaja: Miten kehon fysiologiset prosessit ovat yhteydessä tunteisiin? Mitä ovat kollektiiviset tunteet? Miten käyttäymisen synkronoituminen voi luoda jonkin sellaisen fysiologisen vasteen, joka on perustana ryhmäkoheesion luovalle tunteelle?</p>
+                <p><b>McNeill</b> kysyy synkronoitumisen fysiologian ja solidaarisuuden tunteen yhteydestä, josta kirjan kirjoittamisen aikaan 1995 aiheesta ei oltu juurikaan tehty tutkimusta. Mitä yhteisessä liikkeessä tapahtuu? Miten yhteisyyden tunne syntyy? Kysymys on tietysti laaja: Miten kehon fysiologiset prosessit ovat yhteydessä tunteisiin? Mitä ovat kollektiiviset tunteet? Miten käyttäymisen synkronoituminen voi luoda jonkin sellaisen fysiologisen vasteen, joka on perustana ryhmäkoheesion luovalle tunteelle?</p>
                 <p>Sittemmin fysiologista synkronoitumista on tutkittu. Kehot näyttävät valuvan toisiinsa, imitaatio näyttää olevan hyvin olennaista suhteiden luomisessa ja yhteisesti liikkuvat joukot tuntevat itsensä voimakkaiksi. Sisäpuolet samankaltaistuvat: Sydämien sykkeet, hengitys, näiden arytmia. Aivot aaltoineen. Ulkoinen yhteinen rytmittyminen samankaltaistaa sisäisiä rytmejä.</p>
             </div>
             <div className="w--80 grid grid--3w grid--2h">
@@ -94,7 +94,7 @@ Sebastian López-Lehto & Emmi Kaasalainen
             </div>
             <div className="palsta">
                 <p>Yhteiset liikkeet yhteisen ryhmän ja yhteisen todellisuuden luojana on sosiologian klassikon <b>Émile Durkheimin</b> perusajatuksia. Kun liikumme samalla tavoin, tunnemme että ajattelemme samoin. Yhteisyys tuottaa erityistä emotionaalista energiaa, jota säilötään ryhmän energiaa edustaviin symboleihin, esim. eleisiin.</p>
-                <p>Ajatusta tahollaan on kehitellyt myös sosiologi <b>Randall Collins</b>. Collins artikuloi neljä kohtaa onnistuneen vuorovaikutusrituaalin (minkä tahansa ihmistenvälisen kanssakäynnin) osatekijöiksi: yhteisen kehollisen läsnäolon, yhteisen fokuksen, yhteisen tunnelman, rajan ulkopuoleen. Mikrorytmeissään vastavuoroisesti synkronoituvat kehot luovat merkityksellistä emotionaalista energiaa, joka on ensisijainen moraalivaateisiin ja symboleihin nähden. Yhteiset liikkeet ja yhteiset käytänteet luovat jaetun todellisuuden. Se muuntuu, hajoaa, unohtuu, jos vuorovaikutuksen rituaaleja, yhteistä toimintaa ei ole.</p>
+                <p>Ajatusta tahollaan on kehitellyt myös sosiologi <b>Randall Collins</b>. <b>Collins</b> artikuloi neljä kohtaa onnistuneen vuorovaikutusrituaalin (minkä tahansa ihmistenvälisen kanssakäynnin) osatekijöiksi: yhteisen kehollisen läsnäolon, yhteisen fokuksen, yhteisen tunnelman, rajan ulkopuoleen. Mikrorytmeissään vastavuoroisesti synkronoituvat kehot luovat merkityksellistä emotionaalista energiaa, joka on ensisijainen moraalivaateisiin ja symboleihin nähden. Yhteiset liikkeet ja yhteiset käytänteet luovat jaetun todellisuuden. Se muuntuu, hajoaa, unohtuu, jos vuorovaikutuksen rituaaleja, yhteistä toimintaa ei ole.</p>
             </div>
             <div className="grid--3w grid w--80">
                 <img className="w--100" src="/img/jasenet/10.webp"></img>

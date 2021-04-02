@@ -163,6 +163,8 @@ export const Pains = () => {
                     <p>
                         <b>Renée van Trier</b> is a musician, performer and painter based in Netherlands.
                         <br></br>
+                        <br></br>
+                        <br></br>
                         <a href="https://www.reneevantrier.nl/">https://www.reneevantrier.nl/</a>
                     </p>
                 </Modal>

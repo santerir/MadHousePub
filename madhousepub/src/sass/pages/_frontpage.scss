@@ -84,12 +84,12 @@
                 margin-top: 5em;
             }
             .pub-logo {
-                transform: none;
-                top: unset;
-                left: 10%;
+                transform: translate(-50%, -50%);
+                left: 50%;
+                top: 50%;
+                min-width: unset;
                 width: 85%;
-                min-width: 0;
-                margin: 0;
+                position: absolute;
                 z-index: z("overlay");
             }
         }
