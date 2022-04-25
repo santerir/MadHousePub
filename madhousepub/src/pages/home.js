@@ -10,7 +10,7 @@ import { Hole1, Hole2, Hole3, Hole4, Hole5, Hole6, Hole7, Hole8, Inf } from '../
 
 export default ({ }) => {
 
-    const CONTENT_PANES = [{ name: "I", info_url: "/about" }, { name: "II", info_url: "/about-II" }]
+    const CONTENT_PANES = [{ name: "I", info_url: "/about" }, { name: "II", info_url: "/about-II" }, { name: "III", info_url: "/about-III" }]
 
     const { edition } = useParams();
 
@@ -287,7 +287,7 @@ export default ({ }) => {
                         <div class="article-link">
                             <Link to="/rakkaudesta">
                                 <h1>Rakkaudesta <br />
-– sanasto tuleville vuosikymmenille</h1>
+                                    – sanasto tuleville vuosikymmenille</h1>
                             </Link>
 
                             <div s-only="dsk" className="spacer"></div>
@@ -300,8 +300,8 @@ export default ({ }) => {
                         <div class="article-link">
                             <Link to="/cloudbody">
                                 <h1>Cloudbody,<br />
-an Ecology of Dreams,<br />
-osa 3</h1>
+                                    an Ecology of Dreams,<br />
+                                    osa 3</h1>
                             </Link>
                             <div s-only="dsk" className="spacer"></div>
                             <div className="hole-container">
@@ -381,7 +381,7 @@ osa 3</h1>
                         <div class="article-link">
                             <Link to="/rakkaudesta">
                                 <h1>Rakkaudesta <br />
-– sanasto tuleville vuosikymmenille</h1>
+                                    – sanasto tuleville vuosikymmenille</h1>
                             </Link>
 
                             <div s-only="dsk" className="spacer"></div>
@@ -394,8 +394,8 @@ osa 3</h1>
                         <div class="article-link">
                             <Link to="/cloudbody">
                                 <h1>Cloudbody,<br />
-an Ecology of Dreams,<br />
-osa 3</h1>
+                                    an Ecology of Dreams,<br />
+                                    osa 3</h1>
                             </Link>
                             <div s-only="dsk" className="spacer"></div>
                             <div className="hole-container">
