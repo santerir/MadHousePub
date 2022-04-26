@@ -8,7 +8,7 @@ export const AboutPage = ({ LANGS, CONTENT }) => {
     const [lang, setLang] = useState(LANGS[1])
 
     return (<>
-        <div s-only="mb" className="about-mb">
+        <div s-only="mb" className="about about-mb">
             <LanguageSelector languages={LANGS} setLanguage={setLang} contentID="#lang-content" initial={LANGS[1]}></LanguageSelector>
 
             <div id="lang-content">

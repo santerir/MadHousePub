@@ -1,10 +1,15 @@
-.about {
+
+.article .content .about {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     position: relative;
     margin: 0 !important;
     //margin: 0 2em 0 2em;
     padding: 3em 0 3em 0;
+
+    h5 {
+        text-align: left;
+    }
 
     @include respond-below("mb-l") {
         display: block;

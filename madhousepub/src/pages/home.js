@@ -221,17 +221,17 @@ export default ({ }) => {
                     <img className="pub-logo" src="/img/MHPLogo.svg" />
                     <h3> {CONTENT_PANES[current_pane].name} </h3>
                 </div>
-                <div className="content-area" id="content-area" ref={content_area}
+                <div className={resizing ? "content-area blur" : "content-area"} id="content-area" ref={content_area}
                     onScroll={getOn_scroll()}
 
                 >
                     <div className="dots">
                         {range(SCROLL_POINTS).map((i) => (<label onClick={go_to(i)} className={current_pane == i ? "active" : "inactive"}></label>))}
                     </div>
-                    <div className="content-field s2021">
+                    <div className="content-field s2022">
                         <div class="article-link">
-                            <Link to="/fluctuants">
-                                <h1>FLUCTUANTS</h1>
+                            <Link to="/ihmiskone">
+                                <h1>Täydellinen ihmisko(n)e</h1>
                             </Link>
 
                             <div s-only="dsk" className="spacer"></div>
@@ -241,8 +241,8 @@ export default ({ }) => {
                             </div>
                         </div>
                         <div class="article-link">
-                            <Link to="/ryhman-jasenet">
-                                <h1>Ryhmän jäsenet</h1>
+                            <Link to="/the-blade">
+                                <h1>The Blade</h1>
                             </Link>
                             <div s-only="dsk" className="spacer"></div>
                             <div className="hole-container">
@@ -251,8 +251,8 @@ export default ({ }) => {
                             </div>
                         </div>
                         <div class="article-link">
-                            <Link to="/growing-pains">
-                                <h1>GROWING <br></br> PAINS</h1>
+                            <Link to="/a-house-music">
+                                <h1>A HOUSE MUSIC</h1>
                             </Link>
                             <div s-only="dsk" className="spacer"></div>
                             <div className="hole-container">
@@ -260,10 +260,9 @@ export default ({ }) => {
                                 <img className="hole" id="hole7" src="./img/holes/MHPhole3_1.png"></img>
                             </div>
                         </div>
-                        <div class="article-link ekfrasis-link">
-                            <Link to="/ekfrasiksesta-osa-2">
-                                <h1>Ekfrasiksesta osa 2<br></br>
-                                    <h2 className="smaller">Esityksen kuvittelemisesta  <br></br> ja muistamisesta</h2></h1>
+                        <div class="article-link">
+                            <Link to="/only-flowers">
+                                <h1>I Only Want To Talk <wbr /> About Flowers</h1>
                             </Link>
                             <div s-only="dsk" className="spacer"></div>
                             <div className="hole-container">
@@ -358,6 +357,50 @@ export default ({ }) => {
                             <Link to="/ekfrasiksesta-osa-2">
                                 <h1>Ekfrasiksesta osa 2<br></br>
                                     <h2 className="smaller">Esityksen kuvittelemisesta  <br></br> ja muistamisesta</h2></h1>
+                            </Link>
+                            <div s-only="dsk" className="spacer"></div>
+                            <div className="hole-container">
+                                {/* <Hole8 /> */}
+                                <img className="hole" id="hole8" src="./img/holes/MHPhole4_1.png"></img>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div className="content-field s2022">
+                        <div class="article-link">
+                            <Link to="/ihmiskone">
+                                <h1>Täydellinen ihmisko(n)e</h1>
+                            </Link>
+
+                            <div s-only="dsk" className="spacer"></div>
+                            <div className="hole-container">
+                                {/* <Hole5 /> */}
+                                <img className="hole" id="hole5" src="./img/holes/MHPhole1_1.png"></img>
+                            </div>
+                        </div>
+                        <div class="article-link">
+                            <Link to="/the-blade">
+                                <h1>The Blade</h1>
+                            </Link>
+                            <div s-only="dsk" className="spacer"></div>
+                            <div className="hole-container">
+                                {/* <Hole6 /> */}
+                                <img className="hole" id="hole6" src="./img/holes/MHPhole2_1.png"></img>
+                            </div>
+                        </div>
+                        <div class="article-link">
+                            <Link to="/a-house-music">
+                                <h1>A HOUSE MUSIC</h1>
+                            </Link>
+                            <div s-only="dsk" className="spacer"></div>
+                            <div className="hole-container">
+                                {/* <Hole7 /> */}
+                                <img className="hole" id="hole7" src="./img/holes/MHPhole3_1.png"></img>
+                            </div>
+                        </div>
+                        <div class="article-link">
+                            <Link to="/only-flowers">
+                                <h1>I Only Want To Talk <wbr /> About Flowers</h1>
                             </Link>
                             <div s-only="dsk" className="spacer"></div>
                             <div className="hole-container">

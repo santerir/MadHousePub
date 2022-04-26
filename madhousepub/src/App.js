@@ -22,10 +22,11 @@ import { Jasenet } from './content/s2021/jasenet'
 import { Fluctuants } from './content/s2021/fluctuants';
 import { Ekfrasiksesta } from './content/s2021/ekfrasiksesta';
 
-import { SUMMER2020, SUMMER2021 } from './editions'
+import { SUMMER2020, SUMMER2021, SUMMER2022 } from './editions'
 
 import './sass/style.scss';
 import { Pains } from './content/s2021/pains';
+import { AboutIII } from './content/s2022/aboutIII';
 
 const App = ({ }) => {
 
@@ -42,6 +43,11 @@ const App = ({ }) => {
           <Route path="/about-II">
             <Article edition={SUMMER2021}>
               <AboutII />
+            </Article>
+          </Route>
+          <Route path="/about-III">
+            <Article edition={SUMMER2022}>
+              <AboutIII />
             </Article>
           </Route>
           <Route path="/fluctuants" >

@@ -7,7 +7,7 @@ var _LanguageSelector = ({ languages, setLanguage, contentID, initial }) => {
     const [selected, setSelected] = useState(initial)
 
     var buttons = languages.map((item) => {
-        return (<button aria-label={`Select language ${item}`} aria-selected={selected == item} onClick={() => { setLanguage(item); setSelected(item) }} className={selected == item ? "selected" : ""}>
+        return (<button aria-label={`Select language ${item}`} aria-selected={selected == item} onClick={() => { setLanguage(item); setSelected(item) }} className={selected == item ? "selected text-button" : "text-button"}>
             <h5>{item}</h5>
         </button>)
     })

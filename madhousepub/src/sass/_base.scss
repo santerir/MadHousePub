@@ -38,6 +38,34 @@ button {
     }
 }
 
+button.text-button {
+    h5 {
+        font-family: $font-face;
+        display: inline;
+    } 
+    width: unset;
+    position: relative;
+    
+    &.selected {
+        color: $red;
+    }
+
+    &:after {
+        content: '';
+        position: absolute;
+        top: 25%;
+        height: 75%;
+        left: 100%;
+        border-right: 1px solid black;
+      }
+
+    &:last-of-type {
+        &:after {
+            content: none;
+        }
+    }
+}
+
 .clearfix::after {
     content: "";
     clear: both;

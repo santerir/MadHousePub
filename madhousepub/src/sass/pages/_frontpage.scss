@@ -116,6 +116,13 @@
         grid-auto-columns: 100% 100% 100% 100%;
         grid-auto-flow: column;
         position: relative;
+        transition: filter 0.7s;
+
+
+        &.blur {
+            filter: blur(30px);
+            transition: filter 0.5s;
+        }
 
         z-index: 0;
         @include respond-below("mb-l") {
@@ -179,6 +186,11 @@
             clear: both;
 
             max-height: 200px;
+
+            a {
+                word-break: break-word;
+                white-space: nowrap;
+            }
 
             h1 {
                 margin: 1em 0 0 5%;
