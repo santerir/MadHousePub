@@ -34,17 +34,20 @@ export default ({ }) => {
     const isMobile = () => { return ('ontouchstart' in document.documentElement); }
 
     const on_snapped = () => {
+        snapper.current.snapStop = true;
         setSnapped(false);
         let scroll_pos = content_area.current.scrollLeft
         let pane_size = break_points[1]
         let pos = Math.round(scroll_pos / pane_size) - 1;
         if (pos < 0) {
-            content_area.current.scrollLeft = break_points[SCROLL_POINTS];
+            snapper.current.snapStop = false;
+            content_area.current.scrollTo({ left: break_points[SCROLL_POINTS], top: 0 });
             setCurrent_pane(SCROLL_POINTS - 1);
             return;
         }
         if (pos > (SCROLL_POINTS - 1)) {
-            content_area.current.scrollLeft = break_points[1];
+            snapper.current.snapStop = false;
+            content_area.current.scrollTo({ left: break_points[1], top: 0 });
             setCurrent_pane(0);
             return
         }
@@ -55,28 +58,6 @@ export default ({ }) => {
         setSnapped(true);
     }
 
-    // const on_intersect = (entries) => {
-    //     let is_snapped = reduce(entries, (acc, entry) => {
-    //         // Each entry describes an intersection change for one observed
-    //         // target element:
-    //         //   entry.boundingClientRect
-    //         //   entry.intersectionRatio
-    //         //   entry.intersectionRect
-    //         //   entry.isIntersecting
-    //         //   entry.rootBounds
-    //         //   entry.target
-    //         //   entry.time
-    //         if (entry.isIntersecting) {
-    //             return true;
-    //         }
-    //         return acc;
-    //     }, false);
-
-    //     if (is_snapped) {
-    //         return setSnapped(true);
-    //     }
-    // }
-
     const populate_breakpoints = () => {
         var total = getWidth();
         var arr = range(SCROLL_POINTS + 2);
@@ -86,33 +67,10 @@ export default ({ }) => {
     }
 
     const getOn_scroll = () => {
-        if (isMobile()) {
-            return debounce(on_scroll, 150);
-        }
+
         return noop;
     }
 
-    const on_scroll = () => {
-
-        let scroll_pos = content_area.current.scrollLeft;
-
-        let pane_size = break_points[1]
-        let pos = Math.round(scroll_pos / pane_size) - 1;
-
-
-        if (pos < 0) {
-            content_area.current.scrollTo({ left: break_points[SCROLL_POINTS], top: 0 });
-            setCurrent_pane(SCROLL_POINTS - 1);
-            return;
-        }
-        if (pos > (SCROLL_POINTS - 1)) {
-            content_area.current.scrollTo({ left: break_points[1], top: 0 });
-            setCurrent_pane(0);
-            return
-        }
-
-        setCurrent_pane(pos);
-    }
 
     const go_to = (i) => {
         return () => {
@@ -157,8 +115,9 @@ export default ({ }) => {
 
         populate_breakpoints();
 
+        bindScrollSnap();
+
         if (!isMobile()) {
-            bindScrollSnap()
             content_area.current.addEventListener('wheel', scrollHorizontally);
 
             let handle_resize = () => {
@@ -178,27 +137,12 @@ export default ({ }) => {
         }
 
 
-        // if (isMobile) {
-        // let options = {
-        //     root: document.querySelector('#content-area'),
-        //     rootMargin: '0px',
-        //     threshold: .7
-        // }
-
-        // intersector.current = new IntersectionObserver(on_intersect, options);
-        // intersector.current.observe(frame1.current);
-        // intersector.current.observe(frame2.current);
-        // intersector.current.observe(frame3.current);
-        // intersector.current.observe(frame4.current);
-
-        // content_area.current.addEventListener('touchmove', throttle(on_scroll, 200)); }
-
     }, [])
 
     const bindScrollSnap = () => {
         const snapElement = new ScrollSnap(content_area.current, {
             snapDestinationX: '100%',
-            //snapStop: true,
+            snapStop: true,
             duration: 100,
             timeout: 100,
             threshold: 0.4,
@@ -228,50 +172,7 @@ export default ({ }) => {
                     <div className="dots">
                         {range(SCROLL_POINTS).map((i) => (<label onClick={go_to(i)} className={current_pane == i ? "active" : "inactive"}></label>))}
                     </div>
-                    <div className="content-field s2022">
-                        <div class="article-link">
-                            <Link to="/ihmiskone">
-                                <h1>Täydellinen ihmisko(n)e</h1>
-                            </Link>
-
-                            <div s-only="dsk" className="spacer"></div>
-                            <div className="hole-container">
-                                {/* <Hole5 /> */}
-                                <img className="hole" id="hole5" src="./img/holes/MHPhole1_1.png"></img>
-                            </div>
-                        </div>
-                        <div class="article-link">
-                            <Link to="/the-blade">
-                                <h1>The Blade</h1>
-                            </Link>
-                            <div s-only="dsk" className="spacer"></div>
-                            <div className="hole-container">
-                                {/* <Hole6 /> */}
-                                <img className="hole" id="hole6" src="./img/holes/MHPhole2_1.png"></img>
-                            </div>
-                        </div>
-                        <div class="article-link">
-                            <Link to="/a-house-music">
-                                <h1>A HOUSE MUSIC</h1>
-                            </Link>
-                            <div s-only="dsk" className="spacer"></div>
-                            <div className="hole-container">
-                                {/* <Hole7 /> */}
-                                <img className="hole" id="hole7" src="./img/holes/MHPhole3_1.png"></img>
-                            </div>
-                        </div>
-                        <div class="article-link">
-                            <Link to="/only-flowers">
-                                <h1>I Only Want To Talk <wbr /> About Flowers</h1>
-                            </Link>
-                            <div s-only="dsk" className="spacer"></div>
-                            <div className="hole-container">
-                                {/* <Hole8 /> */}
-                                <img className="hole" id="hole8" src="./img/holes/MHPhole4_1.png"></img>
-                            </div>
-                        </div>
-
-                    </div>
+                    <Content2022></Content2022>
                     <div className="content-field s2020">
                         <div class="article-link">
                             <Link to="/practices-of-love-and-body">
@@ -366,50 +267,7 @@ export default ({ }) => {
                         </div>
 
                     </div>
-                    <div className="content-field s2022">
-                        <div class="article-link">
-                            <Link to="/ihmiskone">
-                                <h1>Täydellinen ihmisko(n)e</h1>
-                            </Link>
-
-                            <div s-only="dsk" className="spacer"></div>
-                            <div className="hole-container">
-                                {/* <Hole5 /> */}
-                                <img className="hole" id="hole5" src="./img/holes/MHPhole1_1.png"></img>
-                            </div>
-                        </div>
-                        <div class="article-link">
-                            <Link to="/the-blade">
-                                <h1>The Blade</h1>
-                            </Link>
-                            <div s-only="dsk" className="spacer"></div>
-                            <div className="hole-container">
-                                {/* <Hole6 /> */}
-                                <img className="hole" id="hole6" src="./img/holes/MHPhole2_1.png"></img>
-                            </div>
-                        </div>
-                        <div class="article-link">
-                            <Link to="/a-house-music">
-                                <h1>A HOUSE MUSIC</h1>
-                            </Link>
-                            <div s-only="dsk" className="spacer"></div>
-                            <div className="hole-container">
-                                {/* <Hole7 /> */}
-                                <img className="hole" id="hole7" src="./img/holes/MHPhole3_1.png"></img>
-                            </div>
-                        </div>
-                        <div class="article-link">
-                            <Link to="/only-flowers">
-                                <h1>I Only Want To Talk <wbr /> About Flowers</h1>
-                            </Link>
-                            <div s-only="dsk" className="spacer"></div>
-                            <div className="hole-container">
-                                {/* <Hole8 /> */}
-                                <img className="hole" id="hole8" src="./img/holes/MHPhole4_1.png"></img>
-                            </div>
-                        </div>
-
-                    </div>
+                    <Content2022></Content2022>
                     <div className="content-field s2020">
                         <div class="article-link">
                             <Link to="/practices-of-love-and-body">
@@ -464,3 +322,50 @@ export default ({ }) => {
         </>
     )
 }
+
+
+const Content2022 = () => (
+    <div className="content-field s2022">
+        <div class="article-link">
+            <Link to="/ihmiskone">
+                <h1>Täydellinen ihmisko(n)e</h1>
+            </Link>
+
+            <div s-only="dsk" className="spacer"></div>
+            <div className="hole-container">
+                {/* <Hole5 /> */}
+                <img className="hole" id="hole12" src="./img/holes/hole-12.png"></img>
+            </div>
+        </div>
+        <div class="article-link">
+            <Link to="/the-blade">
+                <h1>The Blade</h1>
+            </Link>
+            <div s-only="dsk" className="spacer"></div>
+            <div className="hole-container">
+                {/* <Hole6 /> */}
+                <img className="hole" id="hole9" src="./img/holes/hole-9.png"></img>
+            </div>
+        </div>
+        <div class="article-link">
+            <Link to="/a-house-music">
+                <h1>A HOUSE MUSIC</h1>
+            </Link>
+            <div s-only="dsk" className="spacer"></div>
+            <div className="hole-container">
+                {/* <Hole7 /> */}
+                <img className="hole" id="hole11" src="./img/holes/hole-11.png"></img>
+            </div>
+        </div>
+        <div class="article-link">
+            <Link to="/only-flowers">
+                <h1>I Only Want To Talk <wbr /> About Flowers</h1>
+            </Link>
+            <div s-only="dsk" className="spacer"></div>
+            <div className="hole-container">
+                {/* <Hole8 /> */}
+                <img className="hole" id="hole10" src="./img/holes/hole-10.png"></img>
+            </div>
+        </div>
+    </div>
+)
