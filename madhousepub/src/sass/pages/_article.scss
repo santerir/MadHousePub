@@ -120,7 +120,9 @@
         }
 
         .title {
+
             text-align: center;
+
             margin: 0 0 2em 0;
 
             #info-modal-button {
@@ -131,6 +133,8 @@
                 left: 0;
                 right: 0;
                 margin: -34px auto;
+
+                text-align: left;
             }
         }
 
@@ -138,4 +142,5 @@
             margin: 3em auto 1em auto;
         }
     }
+
 }

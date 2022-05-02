@@ -35,11 +35,11 @@ export const Ekfrasiksesta = () => {
                 </ModalButton>
                 <Modal modalId="info-modal" closable>
                     <p><b>Ekfrasiksesta osa 2.<br />
-                    seassa-kollektiivi
-</b></p>
+                        seassa-kollektiivi
+                    </b></p>
 
                     <p><b>4/2021<br />
-                    teksti</b>
+                        teksti</b>
                     </p>
 
                     <p>
@@ -108,7 +108,7 @@ export const Ekfrasiksesta = () => {
                 <p><b>Katsomistapahtuma ja siitä puhuminen eivät usein vastaa toisiaan.</b> Usein ne jopa estävät toisiaan. Silti kielen kanssa pitää aina tehdä sopimus, että se täsmää jotensakin kuvaamaansa kohteeseen. Tai solmia sopimus ylipäänsä siitä, millaisessa suhteessa kieli on todellisuuteen. Saa se olla horjuvakin.
                 </p><p className="indent">
                     Toisin sanoen, aistisesti välittyvä todellisuus koostuu mahdollisesti muustakin kuin siitä, mitä konkreettisesti tapahtuu: todellisuus on aukkoja muistamisen ja kuvittelemisen välillä. Mietin faktan, fabuloinnin, projisoinnin, muistamisen ja unohtamisen eri kohtaamispintoja. Mahdollisesti kokemuksen sanallistamiseen liittyy nämä kaikki. Sen takia sanallistaminen on niin valtavan tärkeää. On mahdollisesti yhdentekevää, onko sanallistettu asia, sanan kirjaimellisessa merkityksessä, <i>totta</i>.
-</p>
+                </p>
 
                 <p className="color-teal">Millainen dokumentti ekfrasis on? Kysymykseen voi vastata selvittämällä, mitä kirjoittaminen on. Kirjoittaminen on muun muassa keino merkitä muistiin. <b>Kirjoittamalla voi tallentaa kehonsa ulkopuolelle jotain, jonka haluaa muistaa ja johon palata</b>, ja jonka voi näin ajatella olevan tekijälleen tärkeää. Ja näin kirjoitetun voi myös unohtaa, kun jokin toinen materiaali kannattelee muistamisen tekoa.</p>
                 <p className="color-teal">Antiikin Kreikassa ekfrasiksella tarkoitettiin alkujaan <i>kuvausta</i><sup>1</sup>. Sanan etymologinen tulkinta <i>ulos puhumisesta</i><sup>2</sup>  sisältää viittauksen aikakauteen, jolloin kirjoitus- ja lukutaito eivät olleet yleisiä. Varhaisimmat ekfrasikset ovat eläneet ääneen kerrottuina, kuunneltuina, ehkä toistettuina ja siten muistettuina. Ekfrasis sanana, tänä päivänä, palauttaa ajatukseni yhä uudelleen kehollisuuteen ja ohimenevyyteen.</p>
@@ -151,7 +151,7 @@ export const Ekfrasiksesta = () => {
                 </p>
                 <p>
                     <span className="color-teal">Jätämme tähän tilaa tuleville esityksille ja niiden kuvittelulle </span><br />
-Jätämme tähän tilaa tuleville esityksille ja niiden kuvittelulle<br />
+                    Jätämme tähän tilaa tuleville esityksille ja niiden kuvittelulle<br />
                     <span className="color-blue"> Jätämme tähän tilaa tuleville esityksille ja niiden kuvittelulle  </span>
                 </p>
             </div>

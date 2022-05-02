@@ -27,4 +27,72 @@
             text-decoration: none;
         }
     }
+
+    .hole_ {
+        position: relative;
+
+        height: 300px;
+
+        @include respond-below("mb-l") {
+            height: 150px;
+        }
+
+        svg {
+            z-index: z("overlay");
+            position: absolute;
+            max-width: 100%;
+        }
+
+        &.hole_9 {
+            &::before {
+                mask-image: url(/img/holes/hole-12.svg);
+            }
+
+            svg {
+                left: calc(50% + 0.5px);
+                transform: translateX(-50%);
+            }
+
+            @include respond-below("mb-l") {
+                &[data-w-p="2"],
+                &[data-w-p="1"],
+                &[data-w-p="0"] {
+                    svg {
+                        top: 0.5px;
+                        left: calc(50% + 0.2px);
+                        transform: translateX(-50%);
+                    }
+                }
+            }
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+
+            height: 300px;
+
+            @include respond-below("mb-l") {
+                height: 150px;
+            }
+
+            background-attachment: fixed;
+
+            background-image: url("/img/s2022-bkgrnd.png");
+            background-size: cover;
+            background-position: center center;
+
+            @supports (-webkit-touch-callout: none) {
+                background-attachment: initial;
+            }
+
+            mask-size: contain;
+            mask-repeat: no-repeat;
+            mask-position: center;
+        }
+    }
+
 }
