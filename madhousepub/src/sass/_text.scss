@@ -1,12 +1,12 @@
 .ligature {
     font-family: $heading-font;
-    font-size: 3em;
+    font-size: 3rem;
     color: black;
     line-height: 0.6;
 }
 
 p {
-    font-size: 0.7em;
+    font-size: 0.7rem;
     color: $teal;
 
     &.indent {
@@ -72,6 +72,10 @@ a {
 }
 
 div.center-text {
+    text-align: center;
+}
+
+p.center-text {
     text-align: center;
 }
 
