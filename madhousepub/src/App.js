@@ -29,6 +29,8 @@ import { Ihmiskone } from './content/s2022/ihmiskone';
 import { SUMMER2020, SUMMER2021, SUMMER2022 } from './editions'
 
 import './sass/style.scss';
+import { Blade } from './content/s2022/blade';
+import { Housemusic } from './content/s2022/housemusic';
 
 
 const App = ({ }) => {
@@ -53,8 +55,18 @@ const App = ({ }) => {
               <AboutIII />
             </Article>
           </Route>
+          <Route path="/a-house-music">
+            <Article edition={SUMMER2022} next="/the-blade" prev="/tunnemylläkkähässäkkä">
+              <Housemusic />
+            </Article>
+          </Route>
+          <Route path="/the-blade">
+            <Article edition={SUMMER2022} next="/a-house-music" prev="/ihmiskone">
+              <Blade />
+            </Article>
+          </Route>
           <Route path="/ihmiskone">
-            <Article edition={SUMMER2022} next="/fluctuants" prev="/tunnemylläkkähässäkkä">
+            <Article edition={SUMMER2022} next="/the-blade" prev="/fluctuants">
               <Ihmiskone />
             </Article>
           </Route>
@@ -101,7 +113,7 @@ const App = ({ }) => {
           <Route path="/:edition">
             <Home />
           </Route>
-          <Redirect exact from='/' to="/II" />
+          <Redirect exact from='/' to="/III" />
         </Switch>
       </div>
     </Router>

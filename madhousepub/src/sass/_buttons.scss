@@ -1,32 +1,3 @@
-@import "constants";
-@import "zvalues";
-@import "media_queries";
-
-html {
-    font-family: $font-face;
-    font-size: $font-base-size;
-
-    @include respond-between("mb-l", "l") {
-        font-size: 0.9 * $font-base-size;
-    }
-
-    div {
-        box-sizing: border-box;
-    }
-}
-
-body {
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: 0;
-    margin-right: 0;
-    -webkit-text-size-adjust: none;
-
-    #root {
-        height: 100vh;
-    }
-}
-
 button {
     border: none;
     background-color: unset;
@@ -87,27 +58,5 @@ button.text-button {
         &:after {
             content: none;
         }
-    }
-}
-
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
-[s-only="mb"] {
-    @include respond-between("mb-s", "mb-l") {
-    }
-    @include respond-above("mb-l") {
-        display: none !important;
-    }
-}
-
-[s-only="dsk"] {
-    @include respond-between("mb-s", "mb-l") {
-        display: none !important;
-    }
-    @include respond-above("mb-l") {
     }
 }

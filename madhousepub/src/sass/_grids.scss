@@ -4,6 +4,7 @@
     &--3w {
         grid-template-columns: 1fr 1fr 1fr;
         column-gap: 1em;
+        grid-auto-flow: column;
     }
 
     &--2w {

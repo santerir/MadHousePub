@@ -18,6 +18,18 @@
     }
 }
 
+.content {
+    color: $teal;
+
+    .title {
+        color: black;
+    }
+
+    .modal-content {
+        color: black;
+    }
+}
+
 .polab {
     #playlist {
         left: 20%;
