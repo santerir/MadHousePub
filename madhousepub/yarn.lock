@@ -7694,6 +7694,13 @@ pako@~1.0.5:
   resolved "https://registry.yarnpkg.com/pako/-/pako-1.0.11.tgz#6c9599d340d54dfd3946380252a35705a6b992bf"
   integrity sha512-4hLB8Py4zZce5s4yd9XzopqwVv/yGNhV1Bl8NTmCq1763HeK2+EwVTv+leGeL13Dnh2wfbqowVPXCIO0z4taYw==
 
+panelsnap@^1.3.0:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/panelsnap/-/panelsnap-1.3.0.tgz#21123139c0f0641b33127cfef8bb675fc01c40b7"
+  integrity sha512-nxX7oAMVU516lAN8CZZHuECaENI85qDRhgU0jIPxqeVssnfSPBvQhIqaCtCscw8H+wMjaeQBb5XGkqhUbhTAHA==
+  dependencies:
+    tweezer.js "^1.4.0"
+
 parallel-transform@^1.1.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/parallel-transform/-/parallel-transform-1.2.0.tgz#9049ca37d6cb2182c3b1d2c720be94d14a5814fc"
@@ -9644,10 +9651,10 @@ schema-utils@^2.5.0, schema-utils@^2.6.0, schema-utils@^2.6.1, schema-utils@^2.6
     ajv "^6.12.0"
     ajv-keywords "^3.4.1"
 
-scroll-snap@^3.2.3:
-  version "3.2.3"
-  resolved "https://registry.yarnpkg.com/scroll-snap/-/scroll-snap-3.2.3.tgz#893119102ef8b8d0d18ac6f06d464286f1159c02"
-  integrity sha512-SxHplDVKP/MQB4Eqh347Nhgu7VdEZq7dORIkFbh5mkumHv/p9UVPox8hyt5AePRcByCPG31xQCUhiwi6CHMxoQ==
+scroll-snap@^4.0.3:
+  version "4.0.3"
+  resolved "https://registry.yarnpkg.com/scroll-snap/-/scroll-snap-4.0.3.tgz#015ef1e2661249acfe99c673408a3710f74c7b3d"
+  integrity sha512-7am2JXqY/0jHN9+3b2zhZtm55NmzEQhZTXZBIdC/fVb6aVN5nonjbRpf+OghU9LhguJB+rq5ty9SmQcYzMvMxw==
 
 scss-tokenizer@^0.2.3:
   version "0.2.3"
@@ -10633,6 +10640,11 @@ tweetnacl@^0.14.3, tweetnacl@~0.14.0:
   version "0.14.5"
   resolved "https://registry.yarnpkg.com/tweetnacl/-/tweetnacl-0.14.5.tgz#5ae68177f192d4456269d108afa93ff8743f4f64"
   integrity sha1-WuaBd/GS1EViadEIr6k/+HQ/T2Q=
+
+tweezer.js@^1.4.0:
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/tweezer.js/-/tweezer.js-1.5.0.tgz#ca50ac5215022203fd3be4d28617e8e2305f5c0c"
+  integrity sha512-aSiJz7rGWNAQq7hjMK9ZYDuEawXupcCWgl3woQQSoDP2Oh8O4srWb/uO1PzzHIsrPEOqrjJ2sUb9FERfzuBabQ==
 
 type-check@~0.3.2:
   version "0.3.2"

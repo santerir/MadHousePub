@@ -2,7 +2,8 @@ import React, { useEffect, useState, useRef } from 'react'
 import { Link, useParams, useHistory } from 'react-router-dom'
 import { range, debounce, reduce, noop, map, some } from 'lodash';
 
-import ScrollSnap from 'scroll-snap'
+import createScrollSnap from 'scroll-snap'
+
 
 import SVGFilters from '../components/svg-filters'
 import { Hole1, Hole2, Hole3, Hole4, Hole5, Hole6, Hole7, Hole8, Inf } from '../components/svgs'
@@ -34,19 +35,16 @@ export default ({ }) => {
     const isMobile = () => { return ('ontouchstart' in document.documentElement); }
 
     const on_snapped = () => {
-        snapper.current.snapStop = true;
         setSnapped(false);
         let scroll_pos = content_area.current.scrollLeft
         let pane_size = break_points[1]
         let pos = Math.round(scroll_pos / pane_size) - 1;
         if (pos < 0) {
-            snapper.current.snapStop = false;
             content_area.current.scrollTo({ left: break_points[SCROLL_POINTS], top: 0 });
             setCurrent_pane(SCROLL_POINTS - 1);
             return;
         }
         if (pos > (SCROLL_POINTS - 1)) {
-            snapper.current.snapStop = false;
             content_area.current.scrollTo({ left: break_points[1], top: 0 });
             setCurrent_pane(0);
             return
@@ -66,16 +64,10 @@ export default ({ }) => {
         setBreak_points(arr)
     }
 
-    const getOn_scroll = () => {
-
-        return noop;
-    }
-
 
     const go_to = (i) => {
         return () => {
-            snapper.current.snapStop = false;
-            content_area.current.scrollTo({ left: break_points[i + 1], top: 0, behavior: "smooth" })
+            content_area.current.scrollTo({ left: break_points[i + 1], top: 0, behavior: "smooth" });
         }
     }
 
@@ -141,16 +133,14 @@ export default ({ }) => {
     }, [])
 
     const bindScrollSnap = () => {
-        const snapElement = new ScrollSnap(content_area.current, {
+        const snapElement = createScrollSnap(content_area.current, {
             snapDestinationX: '100%',
-            snapStop: true,
-            duration: 100,
+            snapStop: false,
+            duration: 200,
             timeout: 100,
-            threshold: 0.4,
-            easing: t => t * (2 - t)
-        });
+            threshold: 0.4
+        }, on_snap);
         snapper.current = snapElement;
-        snapper.current.bind(on_snap)
     }
 
     return (
@@ -167,14 +157,12 @@ export default ({ }) => {
                     <h3> {CONTENT_PANES[current_pane].name} </h3>
                 </div>
                 <div className={resizing ? "content-area blur" : "content-area"} id="content-area" ref={content_area}
-                    onScroll={getOn_scroll()}
-
                 >
                     <div className="dots">
                         {range(SCROLL_POINTS).map((i) => (<label onClick={go_to(i)} className={current_pane == i ? "active" : "inactive"}></label>))}
                     </div>
                     <Content2022></Content2022>
-                    <div className="content-field s2020">
+                    <section className="content-field s2020">
                         <div class="article-link">
                             <Link to="/practices-of-love-and-body">
                                 <h1>Practices of Love <br /> and Body</h1>
@@ -222,8 +210,8 @@ export default ({ }) => {
                             </div>
 
                         </div>
-                    </div>
-                    <div className="content-field s2021">
+                    </section>
+                    <section className="content-field s2021">
                         <div class="article-link">
                             <Link to="/fluctuants">
                                 <h1>FLUCTUANTS</h1>
@@ -267,7 +255,7 @@ export default ({ }) => {
                             </div>
                         </div>
 
-                    </div>
+                    </section>
                     <Content2022></Content2022>
                     <div className="content-field s2020">
                         <div class="article-link">
@@ -326,7 +314,7 @@ export default ({ }) => {
 
 
 const Content2022 = () => (
-    <div className="content-field s2022">
+    <section className="content-field s2022">
         <div class="article-link">
             <Link to="/ihmiskone">
                 <h1>Täydellinen ihmisko(n)e</h1>
@@ -368,5 +356,5 @@ const Content2022 = () => (
                 <img className="hole" id="hole10" src="./img/holes/hole-10.png"></img>
             </div>
         </div>
-    </div>
+    </section>
 )
