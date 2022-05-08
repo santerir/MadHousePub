@@ -72,7 +72,7 @@ const App = ({ }) => {
             </Article>
           </Route>
           <Route path="/ihmiskone">
-            <Article edition={SUMMER2022} next="/the-blade" prev="/fluctuants">
+            <Article edition={SUMMER2022} next="/the-blade" prev="/ekfrasiksesta-osa-2">
               <Ihmiskone />
             </Article>
           </Route>
@@ -97,7 +97,7 @@ const App = ({ }) => {
             </Article>
           </Route>
           <Route path="/practices-of-love-and-body" >
-            <Article edition={SUMMER2020} next="/rakkaudesta" prev="/ekfrasiksesta-osa-2">
+            <Article edition={SUMMER2020} next="/rakkaudesta" prev="/i-only-want-to-talk-about-flowers">
               <Polab />
             </Article>
           </Route>
@@ -112,7 +112,7 @@ const App = ({ }) => {
             </Article>
           </Route>
           <Route path="/tunnemylläkkähässäkkä">
-            <Article edition={SUMMER2020} next="/ihmiskone" prev="/cloudbody">
+            <Article edition={SUMMER2020} next="/fluctuants" prev="/cloudbody">
               <Tunne />
             </Article>
           </Route>

@@ -74,6 +74,7 @@ export default ({ }) => {
 
     const go_to = (i) => {
         return () => {
+            snapper.current.snapStop = false;
             content_area.current.scrollTo({ left: break_points[i + 1], top: 0, behavior: "smooth" })
         }
     }
