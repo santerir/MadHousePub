@@ -130,6 +130,10 @@ export const Housemusic = () => {
                 <p>I mix chalk with dye, I rub the surface with a shiny pebble, I apply the chalk and dye to the surface, perhaps with some wax to try to make it stick</p>
                 <p>I imagine a surface that makes sense, and a surface that makes no sense, and a surface that refers to nothing,</p>
                 <p>an elongated section of plastery paper, leaning at an angle, supported by... what?</p>
+                <p>
+                    <br></br>
+                    <br></br>
+                </p>
                 <p>I imagine staircases and columns, arched doorways of some institution, a convention centre, an underground station, a convent for clergy to live in perhaps,</p>
                 <p>a staircase that leads up, and then down again. An echo of that same building in deeper, darker tones</p>
             </div>
@@ -139,12 +143,20 @@ export const Housemusic = () => {
             <div className='palsta'>
                 <p>I want to know how a music will sound if only partly written, one part totally free, improvised, and the other with more instruction (a score) - this second player perhaps has had less time to acquire the skill, less erudition – and the more experienced player supports them playing through their understanding of the situation of improvisation – a unique kind of ’being in it’.</p>
                 <p>This is a structure too.</p>
+                <p>
+                    <br></br>
+                    <br></br>
+                </p>
                 <p>The score is in parts, loose pages which are only given an order to be played in in the moments leading up to the performance. We talk through the material once, we record three takes. The score that the second guitarist played from is shredded, broken down and incorporated into a paper clay.</p>
                 <p>I tend not to think in terms of opposites and binaries, but I notice I’m drawn to the idea of an echo or a shadow in this context - one player masks or shadows or shades or shields or shreds or buffers the other, I don’t know what that is, yet.</p>
                 <p>The thought of the frame and the framework returns: this too has a framework, although for a non-idiomatic improvisation, I suppose the framework is ideally to have none... But there is still something there. Playing together, playing off what the other instrumentalist, the performance space or situation proposes – there are glues and social threads holding this together, even though the frame is weak and may collapse at any moment.</p>
                 <p>We cherish the risk, the inherent danger contained in performance (free improvisation, for me, is made up of many of the same elements as performance art is - perhaps this ought to apply to more composed music too). In every moment a potential to either sound or not, to play or not, to express a something something</p>
                 <p>I run my hands through the shredded paper, I knead it into the  pulped cellulose, I think about how</p>
                 <p>someone said to me: ”this must be hard for you, the mental fatigue brought on by the grinding, the breaking down, the destructive forces present in the making of this clay”</p>
+                <p>
+                    <br></br>
+                    <br></br>
+                </p>
                 <p>but all I could think was the shadow of an object,</p>
                 <p>a lightness,</p>
                 <p>my hands trying to control something that warps, has a life of its own, that will wait for me to look away before bending out of shape (as if to tell me it doesn’t require my active participation in its making, and that my attempts to control it are pointless),</p>
@@ -161,6 +173,10 @@ export const Housemusic = () => {
                 <p>that we have all these ideas of building in abstraction and chance, but really it’s just moving along much like anything else would,</p>
                 <p>oh well</p>
                 <p>never mind</p>
+                <p>
+                    <br></br>
+                    <br></br>
+                </p>
                 <p>Free improvisation in the context of music is sometimes seen as an exercise in striving towards an emptiness, Cagean or Zen-like. Becoming attuned to something on the edge of perception, focusing in on a kind of distilled expression of sound and silence - not through thinking, but through the simple physical interaction between yourself and your instrument. Muscle memory may play a part, as perhaps does lived experience. While there’s still a thought process behind the playing, its primacy is pushed back. Perhaps it’s a way of avoiding the pressures of having to produce a composition, an accepted, coherent musical form (although all music, organised or unorganised in nature, could - should? - fundamentally be seen as coherent anyway). The mind goes blank, the music plays by itself, you’re absolved of the responsibility of making something, or at least you are free of playing by the rules of  the generally accepted role of the artist that produces an art work.</p>
             </div>
             <div className='palsta'>
@@ -169,9 +185,13 @@ export const Housemusic = () => {
             <div className='palsta'>
                 <p>As Daniel had never improvised before, I wrote some short pieces of music for him. He practiced the parts, and in our rehearsal together with Lauri, we discussed ways of breaking the components of the music down through randomisation, repetition, dynamic changes and altering of speed and tempo. This allowed Daniel to begin to introduce elements of improvisation into his playing.</p>
 
-                <p>We spoke after the recording:</p>
+                <p>
+                    <br></br>
+                    <br></br>
+                </p>
             </div>
             <div className="dialogue palsta">
+                <p style={{ fontSize: ".7em" }}>We spoke after the recording:</p>
                 <p>RB: How did playing feel today?</p>
                 <p>DB: Fine I guess.</p>
                 <p>RB: Do you think there’s a difference playing like this compared to playing from a written score?</p>
@@ -182,13 +202,14 @@ export const Housemusic = () => {
                 <p>DB: Yeah. Like playing. I start and then before I realise, it’s already over. I can take pretty much any menial task and get into that flow-state.</p>
                 <p>RB: Like snow clearing?</p>
                 <p>DB: Yeah. It’s kind of easy for me.</p>
+                <p>
+                    <br></br>
+                </p>
             </div>
-            <div className='palsta' ref={FreeToDoWhatever}>
+            <div className='palsta dialogue' ref={FreeToDoWhatever}>
                 <h3>FREE TO DO WHATEVER<br></br>
                     A conversation with Lauri Hyvärinen
                 </h3>
-            </div>
-            <div className='palsta dialogue'>
                 <p>(Before the recording cuts in, we’ve been talking about improvising as a means of composing...)</p>
                 <p>RB: ...so I suppose with free music it seems like a lot of the time it’s just luck.</p>
                 <p>LH: Yes.</p>
@@ -226,6 +247,10 @@ export const Housemusic = () => {
             </div>
             <div className='palsta'>
                 <p>Listening to the recording of Lauri and Daniel playing, I begin to hear a hissing noise in there. A repetitive action like drawing, sanding, colouring in, grating, rubbing. The hissing sound on the recording implies the making of something, a powerful suggestion of tactility.</p>
+                <p>
+                    <br></br>
+                    <br></br>
+                </p>
                 <p>I look at the drawing I made of the house. It’s more cavernous and empty than before. There appears to be more room in it now, although I’m less inclined to begin filling in the negative space.</p>
                 <p>I collect the assorted loose pages of the paper scores that I made for Daniel, these messy cyanotype prints on scraps of waste paper. I think about statues inside marble, or music that is like a cloud, an amorphous mass of sound that a composer sculpts from. What kind of music might this paper contain beyond that which is printed on it?</p>
                 <p>I tear the scores up as small as I can. I mix the cut up notation with a fine, powdery cellulose, adding water. I knead the mass into a papier-mâché.</p>

@@ -31,6 +31,7 @@ import { SUMMER2020, SUMMER2021, SUMMER2022 } from './editions'
 import './sass/style.scss';
 import { Blade } from './content/s2022/blade';
 import { Housemusic } from './content/s2022/housemusic';
+import { Flowers } from './content/s2022/flowers';
 
 
 const App = ({ }) => {
@@ -55,8 +56,13 @@ const App = ({ }) => {
               <AboutIII />
             </Article>
           </Route>
+          <Route path="/i-only-want-to-talk-about-flowers">
+            <Article edition={SUMMER2022} next="/practices-of-love-and-body" prev="/a-house-music">
+              <Flowers />
+            </Article>
+          </Route>
           <Route path="/a-house-music">
-            <Article edition={SUMMER2022} next="/the-blade" prev="/tunnemylläkkähässäkkä">
+            <Article edition={SUMMER2022} next="/i-only-want-to-talk-about-flowers" prev="/the-blade">
               <Housemusic />
             </Article>
           </Route>
@@ -86,7 +92,7 @@ const App = ({ }) => {
             </Article>
           </Route>
           <Route path="/ekfrasiksesta-osa-2" >
-            <Article edition={SUMMER2021} next="/practices-of-love-and-body" prev="/growing-pains">
+            <Article edition={SUMMER2021} next="/ihmiskone" prev="/growing-pains">
               <Ekfrasiksesta />
             </Article>
           </Route>

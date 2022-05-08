@@ -143,6 +143,10 @@
         .buttons {
             height: 50px;
             align-items: center;
+
+            @include respond-below("mb-l") {
+                height: 100px;
+            }
         }
 
         img {
@@ -155,6 +159,18 @@
             }
         }
 
+    }
+
+    .flowers {
+        img {
+            width: 100%;
+        }
+
+        h3 {
+            font-size: smaller;
+            text-align: center;
+            color: black;
+        }
     }
 
 }

@@ -24,13 +24,27 @@ button.lozenge {
     }
 
     &:hover {
-        background-color: $purp;
+        background-color: $orange;
     }
 
     width: 180px;
     height: 2em;
     border: 1px black solid;
     border-radius: 30px;
+
+    &.larger {
+        height: 3em;
+        width: 320px;
+        border-radius: 60px;
+        font-size: 1em;
+
+        @include respond-below("mb-l") {
+            height: 2.3em;
+            width: 280px;
+            border-radius: 50px;
+            font-size: 0.9em;
+        }
+    }
 }
 
 button.text-button {

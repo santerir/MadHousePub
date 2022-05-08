@@ -27,69 +27,6 @@ body {
     }
 }
 
-button {
-    border: none;
-    background-color: unset;
-    cursor: pointer;
-    width: 50px;
-
-    font-family: $sans-font;
-
-    &:focus {
-        outline: none;
-    }
-
-}
-
-button.lozenge {
-    border: none;
-    background-color: unset;
-    cursor: pointer;
-
-    font-family: $sans-font;
-
-    &:focus {
-        outline: none;
-    }
-
-    &:hover {
-        background-color: $purp;
-    }
-
-    width: 180px;
-    height: 2em;
-    border: 1px black solid;
-    border-radius: 30px;
-}
-
-button.text-button {
-    h5 {
-        font-family: $font-face;
-        display: inline;
-    } 
-    width: unset;
-    position: relative;
-    
-    &.selected {
-        color: $red;
-    }
-
-    &:after {
-        content: '';
-        position: absolute;
-        top: 25%;
-        height: 75%;
-        left: 100%;
-        border-right: 1px solid black;
-      }
-
-    &:last-of-type {
-        &:after {
-            content: none;
-        }
-    }
-}
-
 .clearfix::after {
     content: "";
     clear: both;

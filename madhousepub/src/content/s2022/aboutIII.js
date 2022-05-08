@@ -96,6 +96,47 @@ const CONTENT = {
     </>,
     SVE: <>
         <p>
+            <span className="ligature">
+                Välkommen
+            </span>  till den tredje utgåvan av <i>Mad House Helsinki Publication!</i>
+
+        </p>
+        <p>
+            <i>Mad House Helsinki Publication</i> är ett internetbaserat interaktivt rum för scenkonst. Publication är en plattform där konstnärer kan utforska medier såsom video, fotografi, teckning och text. I den tredje utgåvan av Publication kan du ta del av konstverk skapade av musiker, kompositör och scenkonstnär <b>Venla Ilona Blom</b>, konstnär aktiv inom text- och musikbaserad konst <b>Roy Boswell</b>, scen- och bildkonstnär <b>Renen Itzhakin</b> samt bild- och scenkonstnär <b>Diana Soria Hernandezin</b>.
+
+
+        </p>
+        <p>
+            Genom att läsa och ta del av Publication kan du medverka i skapandet av diskussion omkring digital scenkonst. Dyk in i Publications digitala värld och berätta för oss vad du upplevde via vår publikenkät.
+        </p>
+        <br /><br />
+        <p style={{ fontSize: "0.6em" }}>
+            <b>Chefredaktör:</b>
+            <br />
+            Anne Naukkarinen
+            <br />
+            <br />
+
+            <b>Grafisk design:
+            </b>
+            <br />
+            Kiia Beilinson
+            <br />
+            <br />
+
+            <b>Programmering:
+            </b>
+            <br />
+            Santeri Räisänen
+            <br />
+            <br />
+
+            <b>Publikarbete och översättning:
+            </b>
+            <br />
+            Laura Tolvanen
+            <br />
+            <br />
         </p>
     </>
 }

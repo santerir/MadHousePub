@@ -68,8 +68,12 @@ export const Blade = () => {
                 </Modal>
             </div>
             <div className='palsta'>
-                <ReactPlayer url="https://vimeo.com/701622331" controls="true" />
-
+                <div className='p-wrapper'>
+                    <ReactPlayer url="https://vimeo.com/701622331" className="react-player" controls="true"
+                        width='100%'
+                        height='100%'
+                    />
+                </div>
             </div>
         </div>
     )

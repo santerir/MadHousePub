@@ -358,7 +358,7 @@ const Content2022 = () => (
             </div>
         </div>
         <div class="article-link">
-            <Link to="/only-flowers">
+            <Link to="/i-only-want-to-talk-about-flowers">
                 <h1>I Only Want To Talk <wbr /> About Flowers</h1>
             </Link>
             <div s-only="dsk" className="spacer"></div>
