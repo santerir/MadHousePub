@@ -42,7 +42,7 @@ export const Flowers = () => {
 
                             <p><i>Diana Soria Hernandez</i> is a visual artist mainly working with performance art, live installation, ceramics and drawing. She holds a BA in Fine Arts from La Esmeralda in Mexico City, an MFA in Printmaking from the Academy of Fine Arts Helsinki and is pursuing a MA in Live Art and Performance Studies at the Theatre Academy Helsinki. Her work has been shown internationally.</p>
 
-                            <a href="http://dianasoria.net/">http://dianasoria.net/</a>
+                            <p><a href="http://dianasoria.net/">http://dianasoria.net/</a></p>
 
                         </LanguageContent>
                         <LanguageContent language={"FI"} selectedLanguage={lang}>
@@ -59,7 +59,7 @@ export const Flowers = () => {
 
                             <p><b>Diana Soria Hernandez</b> on kuvataiteilija, joka työskentelee performanssitaiteen, live-installaatioiden, keramiikan ja piirustuksen parissa. Hän on valmistunut taiteiden kandiksi La Esmeraldasta, Meksikosta sekä taiteiden maisteriksi Kuvataideakatemiasta Helsingistä. Tällä hetkellä Soria Hernandez suorittaa maisterin tutkintoa Taideyliopiston Teatterikorkeakoulusta. Hänen töitään on ollut esillä maailmanlaajuisesti.</p>
 
-                            <a href="http://dianasoria.net/">http://dianasoria.net/</a>
+                            <p> <a href="http://dianasoria.net/">http://dianasoria.net/</a> </p>
 
 
                         </LanguageContent>

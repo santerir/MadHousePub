@@ -67,7 +67,11 @@ export default ({ }) => {
 
     const go_to = (i) => {
         return () => {
+            snapper.current.unbind();           // Fix for firefox race conditions
             content_area.current.scrollTo({ left: break_points[i + 1], top: 0, behavior: "smooth" });
+            setTimeout(() => {              // Fix for firefox race conditions
+                snapper.current.bind();
+            }, 1000);
         }
     }
 
