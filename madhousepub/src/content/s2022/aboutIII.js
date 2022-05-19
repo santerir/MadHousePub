@@ -19,7 +19,7 @@ const CONTENT = {
                 Publicationin</i> kolmannen numeron pariin!
         </p>
         <p>
-            <i>Mad House Helsinki Publication</i> on verkkoympäristössä toimiva interaktiivinen esitystaiteen tila. Publication rakentuu taiteilijalähtöisesti hyödyntäen mm. videon, valokuvan, piirroksen, äänen ja tekstin mahdollisuuksia. Publicationin kolmannessa numerossa on koettavissa muusikko, säveltäjä ja esitystaiteilija <b>Venla Ilona Blomin</b>, veistoksen, tekstin ja musiikin parissa työskentelevän taiteilijan <b>Roy Boswellin</b>, esitys- ja kuvataiteilija <b>Renen Itzhakin</b>, kuva- ja esitystaiteilija <b>Diana Soria Hernandezin</b> teokset.
+            Mad House Helsinki Publication on verkkoympäristössä toimiva interaktiivinen esitystaiteen tila. Publication rakentuu taiteilijalähtöisesti hyödyntäen mm. videon, valokuvan, piirroksen, äänen ja tekstin mahdollisuuksia. Publicationin kolmannessa numerossa on koettavissa muusikko, säveltäjä ja esitystaiteilija <b>Venla Ilona Blomin</b>, veistoksen, tekstin ja musiikin parissa työskentelevän taiteilijan <b>Roy Boswellin</b>, esitys- ja kuvataiteilija <b>Renen Itzhakin</b>, kuva- ja esitystaiteilija <b>Diana Soria Hernandezin</b> teokset.
         </p>
         <p>
             Publicationin kokijana ja katsojana olet mukana luomassa vuoropuhelua digitaalisen esitystaiteen kanssa. Sukella mukaan Publicationin verkkoympäristöön ja kerro meille <a target="_blank" href="https://forms.gle/ttxKLDqTHCWSJihU8">yleisökyselyn</a> kautta mitä ja miten sen koit.
@@ -60,7 +60,7 @@ const CONTENT = {
             </span>  to the third issue of <i>Mad House Helsinki Publication</i>!
         </p>
         <p>
-            <i>Mad House Helsinki Publication</i> is an online-based interactive space for performative arts. The Publication is a platform for artists to explore the possibilities of multiple mediums, such as film, image, drawing, sound and text. The third issue features works by musician, composer and performance artist <b>Venla Ilona Blom</b>, artist working with sculpture, text and music <b>Roy Boswell</b>, performance and visual artist <b>Renen Itzhaki</b>, and visual and performance artist <b>Diana Soria Hernandez</b>.
+            Mad House Helsinki Publication is an online-based interactive space for performative arts. The Publication is a platform for artists to explore the possibilities of multiple mediums, such as film, image, drawing, sound and text. The third issue features works by musician, composer and performance artist <b>Venla Ilona Blom</b>, artist working with sculpture, text and music <b>Roy Boswell</b>, performance and visual artist <b>Renen Itzhaki</b>, and visual and performance artist <b>Diana Soria Hernandez</b>.
 
         </p>
         <p>

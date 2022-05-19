@@ -67,7 +67,9 @@ export const Flowers = () => {
                 </Modal>
             </div>
             <div className='palsta'>
-                <iframe src="/resources/I_Only_Want_To_Talk_About_Flowers.pdf#toolbar=0&navpanes=0&scrollbar=0" width="595" height="780" />
+                <div className='embed-responsive'>
+                    <iframe src="/resources/I_Only_Want_To_Talk_About_Flowers.pdf#toolbar=0&navpanes=0&scrollbar=0" width="100%" height="100%" />
+                </div>
             </div>
             <div className='palsta center-text'>
                 <a target="_blank" href="/resources/I_Only_Want_To_Talk_About_Flowers.pdf" download>
