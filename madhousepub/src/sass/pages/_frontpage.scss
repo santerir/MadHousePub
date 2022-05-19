@@ -295,7 +295,8 @@
                     top: 5%;
                     margin-right: -35%;
                     left: -30%;
-                    width: 45%;
+                    max-height: 30vh;
+                    height: 120%;
                 }
 
                 #hole5 {
@@ -335,24 +336,24 @@
                 }
 
                 #hole10 {
-                    width: 18%;
                     float: right;
-                    left: 7%;
+                    left: 2%;
                     top: -27%;
+                    height: 30vh;
                 }
 
                 #hole11 {
                     width: 70%;
+                    max-width: 40vw;
                     float: right;
-                    top: -20%;
+                    top: -15%;
 
                 }
 
                 #hole12 {
                     float: left;
-                    width: 37%;
-                    top: 10%;
-                    right: 8%;
+                    width: 26%;
+                    top: 26%;
                     
                 }
             }

@@ -17,6 +17,8 @@ button.lozenge {
     background-color: unset;
     cursor: pointer;
 
+    color: black;
+
     font-family: $sans-font;
 
     &:focus {
@@ -33,10 +35,10 @@ button.lozenge {
     border-radius: 30px;
 
     &.larger {
-        height: 3em;
-        width: 320px;
+        height: 2.4em;
+        width: 280px;
         border-radius: 60px;
-        font-size: 1em;
+        font-size: 0.9em;
 
         @include respond-below("mb-l") {
             height: 2.3em;

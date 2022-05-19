@@ -17,7 +17,7 @@ export const Blade = () => {
     return (
         <div className="blade">
             <div className="title">
-                <h1>The Blade</h1>
+                <h1>The blade</h1>
                 <h5>Renen Itzhaki</h5>
                 <ModalButton modalId="info-modal">
                     <Inf />
@@ -42,7 +42,7 @@ export const Blade = () => {
                             <p><b>Renen Itzhaki</b> is an artist active in the fields of performance, video, and installation. Their work is characterized by reflection on the processes of art making, authorship, institutional critique, and personal memory. They also collaborate as a performer, dramaturge and choreographer, working with different artists, including Jeremy Shaw, Boudry/Lorenz, Maryna Makarenko, Boris Nikitin, Lee Méir, Lia Rodrigues, and many more.</p>
 
 
-                            <p><a href="http://www.whoisrenen.net">www.whoisrenen.net</a></p>
+                            <p><a target="_blank" href="http://www.whoisrenen.net">www.whoisrenen.net</a></p>
 
 
                         </LanguageContent>
@@ -60,7 +60,7 @@ export const Blade = () => {
 
                             <p><b>Renen Itzhaki</b> tekee taidetta videon, installaation ja performanssitaiteen parissa. Hänen työtään sävyttää taiteellisen prosessin tarkastelu, tekijyys, institutionaalinen kritiikki sekä henkilökohtainen kokemus. Itzhaki tekee taiteellista yhteistyötä performanssin, dramaturgian ja koreografian parissa. Hän on työskennellyt mm. Jeremy Shawin, Boudry/Lorenzin, Maryna Makarenkon, Boris Nikitinin, Lee Méirin, Lia Rodriguesin ja monen muun kanssa.</p>
 
-                            <p><a href="http://www.whoisrenen.net">www.whoisrenen.net</a></p>
+                            <p><a target="_blank" href="http://www.whoisrenen.net">www.whoisrenen.net</a></p>
 
 
                         </LanguageContent>

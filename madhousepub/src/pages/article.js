@@ -15,8 +15,8 @@ export default ({ edition, next, prev, children }) => {
 
     return (
         <div className={["article", edition.cls].join(' ')}>
-            <div className="header">
-                <Link to="/">
+            <div className="header bckground">
+                <Link to={edition.root}>
                     <h4> Mad House Helsinki <span style={{ fontWeight: 100 }}>Publication</span></h4>
                 </Link>
                 <Link to={edition.root}><button className="close-button">
@@ -24,7 +24,7 @@ export default ({ edition, next, prev, children }) => {
                 </button></Link>
             </div>
             <div className="content" ref={contentRef}>{children}</div>
-            <div className="footer">
+            <div className="footer bckground bckground-bttm">
                 {prev && <Link to={prev}><button className="bck"><Bck /></button></Link>}
                 {next && <Link to={next}><button className="fwd"><Fwd /></button></Link>}
             </div>

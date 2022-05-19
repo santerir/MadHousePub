@@ -320,11 +320,10 @@ export default ({ }) => {
 const Content2022 = () => (
     <section className="content-field s2022">
         <div class="article-link">
-            <Link to="/ihmiskone">
-                <h1>Täydellinen ihmisko(n)e</h1>
+            <Link to="/i-only-want-to-talk-about-flowers">
+                <h1>I Only Want To Talk <wbr /> About Flowers</h1>
             </Link>
-
-            <div s-only="dsk" className="spacer"></div>
+            {/* <div s-only="dsk" className="spacer"></div> */}
             <div className="hole-container">
                 {/* <Hole5 /> */}
                 <img className="hole" id="hole12" src="./img/holes/hole-12.png"></img>
@@ -332,7 +331,7 @@ const Content2022 = () => (
         </div>
         <div class="article-link">
             <Link to="/the-blade">
-                <h1>The Blade</h1>
+                <h1>The blade</h1>
             </Link>
             <div s-only="dsk" className="spacer"></div>
             <div className="hole-container">
@@ -351,8 +350,8 @@ const Content2022 = () => (
             </div>
         </div>
         <div class="article-link">
-            <Link to="/i-only-want-to-talk-about-flowers">
-                <h1>I Only Want To Talk <wbr /> About Flowers</h1>
+            <Link to="/ihmiskone">
+                <h1>Täydellinen ihmisko(n)e</h1>
             </Link>
             <div s-only="dsk" className="spacer"></div>
             <div className="hole-container">

@@ -42,7 +42,7 @@ export const Flowers = () => {
 
                             <p><i>Diana Soria Hernandez</i> is a visual artist mainly working with performance art, live installation, ceramics and drawing. She holds a BA in Fine Arts from La Esmeralda in Mexico City, an MFA in Printmaking from the Academy of Fine Arts Helsinki and is pursuing a MA in Live Art and Performance Studies at the Theatre Academy Helsinki. Her work has been shown internationally.</p>
 
-                            <p><a href="http://dianasoria.net/">http://dianasoria.net/</a></p>
+                            <p><a target="_blank" href="http://dianasoria.net/">http://dianasoria.net/</a></p>
 
                         </LanguageContent>
                         <LanguageContent language={"FI"} selectedLanguage={lang}>
@@ -59,7 +59,7 @@ export const Flowers = () => {
 
                             <p><b>Diana Soria Hernandez</b> on kuvataiteilija, joka työskentelee performanssitaiteen, live-installaatioiden, keramiikan ja piirustuksen parissa. Hän on valmistunut taiteiden kandiksi La Esmeraldasta, Meksikosta sekä taiteiden maisteriksi Kuvataideakatemiasta Helsingistä. Tällä hetkellä Soria Hernandez suorittaa maisterin tutkintoa Taideyliopiston Teatterikorkeakoulusta. Hänen töitään on ollut esillä maailmanlaajuisesti.</p>
 
-                            <p> <a href="http://dianasoria.net/">http://dianasoria.net/</a> </p>
+                            <p> <a target="_blank" href="http://dianasoria.net/">http://dianasoria.net/</a> </p>
 
 
                         </LanguageContent>
@@ -67,13 +67,10 @@ export const Flowers = () => {
                 </Modal>
             </div>
             <div className='palsta'>
-                <h3>Tap the cover to open the PDF in a new tab:</h3>
-            </div>
-            <div className='palsta'>
-                <a href="/resources/I_Only_Want_To_Talk_About_Flowers.pdf" target="_blank"><img src="img/flowers/flowers-cover.png" /></a>
+                <iframe src="/resources/I_Only_Want_To_Talk_About_Flowers.pdf#toolbar=0&navpanes=0&scrollbar=0" width="595" height="780" />
             </div>
             <div className='palsta center-text'>
-                <a href="/resources/I_Only_Want_To_Talk_About_Flowers.pdf" download>
+                <a target="_blank" href="/resources/I_Only_Want_To_Talk_About_Flowers.pdf" download>
                     <button className='lozenge larger'>
                         Download PDF here
                     </button>

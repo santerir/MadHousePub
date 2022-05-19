@@ -77,15 +77,15 @@ export const Ihmiskone = () => {
 
             <div className="spacer"></div>
 
-            <div className='palsta center-text'>
-                <p>LIIKAA</p>
-                <ReactPlayer height="140px" width="340px" style={{ margin: "0 auto" }} url="https://soundcloud.com/madhousehelsinki/liikaa-1"></ReactPlayer>
-            </div>
             <div className='palsta'>
                 <p>
                     Tänään olen niin pohjamutia myöten surullinen, pettynyt ja häpeissäni että selviytyäkseni työstäni, minun on puettava robottiasu ylleni ja painettava ON -nappia. Minun on vain suoriuduttava.<br />
                     Minun on lakattava olemasta ihminen.
                 </p>
+            </div>
+            <div className='palsta center-text'>
+                <p>LIIKAA</p>
+                <ReactPlayer height="140px" width="340px" style={{ margin: "0 auto" }} url="https://soundcloud.com/madhousehelsinki/liikaa-1"></ReactPlayer>
             </div>
             <div className='palsta center-text'>
                 <p>***</p>
@@ -100,7 +100,7 @@ export const Ihmiskone = () => {
 
                 <p>Ajatus siitä, että on oltava konemaisen tarkka ilmaisussa, tekniikassa ja musiikissa alkoi syöpyä myös ajatteluuni ja asenteisiini suhteessa itseeni ihmisenä. Aloin versioimaan itseäni, ohjelmoimaan käyttäytymistäni ja kategorisoimaan tunteitani. Tein jatkuvaa analyysia itsestäni, jotta saisin lisää informaatiota – miten olla, miten käyttäytyä, miten kontrolloida, miten suoriutua. Opettelin olemaan tekijä, en kokija – oleva, en olija. Ajattelin, että ainoa tapa selvitä elämässä ja saavuttaa mitään, on opetella säätelemään tunteita ja kanavoimaan ajatuksia – eliminoimalla häiriötekijät, tukahduttamalla ahdistus, piilottamalla herkkyys.</p>
 
-                <p>Opettelin olemaan versio, joka uskotteli kaikille olevansa kyvykäs, eloisa, rohkea, taitava ja pidättelemätön, toki myös sopivissa määrin herkkä, empaattinen ja sielukas. Minusta tulikin sellainen – suhtauduin elämääni narratiivisena tutkimuskohteena selittääkseni itselleni ja muille tietynlaiset asenteet, ajattelumallit ja elämässäni toistuvat ilmiöt. Kuvailin itseäni ja elämääni adjektiivein ja puhuin lääketieteellisten termien avulla mielenterveyteeni vaikuttavien tekijöiden olemassaolosta, mikä ”oikeutti” minut välillä suistumaan raiteiltani, menettämään kontrollin, näyttämään haavoittuvaisuuden –</p>
+                <p>Opettelin olemaan versio, joka uskotteli kaikille olevansa kyvykäs, eloisa, rohkea, taitava ja pidättelemätön, toki myös <i>sopivissa määrin</i> herkkä, empaattinen ja sielukas. Minusta tulikin sellainen – suhtauduin elämääni narratiivisena tutkimuskohteena selittääkseni itselleni ja muille tietynlaiset asenteet, ajattelumallit ja elämässäni toistuvat ilmiöt. Kuvailin itseäni ja elämääni adjektiivein ja puhuin lääketieteellisten termien avulla mielenterveyteeni vaikuttavien tekijöiden olemassaolosta, mikä ”oikeutti” minut välillä suistumaan raiteiltani, menettämään kontrollin, näyttämään haavoittuvaisuuden –</p>
 
                 <p>olemaan hetken ihan <i>oikea ihminen</i>.</p>
 
@@ -132,15 +132,6 @@ export const Ihmiskone = () => {
                 <p>Keväällä 2020 sain Koneen Säätiön apurahan WOMAN MACHINE -teoksen säveltämiseen ja käsikirjoittamiseen. Pandemia oli juuri puhjennut ja jouduin eristämään itseni kotistudiooni kuukausiksi. Noiden kuukausien aikana ei syntynyt sävellyksiä – syntyi tekstiä. Purin paperille kokemuksia, joista olin aiemmin vaiennut. Mitä enemmän kirjoitin, sitä selkeämmin koin tarvetta kirjoittaa. En välittänyt raameista, muodoista tai punaisesta langasta – välitin vain omasta rehellisyydestäni. Kirjoitin paniikkihäiriöstä, kaksisuuntaisen mielialahäiriön diagnoosista ja seksuaalisesta väkivallasta. Kirjoitin abortista. Kirjoitin terapiasta. Kirjoitin siitä, kuinka paljon vihasin terapiaa. Kirjoitin häpeästä, kuolemanpelosta, kuoleman ihannoimisesta, maniasta, työstä, rakkaudesta. Syntyi sekava läjä tekstiä, mistä en saa vielä itsekään kiinni. Teksti poukkoilee, muuttaa muotoaan ja on epätäydellistä, epäselvää ja keskeneräistä. Mutta kaiken tuon alla on tarina, jonka haluan kertoa. Olen kirjoittanut elämässäni paljon; sanoituksia, runoja, artikkeleita. Olen julkaissut paljon mutta sensuroinut sitäkin enemmän. Minulla on pohjattoman syvä kiintymyssuhde tarinankerrontaan, ja muusikkona ja esiintyvänä taiteilijana kerron usein tarinoita sävelten tai liikkeen kautta. Kieli on kuitenkin ensirakkauteni, olen aina kirjoittanut ja oppinut hitaasti nöyrtymään sanojen edessä.
                 </p>
             </div>
-            <div className='palsta center-text'>
-                <p>***</p>
-            </div>
-            <p className='palsta'>
-                <i>
-                    Tunteeni vyöryvät päälleni jokaisena elämäni hetkenä. Ne johdattavat minut harhaan. Jossain kaikkien noiden tunteiden alla on karttani, intuitioni, joka on hautautunut kauas lapsuuteni, nuoruuteni ja varhaisaikuisuuteni taistelujen alle – muurautunut syvälle erilaisten diagnoosien värittämän omakuvan ja pseudoidentiteetin syvyyksiin. Elämä on kaatanut juurieni päälle niin paljon sementtiä, että en pääse tunteitani ja ajatuksiani pakoon
-                    – en vaikka ne ovat kerta toisensa jälkeen lähellä tappaa minut.
-                </i>
-            </p>
             <div className='palsta center-text'>
                 <p>***</p>
             </div>

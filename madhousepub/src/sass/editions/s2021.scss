@@ -2,7 +2,11 @@
     .bckground {
         background-image: url("/img/s2021-bkgrnd.jpg");
         background-size: cover;
-        background-position: center center;
+        background-position: initial;
+
+        &.bckground-bttm {
+            background-position: bottom;
+        }
     }
 
     &.content-field {
