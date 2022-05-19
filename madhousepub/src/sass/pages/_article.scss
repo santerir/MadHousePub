@@ -9,9 +9,14 @@
         top: 0;
         height: 50px;
         z-index: z("overlay");
+        transition: top 0.3s;
 
         @include respond-below("mb-l") {
             height: $mb-head-foot-size;
+        }
+
+        &.hide {
+            top: -75px;
         }
 
         display: flex;
@@ -51,6 +56,11 @@
         bottom: 0;
         width: 100%;
         height: 50px;
+        transition: bottom 0.3s;
+
+        &.hide {
+            bottom: -50px;
+        }
 
         @include respond-below("mb-l") {
             height: $mb-head-foot-size;
@@ -88,14 +98,12 @@
         top: 50px;
 
         background-color: $base-color;
-        overflow-y: scroll;
         padding: 3em 2em 0 2em;
-        overflow-x: hidden;
 
         min-height: 100vh;
 
         @include respond-below("mb-l") {
-            padding: 0 0.2em 6em 0.2em;
+            padding: 3em 0.2em 6em 0.2em;
         }
 
         & > div {

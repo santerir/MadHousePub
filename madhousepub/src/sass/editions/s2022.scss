@@ -149,11 +149,30 @@
         }
 
         .buttons {
-            height: 50px;
+            height: 100px;
             align-items: center;
+
+            position: sticky;
+            padding-top: 50px;
+
+            top: 0;
+
+            background: ivory;
 
             @include respond-below("mb-l") {
                 height: 100px;
+            }
+
+            .active {
+                background-color: $orange;
+            }
+        }
+
+        section {
+            display: none;
+
+            &.active {
+                display: block;
             }
         }
 
