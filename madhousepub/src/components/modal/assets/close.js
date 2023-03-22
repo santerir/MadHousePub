@@ -1,3 +1,10 @@
+/* 
+ *  Copyright (c) 2023 Santtu Räisänen github.com/santerir
+ *  
+ *  This work is licensed under the terms of the MIT license.  
+ *  For a copy, see <https://opensource.org/licenses/MIT>.
+ */
+
 import React from 'react'
 
 export const Cls = () => (<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38.51 40.57">

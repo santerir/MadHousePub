@@ -1,3 +1,10 @@
+/* 
+ *  Copyright (c) 2023 Santtu Räisänen github.com/santerir
+ *  
+ *  This work is licensed under the terms of the MIT license.  
+ *  For a copy, see <https://opensource.org/licenses/MIT>.
+ */
+
 import React, { useEffect, useState, useRef } from 'react'
 import { Link, useParams, useHistory } from 'react-router-dom'
 import { range, debounce, reduce, noop, map, some } from 'lodash';
@@ -166,156 +173,121 @@ export default ({ }) => {
                         {range(SCROLL_POINTS).map((i) => (<label onClick={go_to(i)} className={current_pane == i ? "active" : "inactive"}></label>))}
                     </div>
                     <Content2022></Content2022>
-                    <section className="content-field s2020">
-                        <div class="article-link">
-                            <Link to="/practices-of-love-and-body">
-                                <h1>Practices of Love <br /> and Body</h1>
-                            </Link>
-                            <div s-only="dsk" className="spacer"></div>
-                            <div className="hole-container">
-                                {/* <Hole1 /> */}
-                                <img className="hole" id="hole1" src="./img/holes/Hole1.png"></img>
-                            </div>
-                        </div>
-                        <div class="article-link">
-                            <Link to="/rakkaudesta">
-                                <h1>Rakkaudesta <br />
-                                    – sanasto tuleville vuosikymmenille</h1>
-                            </Link>
-
-                            <div s-only="dsk" className="spacer"></div>
-                            <div className="hole-container">
-                                {/* <Hole4 /> */}
-                                <img className="hole" id="hole4" src="./img/holes/Hole4.png"></img>
-
-                            </div>
-                        </div>
-                        <div class="article-link">
-                            <Link to="/cloudbody">
-                                <h1>Cloudbody,<br />
-                                    an Ecology of Dreams,<br />
-                                    osa 3</h1>
-                            </Link>
-                            <div s-only="dsk" className="spacer"></div>
-                            <div className="hole-container">
-                                {/* <Hole2 /> */}
-                                <img className="hole" id="hole2" src="./img/holes/Hole2.png"></img>
-                            </div>
-
-                        </div>
-                        <div class="article-link">
-                            <Link to="/tunnemylläkkähässäkkä">
-                                <h1>Tunnemylläkkähässäkkä</h1>
-                            </Link>
-                            <div s-only="dsk" className="spacer"></div>
-                            <div className="hole-container">
-                                {/* <Hole3 /> */}
-                                <img className="hole" id="hole3" src="./img/holes/Hole3.png"></img>
-                            </div>
-
-                        </div>
-                    </section>
-                    <section className="content-field s2021">
-                        <div class="article-link">
-                            <Link to="/fluctuants">
-                                <h1>FLUCTUANTS</h1>
-                            </Link>
-
-                            <div s-only="dsk" className="spacer"></div>
-                            <div className="hole-container">
-                                {/* <Hole5 /> */}
-                                <img className="hole" id="hole5" src="./img/holes/MHPhole1_1.png"></img>
-                            </div>
-                        </div>
-                        <div class="article-link">
-                            <Link to="/ryhman-jasenet">
-                                <h1>Ryhmän jäsenet</h1>
-                            </Link>
-                            <div s-only="dsk" className="spacer"></div>
-                            <div className="hole-container">
-                                {/* <Hole6 /> */}
-                                <img className="hole" id="hole6" src="./img/holes/MHPhole2_1.png"></img>
-                            </div>
-                        </div>
-                        <div class="article-link">
-                            <Link to="/growing-pains">
-                                <h1>GROWING <br></br> PAINS</h1>
-                            </Link>
-                            <div s-only="dsk" className="spacer"></div>
-                            <div className="hole-container">
-                                {/* <Hole7 /> */}
-                                <img className="hole" id="hole7" src="./img/holes/MHPhole3_1.png"></img>
-                            </div>
-                        </div>
-                        <div class="article-link ekfrasis-link">
-                            <Link to="/ekfrasiksesta-osa-2">
-                                <h1>Ekfrasiksesta osa 2<br></br>
-                                    <h2 className="smaller">Esityksen kuvittelemisesta  <br></br> ja muistamisesta</h2></h1>
-                            </Link>
-                            <div s-only="dsk" className="spacer"></div>
-                            <div className="hole-container">
-                                {/* <Hole8 /> */}
-                                <img className="hole" id="hole8" src="./img/holes/MHPhole4_1.png"></img>
-                            </div>
-                        </div>
-
-                    </section>
+                    <Content2020></Content2020>
+                    <Content2021></Content2021>
                     <Content2022></Content2022>
-                    <div className="content-field s2020">
-                        <div class="article-link">
-                            <Link to="/practices-of-love-and-body">
-                                <h1>Practices of Love <br /> and Body</h1>
-                            </Link>
-                            <div s-only="dsk" className="spacer"></div>
-                            <div className="hole-container">
-                                {/* <Hole1 /> */}
-                                <img className="hole" id="hole1" src="./img/holes/Hole1.png"></img>
-                            </div>
-                        </div>
-                        <div class="article-link">
-                            <Link to="/rakkaudesta">
-                                <h1>Rakkaudesta <br />
-                                    – sanasto tuleville vuosikymmenille</h1>
-                            </Link>
-
-                            <div s-only="dsk" className="spacer"></div>
-                            <div className="hole-container">
-                                {/* <Hole4 /> */}
-                                <img className="hole" id="hole4" src="./img/holes/Hole4.png"></img>
-
-                            </div>
-                        </div>
-                        <div class="article-link">
-                            <Link to="/cloudbody">
-                                <h1>Cloudbody,<br />
-                                    an Ecology of Dreams,<br />
-                                    osa 3</h1>
-                            </Link>
-                            <div s-only="dsk" className="spacer"></div>
-                            <div className="hole-container">
-                                {/* <Hole2 /> */}
-                                <img className="hole" id="hole2" src="./img/holes/Hole2.png"></img>
-                            </div>
-
-                        </div>
-                        <div class="article-link">
-                            <Link to="/tunnemylläkkähässäkkä">
-                                <h1>Tunnemylläkkähässäkkä</h1>
-                            </Link>
-                            <div s-only="dsk" className="spacer"></div>
-                            <div className="hole-container">
-                                {/* <Hole3 /> */}
-                                <img className="hole" id="hole3" src="./img/holes/Hole3.png"></img>
-                            </div>
-
-                        </div>
-                    </div>
+                    <Content2020></Content2020>
                 </div>
             </div>
         </>
     )
 }
 
+/* Note: First and last content panes are repeated to make the carousel 
+*looping. Scrolling past the last pane will make the carousel quickly snap to 
+*the actual first pane from the decoy 'first pane' tacked to the end of the  
+*coursel. Same logic obviously for the last pane and the decoy last pane at the * beginning of the carousel.
+*/
+
+const Content2021 = () => (
+    <section className="content-field s2021">
+        <div class="article-link">
+            <Link to="/fluctuants">
+                <h1>FLUCTUANTS</h1>
+            </Link>
+
+            <div s-only="dsk" className="spacer"></div>
+            <div className="hole-container">
+                {/* <Hole5 /> */}
+                <img className="hole" id="hole5" src="./img/holes/MHPhole1_1.png"></img>
+            </div>
+        </div>
+        <div class="article-link">
+            <Link to="/ryhman-jasenet">
+                <h1>Ryhmän jäsenet</h1>
+            </Link>
+            <div s-only="dsk" className="spacer"></div>
+            <div className="hole-container">
+                {/* <Hole6 /> */}
+                <img className="hole" id="hole6" src="./img/holes/MHPhole2_1.png"></img>
+            </div>
+        </div>
+        <div class="article-link">
+            <Link to="/growing-pains">
+                <h1>GROWING <br></br> PAINS</h1>
+            </Link>
+            <div s-only="dsk" className="spacer"></div>
+            <div className="hole-container">
+                {/* <Hole7 /> */}
+                <img className="hole" id="hole7" src="./img/holes/MHPhole3_1.png"></img>
+            </div>
+        </div>
+        <div class="article-link ekfrasis-link">
+            <Link to="/ekfrasiksesta-osa-2">
+                <h1>Ekfrasiksesta osa 2<br></br>
+                    <h2 className="smaller">Esityksen kuvittelemisesta  <br></br> ja muistamisesta</h2></h1>
+            </Link>
+            <div s-only="dsk" className="spacer"></div>
+            <div className="hole-container">
+                {/* <Hole8 /> */}
+                <img className="hole" id="hole8" src="./img/holes/MHPhole4_1.png"></img>
+            </div>
+        </div>
+
+    </section>
+)
+
+const Content2020 = () => (
+    <section className="content-field s2020">
+        <div class="article-link">
+            <Link to="/practices-of-love-and-body">
+                <h1>Practices of Love <br /> and Body</h1>
+            </Link>
+            <div s-only="dsk" className="spacer"></div>
+            <div className="hole-container">
+                {/* <Hole1 /> */}
+                <img className="hole" id="hole1" src="./img/holes/Hole1.png"></img>
+            </div>
+        </div>
+        <div class="article-link">
+            <Link to="/rakkaudesta">
+                <h1>Rakkaudesta <br />
+                    – sanasto tuleville vuosikymmenille</h1>
+            </Link>
+
+            <div s-only="dsk" className="spacer"></div>
+            <div className="hole-container">
+                {/* <Hole4 /> */}
+                <img className="hole" id="hole4" src="./img/holes/Hole4.png"></img>
+
+            </div>
+        </div>
+        <div class="article-link">
+            <Link to="/cloudbody">
+                <h1>Cloudbody,<br />
+                    an Ecology of Dreams,<br />
+                    osa 3</h1>
+            </Link>
+            <div s-only="dsk" className="spacer"></div>
+            <div className="hole-container">
+                {/* <Hole2 /> */}
+                <img className="hole" id="hole2" src="./img/holes/Hole2.png"></img>
+            </div>
+
+        </div>
+        <div class="article-link">
+            <Link to="/tunnemylläkkähässäkkä">
+                <h1>Tunnemylläkkähässäkkä</h1>
+            </Link>
+            <div s-only="dsk" className="spacer"></div>
+            <div className="hole-container">
+                {/* <Hole3 /> */}
+                <img className="hole" id="hole3" src="./img/holes/Hole3.png"></img>
+            </div>
+
+        </div>
+    </section>
+)
 
 const Content2022 = () => (
     <section className="content-field s2022">
