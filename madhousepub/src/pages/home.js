@@ -341,7 +341,7 @@ const Content2022 = () => (
         </div>
         <div class="article-link">
             <Link to="/a-house-music">
-                <h1>A HOUSE MUSIC</h1>
+                <h1>A House Music</h1>
             </Link>
             <div s-only="dsk" className="spacer"></div>
             <div className="hole-container">

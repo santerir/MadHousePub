@@ -56,24 +56,24 @@ const App = ({ }) => {
               <AboutIII />
             </Article>
           </Route>
-          <Route path="/i-only-want-to-talk-about-flowers">
+          <Route path="/ihmiskone">
             <Article edition={SUMMER2022} next="/practices-of-love-and-body" prev="/a-house-music">
-              <Flowers />
+              <Ihmiskone />
             </Article>
           </Route>
           <Route path="/a-house-music">
-            <Article edition={SUMMER2022} next="/i-only-want-to-talk-about-flowers" prev="/the-blade">
+            <Article edition={SUMMER2022} next="/ihmiskone" prev="/the-blade">
               <Housemusic />
             </Article>
           </Route>
           <Route path="/the-blade">
-            <Article edition={SUMMER2022} next="/a-house-music" prev="/ihmiskone">
+            <Article edition={SUMMER2022} next="/a-house-music" prev="/i-only-want-to-talk-about-flowers">
               <Blade />
             </Article>
           </Route>
-          <Route path="/ihmiskone">
+          <Route path="/i-only-want-to-talk-about-flowers">
             <Article edition={SUMMER2022} next="/the-blade" prev="/ekfrasiksesta-osa-2">
-              <Ihmiskone />
+              <Flowers />
             </Article>
           </Route>
           <Route path="/fluctuants" >
@@ -92,12 +92,12 @@ const App = ({ }) => {
             </Article>
           </Route>
           <Route path="/ekfrasiksesta-osa-2" >
-            <Article edition={SUMMER2021} next="/ihmiskone" prev="/growing-pains">
+            <Article edition={SUMMER2021} next="/i-only-want-to-talk-about-flowers" prev="/growing-pains">
               <Ekfrasiksesta />
             </Article>
           </Route>
           <Route path="/practices-of-love-and-body" >
-            <Article edition={SUMMER2020} next="/rakkaudesta" prev="/i-only-want-to-talk-about-flowers">
+            <Article edition={SUMMER2020} next="/rakkaudesta" prev="/ihmiskone">
               <Polab />
             </Article>
           </Route>

@@ -67,9 +67,10 @@ export const Flowers = () => {
                 </Modal>
             </div>
             <div className='palsta'>
-                <div className='embed-responsive'>
-                    <iframe src="/resources/I_Only_Want_To_Talk_About_Flowers.pdf#toolbar=0&navpanes=0&scrollbar=0" width="100%" height="100%" />
-                </div>
+                <h3>Tap the cover to open the PDF in a new tab:</h3>
+            </div>
+            <div className='palsta'>
+                <a href="/resources/I_Only_Want_To_Talk_About_Flowers.pdf" target="_blank"><img src="img/flowers/flowers-cover.png" /></a>
             </div>
             <div className='palsta center-text'>
                 <a target="_blank" href="/resources/I_Only_Want_To_Talk_About_Flowers.pdf" download>

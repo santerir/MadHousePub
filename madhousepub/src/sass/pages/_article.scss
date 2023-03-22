@@ -8,7 +8,7 @@
         position: fixed;
         top: 0;
         height: 50px;
-        z-index: z("overlay");
+        z-index: z("toppest");
         transition: top 0.3s;
 
         @include respond-below("mb-l") {
@@ -58,6 +58,8 @@
         height: 50px;
         transition: bottom 0.3s;
 
+        z-index: z("toppest");
+
         &.hide {
             bottom: -50px;
         }
@@ -101,6 +103,7 @@
         padding: 3em 2em 0 2em;
 
         min-height: 100vh;
+        height: 100%;
 
         @include respond-below("mb-l") {
             padding: 3em 0.2em 6em 0.2em;

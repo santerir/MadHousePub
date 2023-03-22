@@ -79,8 +79,10 @@ export const Ihmiskone = () => {
 
             <div className='palsta'>
                 <p>
-                    Tänään olen niin pohjamutia myöten surullinen, pettynyt ja häpeissäni että selviytyäkseni työstäni, minun on puettava robottiasu ylleni ja painettava ON -nappia. Minun on vain suoriuduttava.<br />
-                    Minun on lakattava olemasta ihminen.
+                    <i>
+                        Tänään olen niin pohjamutia myöten surullinen, pettynyt ja häpeissäni että selviytyäkseni työstäni, minun on puettava robottiasu ylleni ja painettava ON -nappia. Minun on vain suoriuduttava.<br />
+                        Minun on lakattava olemasta ihminen.
+                    </i>
                 </p>
             </div>
             <div className='palsta center-text'>

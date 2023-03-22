@@ -28,7 +28,7 @@ export const Housemusic = () => {
     return (
         <div className="housemusic">
             <div className="title">
-                <h1>A HOUSE MUSIC</h1>
+                <h1>A House Music</h1>
                 <h5>Roy Boswell</h5>
                 <ModalButton modalId="info-modal">
                     <Inf />
@@ -39,7 +39,7 @@ export const Housemusic = () => {
 
                     <div id="l-content">
                         <LanguageContent language={"EN"} selectedLanguage={lang}>
-                            <p><b>A HOUSE MUSIC</b>
+                            <p><b>A House Music</b>
                                 <br />
                                 Roy Boswell
                             </p>
@@ -48,7 +48,7 @@ export const Housemusic = () => {
                                 Drawing, text, music
                             </p>
 
-                            <p><i>A HOUSE MUSIC</i> is a drawing, a text and a music composition. Its music is mostly improvised; partly based in discussion, partly in a deconstructed written notation.</p>
+                            <p><i>A House Music</i> is a drawing, a text and a music composition. Its music is mostly improvised; partly based in discussion, partly in a deconstructed written notation.</p>
 
                             <p>Two guitar players are given “a score” each. The first is a spoken suggestion for a free improvisation; the second comprises four short fragments of music, written as graphic / staff notation. Additional spoken instructions introduce further challenges to the way that the material may be approached. This was an exploratory first foray into improvisation for its player, a guitar student who has only played for 7 months. The instruction given to the first, more experienced player, was to use improvisation as a means of supporting the other guitarist.</p>
 
@@ -58,7 +58,7 @@ export const Housemusic = () => {
 
                         </LanguageContent>
                         <LanguageContent language={"FI"} selectedLanguage={lang}>
-                            <p><b>A HOUSE MUSIC</b>
+                            <p><b>A House Music</b>
                                 <br />
                                 Roy Boswell
                             </p>
@@ -268,14 +268,23 @@ export const Housemusic = () => {
                     <p>the suggestion of music inside is going in new,</p>
                     <p>unexpected directions, going where it will.</p>
                 </div>
-                <div className='palsta dialogue'>
-                    <p>Lauri Hyvärinen has been playing guitar for 25 years. He works in the contexts of contemporary, improvised and experimental music.</p>
-                    <p>Daniel Boswell started playing classical guitar in August 2021. The making of this piece was his first foray into musical improvisation.</p>
-                    <p>The video of Daniel and Lauri’s performance was recorded in Helsinki on March 28th, 2022. It was edited by Liisa Mudist.</p>
-                    <p>Special thanks to Tuomas Lehtomaa.</p>
-
-                </div>
             </section>
-        </div >
+            <div className='palsta dialogue'>
+                <br>
+                </br>
+                <br>
+                </br>
+                <br>
+                </br>
+                <br>
+                </br>
+                <br>
+                </br>
+                <p>Lauri Hyvärinen has been playing guitar for 25 years. He works in the contexts of contemporary, improvised and experimental music.</p>
+                <p>Daniel Boswell started playing classical guitar in August 2021. The making of this piece was his first foray into musical improvisation.</p>
+                <p>The video of Daniel and Lauri’s performance was recorded in Helsinki on March 28th, 2022. It was edited by Liisa Mudist.</p>
+                <p>Special thanks to Tuomas Lehtomaa.</p>
+            </div>
+        </div>
     )
 }
